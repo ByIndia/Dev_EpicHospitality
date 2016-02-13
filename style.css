@@ -1,0 +1,275 @@
+
+/**
+ * ========================================
+ * HEADER SECTION
+ * ========================================
+ */
+#navigation {
+background-color:rgb(238, 247, 251);
+}
+.topbar{
+	display:none;
+}
+.header-section {
+	margin-bottom: 0;
+	-webkit-transition: all ease 1.5s;
+	transition: all ease 1.5s;
+	padding:10px 0 0 0;
+	height:75px;
+	top:0;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+	
+}
+.header-section.header-floating.floating {
+	margin-top: 0;
+}
+.header-section.navbar-default {
+	background-color: #fff;
+}
+.navbar-toggle {
+	margin-top: 13px;
+	margin-bottom: 13px;
+	background:#f5f5f5;
+}
+.navbar-logo {
+	
+	padding-top: 0;
+	padding-bottom: 0;
+	white-space: nowrap;
+}
+.weblogo{
+	display:block;
+}
+.moblogo{
+	display:none;
+}
+.navbar-logo:before {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+.navbar-nav > li > a {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 25px;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	padding:0 20px;
+}
+.navbar-default .navbar-nav > li > a {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-nav li ul {
+  background: #f6fdfe; 
+  padding:5px;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 200px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index:9999;
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.28);
+	-moz-box-shadow: 0 2px 8px rgba(0,0,0,0.28);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.28);
+  
+}
+.navbar-nav li ul li a{
+	padding:10px 6px;
+	color: rgba(0, 0, 0, 0.6);
+	display:block;
+}
+.navbar-nav li ul li a:hover{
+}
+.navbar-nav li ul li.current a{
+	color: #00c6ff;
+}
+.navbar-nav li ul li { 
+  display: block; 
+   border-bottom:1px solid #dde3e4; 
+}
+.navbar-nav li ul li:last-child { 
+   border-bottom:none; 
+}
+.nav_cir{
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	float:left;
+	margin:4px 15px 0 10px;
+}
+.navbar-nav li ul li span{
+	float:left;
+}
+.cln_cir{
+	border:2px solid #29c85e;
+}
+.plm_cir{
+	border:2px solid #00c6ff;
+}
+.car_cir{
+	border:2px solid #b38721;
+}
+.elc_cir{
+	border:2px solid #ff7200;
+}
+.ac_cir{
+	border:2px solid #3b506d;
+}
+.appliances_cir{
+	border:2px solid #7e2a47;
+}
+.geyser_cir{
+	border:2px solid #3b5c88;
+}
+.pest_cir{
+	border:2px solid #fb857d;
+}
+.navbar-nav li ul li:hover {  }
+.navbar-nav li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  }
+.topmenu{
+	position:relative;
+	margin-bottom:0;
+	margin-top:5px;
+}
+.topmenu > li {
+    float: left;
+	list-style:none;
+	list-style-type:none;
+	margin-top:15px !important;
+	margin-bottom: 10px !important;
+	position:relative;
+
+}
+.topmenu > li > a {
+	line-height: 25px;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	padding:0 0 5px 0px;
+	 font-family: 'LatoWebSemibold';
+	color:#fff !important;
+	margin:0 20px;
+	
+}
+
+.topmenu > li > a:hover {
+	color:#fff !important;
+	border-bottom:2px solid #fff;
+}
+.topmenu > li.current > a{
+	color:#fff !important;
+	border-bottom:2px solid #fff;
+}
+
+.topmenu li ul {
+  background: #f6fdfe; 
+  padding:5px;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 200px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index:9999;
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.28);
+	-moz-box-shadow: 0 2px 8px rgba(0,0,0,0.28);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.28);
+}
+.topmenu li ul li {
+  display: block;
+  border-bottom:1px solid #dde3e4; 
+}
+.topmenu li ul li:last-child {
+  border-bottom:none; 
+}
+.topmenu li ul li a{
+	padding:10px 6px;
+	color: rgba(0, 0, 0, 0.6);
+	display:block;
+}
+.topmenu li ul li a:hover{
+	color: #00c6ff;
+}
+.topmenu li ul li.current a{
+	color: #00c6ff;
+}
+.topmenu li ul li:hover { background: #f6fdfe; }
+.topmenu li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+@media ( min-width: 768px ) {
+	.navbar-nav > li > a {
+		margin-top: 17.5px;
+		margin-bottom: 17.5px;
+	}
+}
+/*..................*/
+   /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
