@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="bootstrap.minNew.css">
+
+
+    <style>
+        html,
+        body,
+        .banner,
+        .container {
+            height: 100%;
+            text-align: center;
+        }
+        
+        .block {
+            height: 300px;
+            margin-bottom: 20px;
+            background-color: #D2E6CA;
+        }
+        
+        .foo {
+            margin-bottom: 30px;
+        }
+        
+        .bar {
+            /* background-color: rgba(134, 193, 30, 0.62);*/
+            height: 300px;
+            margin-bottom: 30px;
+            font-size: 3em;
+            border-radius: 50%;
+        }
+         @-webkit-keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @-moz-keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .fade-in {
+                opacity: 0;
+                /* make things invisible upon start */
+                -webkit-animation: fadeIn ease-in 1;
+                /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+                -moz-animation: fadeIn ease-in 1;
+                animation: fadeIn ease-in 1;
+                -webkit-animation-fill-mode: forwards;
+                /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+                -moz-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                -webkit-animation-duration:1.5s;
+                -moz-animation-duration: 1.5s;
+                animation-duration: 1.5s;
+            }
+        
+        .about-title {
+            color: #ffffff;
+            font-size: 85px;
+            font-family: Montserrat, sans-serif;
+            font-weight: bold;
+            line-height: 76px;
+            padding: 160px 90px 0px 90px;
+            text-align: center;
+            margin: 0;
+            -webkit-text-shadow: 0 4px 6px rgba(0, 0, 0, .20);
+            -moz-text-shadow: 0 4px 6px rgba(0, 0, 0, .20);
+            text-shadow: 0 4px 6px rgba(0, 0, 0, .20);
+        }
+        
+        .about-section {
+            background: #fff url("./img/Coverpic.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+            height: 380px;
+        }
+        
+        .founder-section img {
+            height: 90%;
+            width: 95%;
+            border-radius: 50%;
+            width: 100%;
+            box-shadow: 0px 5px 50px #888888;
+        }
+        
+        .subtitle {
+            font-family: Lato, sans-serif;
+            font-size: 40px;
+            font-style: italic;
+            font-variant: normal;
+            font-weight: 300;
+            letter-spacing: normal;
+            line-height: 1.5em;
+            text-transform: none;
+            color: white;
+            text-rendering:optimizeLegibility;
+            -webkit-font-smoothing:antialiased;
+        }
+        .divider
+        {
+            padding: 25px 0px;
+        }
+        body {
+            background-color: rgb(238, 247, 251);
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.smoove.js"></script>
+
+
+</head>
+
+<body>
+    <div>
+        <div id="navigation" class="navbar-collapse collapse">
+            <!--            <img style="float:left;" src="Logo.png" windth="100px" height="100px" />-->
+            <div id="logo" style="float:left;background-image:url('img/logo.png');background-size: 90% 100%;background-repeat: no-repeat;width:300px;height:100px;"></div>
+            <!-- NAVIGATION LINKS -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                    <a href="Home.html">Home</a>
+                </li>
+                <li class="">
+                    <a href="#">Services</a>
+                    <ul>
+                        <li class="">
+                            <a href="https://www.helpr.in/cleaning" class="clearfix">
+                                <div class="cln_cir nav_cir"></div>
+                                <span>Integrated Facility Services</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.helpr.in/pestcontrol" class="clearfix">
+                                <div class="pest_cir nav_cir"></div>
+                                <span>Staffing Solutions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="AboutUs.html">About</a>
+                </li>
+                <li>
+                    <a href="LocateUs.html">Locate Us</a>
+                </li>
+            </ul>
+        </div>
+        <svg preserveAspectRatio="none" viewBox="0 0 100 80" height="80" width="100%" version="1.1" style="position: relative;z-index:2">
+            <!--     Upper top        -->
+            <path d="M0 0  L0 30 L50 0 L100 30 L100 30 L100 0 Z" fill="#EEF7FB"></path>
+            <path d="M100 30 L50 0 L0 30" fill="none" stroke="#b5cbd9" stroke-width="1"></path>
+        </svg>
+    </div>
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generated by Jssor Slider Maker Online. -->
+    <!-- This demo works without jquery library. -->
+
+    <section class="about-section section" style="margin-top:-85px;">
+        <div class="container">
+            <div class="helpr-content" data-stellar-offset-parent="true">
+                <div class="clearfix" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <h1 class="about-title">About Us</h1>
+                    <div class="subtitle"> Some Tag Line, Passion for Hospitality</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section fade-in" >
+        <i> <h3>
+                We are a team of strong-minded individuals with a passion for quality. Our strength lies in our willingness to challenge one another and do what’s best to achieve goals for our clients. </h3>
+            <h3>We do what’s best for our clients to achieve their goals even if it’s something they might not expect. If you like the way we work and are willing to invest in quality, then we are likely to be an excellent fit and will do great work together.</h3>
+            </i>
+        <hr>
+    </section>
+    <section class="container founder-section section">
+        <div class="container">
+            <h1>***Our Founders***</h1>
+             <div class="divider"></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="bar" data-move-y="200px" data-move-x="-200px"><img src="img/Founder1.jpg">Person 1</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bar" data-move-y="200px" data-move-x="-100px"><img src="img/Founder2.jpg">Person 2</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bar" data-move-y="200px" data-move-x="100px"><img src="img/Founder3.jpg">Person 3</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bar" data-move-y="200px" data-move-x="200px"><img src="img/Founder4.jpg">Person 4</div>
+                </div>
+            </div>
+            <div class="divider"></div>
+           
+
+            <div class="col-md-6">
+                <div class=" block">
+                    <H2><i>"Fillers asd asda sdasd asdasdasd asdasdasd asdasda asdasd asdasda dasd asdas dasdasd asdasdasdasdas da as asd  asd asd ad asd asdassdasdasd as as as a aasdasdas asdsdasFillers"</i><br> - by Person 1</H2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div cl<div class=" block">
+                    <H2><i>"Fillers asd asda sdasd asdasdasd asdasdasd asdasda asdasd asdasda dasd asdas dasdasd asdasdasdasdas da as asd  asd asd ad asd asdassdasdasd as as as a aasdasdas asdsdasFillers"</i><br> - by Founder 2</H2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Attach Smoove to elements and set default options
+        $(".foo, .bar").smoove({
+            offset: '40%', // moveX is overridden to -200px for ".bar" object
+        });
+        $('.block').smoove({
+            offset: '40%'
+        });
+
+
+        jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--    <link rel="stylesheet" href="bootstrap.minNew.css">-->
+
+            <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="bootstrap.minNew.css">
+    <script>
+        function MapInit() {
+            var mapProp = {
+
+
+                panControl: true
+                , zoomControl: true
+                , mapTypeControl: true
+                , scaleControl: true
+                , overviewMapControl: true
+                , rotateControl: true
+                , mapTypeId: google.maps.MapTypeId.ROADMAP
+                , center: new google.maps.LatLng(13.058560, 80.233493)
+                , zoom: 15,
+
+
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(13.058560, 80.233493)
+                , map: map
+                , animation: google.maps.Animation.BOUNCE
+                , title: "Mark On Map"
+
+            });
+
+
+            var infowindow = new google.maps.InfoWindow({
+                content: "Epic Hospitality"
+            });
+            infowindow.open(map, marker);
+        }
+
+        function loadScript() {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDCykeItMY-sRpKvFqTrqDvmN79_ru33JM&sensor=false&callback=MapInit";
+            document.body.appendChild(script);
+        }
+
+
+
+        window.onload = loadScript;
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <div id="navigation" class="navbar-collapse collapse">
+                <!--            <img style="float:left;" src="Logo.png" windth="100px" height="100px" />-->
+                <div id="logo" style="float:left;background-image:url('img/logo.png');background-size: 90% 100%;background-repeat: no-repeat;width:300px;height:100px;"></div>
+                <!-- NAVIGATION LINKS -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="Home.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Services</a>
+                        <ul>
+                            <li class="">
+                                <a href="https://www.helpr.in/cleaning" class="clearfix">
+                                    <div class="cln_cir nav_cir"></div>
+                                    <span>Integrated Facility Services</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="https://www.helpr.in/pestcontrol" class="clearfix">
+                                    <div class="pest_cir nav_cir"></div>
+                                    <span>Staffing Solutions</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="AboutUs.html">About</a>
+                    </li>
+                    <li>
+                        <a href="LocateUs.html">Locate Us</a>
+                    </li>
+                </ul>
+            </div>
+        <svg style="background-color:white;" preserveAspectRatio="none" viewBox="0 0 100 100" height="80" width="100%" version="1.1" style="position: relative;">
+            <path d="M0 0  L0 30 L50 0 L100 30 L100 30 L100 0 Z" fill="#EEF7FB"></path>
+            <path d="M100 30 L50 0 L0 30" fill="none" stroke="#b5cbd9" stroke-width="0.5"></path>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center" style="margin-top:-50px">Business Head Office</h1>
+            <section class="address col-md-6 col-xs-12" style="margin-top:10px;">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <!-- Address form -->
+                        <h2>
+                        <div class=" text-center input-group input-group-lg" style="line-height: 1.5;
+    font-stretch: extra-expanded;margin-top:50px;">
+                            <p>Flat No 2,"Hari Harathmajm"</p>
+                            <p>Mahalingam Street, Mahalingapuram,</p>
+                            <p>Chennai - 600034</p>
+                            <p><span class="glyphicon glyphicon-phone-alt"></span> Phone no:+91 4428171437</p>
+                            <p><span class="glyphicon glyphicon-envelope"></span> Email id:epichosp@gmail.com</p>
+                        </div>
+                    </h2>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="col-md-6 col-xs-12" style="margin-top:10px;">
+                <div id="googleMap" style="margin-top:10px;border:1px solid gray; float:right;width:100%;height:380px;    box-shadow: 0px 0px 15px rgb(74, 77, 79);"></div>
+
+            </section>
+
+        </div>
+    </div>
+
+</body>
