@@ -22,6 +22,8 @@
         .block {
             height: 300px;
             margin-bottom: 20px;
+            margin-left: 15px;
+            margin-right: 15px;
             background-color: #D2E6CA;
         }
         
@@ -33,51 +35,53 @@
             /* background-color: rgba(134, 193, 30, 0.62);*/
             height: 300px;
             margin-bottom: 30px;
+            margin-left: 30px;
             font-size: 3em;
             border-radius: 50%;
         }
-         @-webkit-keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-
-            @-moz-keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-
-            .fade-in {
+        
+        @-webkit-keyframes fadeIn {
+            from {
                 opacity: 0;
-                /* make things invisible upon start */
-                -webkit-animation: fadeIn ease-in 1;
-                /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-                -moz-animation: fadeIn ease-in 1;
-                animation: fadeIn ease-in 1;
-                -webkit-animation-fill-mode: forwards;
-                /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-                -moz-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
-                -webkit-animation-duration:1.5s;
-                -moz-animation-duration: 1.5s;
-                animation-duration: 1.5s;
             }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            /* make things invisible upon start */
+            -webkit-animation: fadeIn ease-in 1;
+            /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+            -webkit-animation-fill-mode: forwards;
+            /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+        }
         
         .about-title {
             color: #ffffff;
@@ -105,7 +109,7 @@
             height: 90%;
             width: 95%;
             border-radius: 50%;
-            width: 100%;
+            width: 50%;
             box-shadow: 0px 5px 50px #888888;
         }
         
@@ -119,13 +123,14 @@
             line-height: 1.5em;
             text-transform: none;
             color: white;
-            text-rendering:optimizeLegibility;
-            -webkit-font-smoothing:antialiased;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
         }
-        .divider
-        {
-            padding: 25px 0px;
+        
+        .divider {
+            padding: 5px 0px;
         }
+        
         body {
             background-color: rgb(238, 247, 251);
         }
@@ -186,56 +191,63 @@
             <div class="helpr-content" data-stellar-offset-parent="true">
                 <div class="clearfix" data-wow-duration="1s" data-wow-delay="0.5s">
                     <h1 class="about-title">About Us</h1>
-                    <div class="subtitle"> Some Tag Line, Passion for Hospitality</div>
+                    <div class="subtitle">Passion for Hospitality. We present you our passion.</div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section fade-in" >
-        <i> <h3>
-                We are a team of strong-minded individuals with a passion for quality. Our strength lies in our willingness to challenge one another and do what’s best to achieve goals for our clients. </h3>
-            <h3>We do what’s best for our clients to achieve their goals even if it’s something they might not expect. If you like the way we work and are willing to invest in quality, then we are likely to be an excellent fit and will do great work together.</h3>
+    <section class="section fade-in">
+        <i> <h3> Epic Hospitality services Private	Limited, its main core business is Food Catering and Housekeeping services for Corporates,Institutes, Industries, Event Management, Indoor and Outdoor catering.</h3>
+		<h3> Epic Hospitality owns their food production center by name,Central Kitchen, at Putlur, Tiruvallur District, Chennai.</h3>
+		<h3> Epic Hospitality, is also registered with Karnataka State Government for e-procurement in attending government tenders.</h3>
             </i>
         <hr>
     </section>
-    <section class="container founder-section section">
-        <div class="container">
+    <section class="founder-section section">
+        <div>
             <h1>***Our Founders***</h1>
-             <div class="divider"></div>
+            <div class="divider"></div>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="bar" data-move-y="200px" data-move-x="-200px"><img src="img/Founder1.jpg">Person 1</div>
+                <div class="col-md-6">
+                    <div class="bar" data-move-y="200px" data-move-x="-200px"><img src="img/Founder1.jpg"></br>Person 1</div>
                 </div>
-                <div class="col-md-3">
-                    <div class="bar" data-move-y="200px" data-move-x="-100px"><img src="img/Founder2.jpg">Person 2</div>
-                </div>
-                <div class="col-md-3">
-                    <div class="bar" data-move-y="200px" data-move-x="100px"><img src="img/Founder3.jpg">Person 3</div>
-                </div>
-                <div class="col-md-3">
-                    <div class="bar" data-move-y="200px" data-move-x="200px"><img src="img/Founder4.jpg">Person 4</div>
+                <div class="col-md-6">
+                    <div class="bar" data-move-y="200px" data-move-x="200px"><img src="img/Founder2.jpg"></br>Person 2</div>
                 </div>
             </div>
             <div class="divider"></div>
-           
+
 
             <div class="col-md-6">
                 <div class=" block">
-                    <H2><i>"Fillers asd asda sdasd asdasdasd asdasdasd asdasda asdasd asdasda dasd asdas dasdasd asdasdasdasdas da as asd  asd asd ad asd asdassdasdasd as as as a aasdasdas asdsdasFillers"</i><br> - by Person 1</H2>
+                    <H2><i>T.G.RamMohan, having professional experience for more than two decades in a multi-national group.Most of his career holds experience in middle-east countries. He is exposed to world's best hospitality services offered and aims in delivering the same in India.</i><br></H2>
                 </div>
             </div>
             <div class="col-md-6">
-                <div cl<div class=" block">
-                    <H2><i>"Fillers asd asda sdasd asdasdasd asdasdasd asdasda asdasd asdasda dasd asdas dasdasd asdasdasdasdas da as asd  asd asd ad asd asdassdasdasd as as as a aasdasdas asdsdasFillers"</i><br> - by Founder 2</H2>
+                <div class=" block">
+                    <H2><i>M.Gunasekaran, with field experience for more than two decades across the country working for reputed Organisations in this industry.</i><br></H2>
                 </div>
             </div>
         </div>
+        </br>
+        <div class="col-md-12">
+            <div class="footer" style="height:100px;">
+                <h3>We are a team of like-minded individuals with passion for quality in hospitality services. We are not ready to compromise or quality even if you're ready. Our hospitality to the best is what we strive for. </h3>
+                <h3>Individual commitment to a group effort - that is what makes a team work, a company work, a society work, a civilization work.</h3>
+            </div>
+        </div>
+
     </section>
+
+
 
     <script>
         // Attach Smoove to elements and set default options
         $(".foo, .bar").smoove({
             offset: '40%', // moveX is overridden to -200px for ".bar" object
+        });
+        $(".footer").smoove({
+            offset: '5%', // moveX is overridden to -200px for ".bar" object
         });
         $('.block').smoove({
             offset: '40%'
@@ -245,6 +257,8 @@
         jssor_1_slider_init();
     </script>
     <!-- #endregion Jssor Slider End -->
+
+
 </body>
 
 </html>
