@@ -1,470 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="bootstrap.minNew.css">
-        <style>
-            html,
-            body,
-            .banner,
-            .container {
-                height: 100%;
-                text-align: center;
-            }
 
-            .block {
-                height: 300px;
-                margin-bottom: 20px;
-                background-color: rgba(134, 193, 30, 0.62);
-            }
-
-            .foo {
-                margin-bottom: 30px;
-            }
-
-            .bar {
-                background-color: rgba(134, 193, 30, 0.62);
-                height: 300px;
-                margin-bottom: 30px;
-                font-size: 3em;
-                padding-top: 25%;
-                border-radius: 50%;
-            }
-
-            body {
-                background-color: rgb(238, 247, 251);
-            }
-            /* make keyframes that tell the start state and the end state of our object */
-
-            @-webkit-keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-
-            @-moz-keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-
-            .fade-in {
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.minNew.css">
+    <style>
+        html,
+        body,
+        .banner,
+        .container {
+            height: 100%;
+            text-align: center;
+        }
+        
+        .block {
+            height: 300px;
+            margin-bottom: 20px;
+            background-color: rgba(134, 193, 30, 0.62);
+        }
+        
+        .foo {
+            margin-bottom: 30px;
+        }
+        
+        .bar {
+            background-color: rgba(134, 193, 30, 0.62);
+            height: 300px;
+            margin-bottom: 30px;
+            font-size: 3em;
+            padding-top: 25%;
+            border-radius: 50%;
+        }
+        
+        body {
+            background-color: rgb(238, 247, 251);
+        }
+        /* make keyframes that tell the start state and the end state of our object */
+        
+        @-webkit-keyframes fadeIn {
+            from {
                 opacity: 0;
-                /* make things invisible upon start */
-                -webkit-animation: fadeIn ease-in 1;
-                /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-                -moz-animation: fadeIn ease-in 1;
-                animation: fadeIn ease-in 1;
-                -webkit-animation-fill-mode: forwards;
-                /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-                -moz-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
-                -webkit-animation-duration: 1s;
-                -moz-animation-duration: 1s;
-                animation-duration: 1s;
             }
-
-            .fade-in.one {
-                -webkit-animation-delay: 0.7s;
-                -moz-animation-delay: 0.7s;
-                animation-delay: 0.7s;
+            to {
+                opacity: 1;
             }
-
-            .fade-in.two {
-                -webkit-animation-delay: 1.2s;
-                -moz-animation-delay: 1.2s;
-                animation-delay: 1.2s;
-            }
-
-            .fade-in.three {
-                -webkit-animation-delay: 1.6s;
-                -moz-animation-delay: 1.6s;
-                animation-delay: 1.6s;
-            }
-            /*---make a basic box ---*/
-
-            .box {
-                width: 200px;
-                height: 200px;
-                position: relative;
-                margin: 10px;
-                float: left;
-                border: 1px solid #333;
-                background: #999;
-            }
-
-            1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53
-            /* make keyframes that tell the start state and the end state of our object */
-
-            @-webkit-keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-
-            @-moz-keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-
-            .fade-in {
+        }
+        
+        @-moz-keyframes fadeIn {
+            from {
                 opacity: 0;
-                /* make things invisible upon start */
-                -webkit-animation: fadeIn ease-in 1;
-                /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-                -moz-animation: fadeIn ease-in 1;
-                animation: fadeIn ease-in 1;
-                -webkit-animation-fill-mode: forwards;
-                /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-                -moz-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
-                -webkit-animation-duration: 1.5s;
-                -moz-animation-duration: 1.5s;
-                animation-duration: 1.5s;
             }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            /* make things invisible upon start */
+            -webkit-animation: fadeIn ease-in 1;
+            /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+            -webkit-animation-fill-mode: forwards;
+            /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
+        }
+        
+        .fade-in.one {
+            -webkit-animation-delay: 0.7s;
+            -moz-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+        }
+        
+        .fade-in.two {
+            -webkit-animation-delay: 1.2s;
+            -moz-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+        }
+        
+        .fade-in.three {
+            -webkit-animation-delay: 1.6s;
+            -moz-animation-delay: 1.6s;
+            animation-delay: 1.6s;
+        }
+        /*---make a basic box ---*/
+        
+        .box {
+            width: 250px;
+            height: 200px;
+            position: relative;
+            margin: 10px;
+            float: left;
+            border: 1px solid #333;
+            background: #999;
+        }
+        
+        1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53
+        /* make keyframes that tell the start state and the end state of our object */
+        
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            /* make things invisible upon start */
+            -webkit-animation: fadeIn ease-in 1;
+            /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+            -webkit-animation-fill-mode: forwards;
+            /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+        }
+        
+        .fade-in.one {
+            -webkit-animation-delay: 0.6s;
+            -moz-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+        }
+        
+        .fade-in.two {
+            -webkit-animation-delay: 0.8s;
+            -moz-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+        }
+        
+        .fade-in.three {
+            -webkit-animation-delay: 1.3s;
+            -moz-animation-delay: 1.3s;
+            animation-delay: 1.3s;
+        }
+        /*---make a basic box ---*/
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 10px;
+            float: left;
+            border: 1px solid #333;
+            background: #999;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.smoove.js"></script>
+</head>
 
-            .fade-in.one {
-                -webkit-animation-delay: 0.6s;
-                -moz-animation-delay: 0.6s;
-                animation-delay: 0.6s;
-            }
-
-            .fade-in.two {
-                -webkit-animation-delay: 0.8s;
-                -moz-animation-delay: 0.8s;
-                animation-delay: 0.8s;
-            }
-
-            .fade-in.three {
-                -webkit-animation-delay: 1.3s;
-                -moz-animation-delay: 1.3s;
-                animation-delay: 1.3s;
-            }
-            /*---make a basic box ---*/
-
-            .box {
-                width: 200px;
-                height: 200px;
-                position: relative;
-                margin: 10px;
-                float: left;
-                border: 1px solid #333;
-                background: #999;
-            }
-        </style>
-        <script src="js/jquery.js"></script>
-        <script src="js/jquery.smoove.js"></script>
-    </head>
-    <body>
-        <div>
-            <div id="navigation" class="navbar-collapse collapse">
-                <!--            <img style="float:left;" src="Logo.png" windth="100px" height="100px" />-->
-                <div id="logo" style="float:left;background-image:url('img/logo.png');background-size: 90% 100%;background-repeat: no-repeat;width:300px;height:100px;"></div>
-                <!-- NAVIGATION LINKS -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="">
-                        <a href="Home.html">Home</a>
-                    </li>
-                    <li class="">
-                        <a href="#">Services</a>
-                        <ul>
-                            <li class="">
-                                <a href="https://www.helpr.in/cleaning" class="clearfix">
-                                    <div class="cln_cir nav_cir"></div>
-                                    <span>Integrated Facility Services</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="https://www.helpr.in/pestcontrol" class="clearfix">
-                                    <div class="pest_cir nav_cir"></div>
-                                    <span>Staffing Solutions</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <a href="AboutUs.html">About</a>
-                    </li>
-                    <li>
-                        <a href="LocateUs.html">Locate Us</a>
-                    </li>
-                </ul>
-            </div>
-            <svg preserveAspectRatio="none" viewBox="0 0 100 80" height="80" width="100%" version="1.1" style="position: relative;z-index:2">
-                <!--     Upper top        -->
-                <path d="M0 0  L0 30 L50 0 L100 30 L100 30 L100 0 Z" fill="#EEF7FB"></path>
-                <path d="M100 30 L50 0 L0 30" fill="none" stroke="#b5cbd9" stroke-width="1"></path>
-            </svg>
+<body>
+    <div>
+        <div id="navigation" class="navbar-collapse collapse">
+            <!--            <img style="float:left;" src="Logo.png" windth="100px" height="100px" />-->
+            <div id="logo" style="float:left;background-image:url('img/logo.png');background-size: 90% 100%;background-repeat: no-repeat;width:300px;height:100px;"></div>
+            <!-- NAVIGATION LINKS -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                    <a href="Home.html">Home</a>
+                </li>
+                <li class="">
+                    <a href="#">Services</a>
+                    <ul>
+                        <li class="">
+                            <a href="Services.html" class="clearfix">
+                                <div class="cln_cir nav_cir"></div>
+                                <span>Integrated Facility Services</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/pestcontrol" class="clearfix">
+                                <div class="pest_cir nav_cir"></div>
+                                <span>Staffing Solutions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="AboutUs.html">About Us</a>
+                </li>
+                <li>
+                    <a href="LocateUs.html">Locate Us</a>
+                </li>
+            </ul>
         </div>
-        <!-- #region Jssor Slider Begin -->
-        <!-- Generated by Jssor Slider Maker Online. -->
-        <!-- This demo works without jquery library. -->
-        <script type="text/javascript" src="jssor.slider.debug.js"></script>
-        <!-- use jssor.slider.debug.js instead for debug -->
-        <script>
-            jssor_1_slider_init = function () {
-                var jssor_1_SlideoTransitions = [
+        <svg preserveAspectRatio="none" viewBox="0 0 100 80" height="80" width="100%" version="1.1" style="position: relative;z-index:2">
+            <!--     Upper top        -->
+            <path d="M0 0  L0 30 L50 0 L100 30 L100 30 L100 0 Z" fill="#EEF7FB"></path>
+            <path d="M100 30 L50 0 L0 30" fill="none" stroke="#b5cbd9" stroke-width="1"></path>
+        </svg>
+    </div>
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generated by Jssor Slider Maker Online. -->
+    <!-- This demo works without jquery library. -->
+    <script type="text/javascript" src="jssor.slider.debug.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+    <script>
+        jssor_1_slider_init = function () {
+            var jssor_1_SlideoTransitions = [
                     [{
-                        b: 5500
-                        , d: 3000
-                        , o: -1
-                        , r: 240
-                        , e: {
-                            r: 2
-                        }
+                    b: 5500
+                    , d: 3000
+                    , o: -1
+                    , r: 240
+                    , e: {
+                        r: 2
+                    }
                     }]
-                    , [{
-                        b: -1
-                        , d: 1
-                        , o: -1
+
+
+
+                
+                , [{
+                    b: -1
+                    , d: 1
+                    , o: -1
+                    , c: {
+                        x: 51.0
+                        , t: -51.0
+                    }
+                    }, {
+                    b: 0
+                    , d: 1000
+                    , o: 1
+                    , c: {
+                        x: -51.0
+                        , t: 51.0
+                    }
+                    , e: {
+                        o: 7
                         , c: {
-                            x: 51.0
-                            , t: -51.0
-                        }
-                    }, {
-                        b: 0
-                        , d: 1000
-                        , o: 1
-                        , c: {
-                            x: -51.0
-                            , t: 51.0
-                        }
-                        , e: {
-                            o: 7
-                            , c: {
-                                x: 7
-                                , t: 7
-                            }
-                        }
-                    }]
-                    , [{
-                        b: -1
-                        , d: 1
-                        , o: -1
-                        , sX: 9
-                        , sY: 9
-                    }, {
-                        b: 1000
-                        , d: 1000
-                        , o: 1
-                        , sX: -9
-                        , sY: -9
-                        , e: {
-                            sX: 2
-                            , sY: 2
-                        }
-                    }]
-                    , [{
-                        b: -1
-                        , d: 1
-                        , o: -1
-                        , r: -180
-                        , sX: 9
-                        , sY: 9
-                    }, {
-                        b: 2000
-                        , d: 1000
-                        , o: 1
-                        , r: 180
-                        , sX: -9
-                        , sY: -9
-                        , e: {
-                            r: 2
-                            , sX: 2
-                            , sY: 2
-                        }
-                    }]
-                    , [{
-                        b: -1
-                        , d: 1
-                        , o: -1
-                    }, {
-                        b: 3000
-                        , d: 2000
-                        , y: 180
-                        , o: 1
-                        , e: {
-                            y: 16
-                        }
-                    }]
-                    , [{
-                        b: -1
-                        , d: 1
-                        , o: -1
-                        , r: -150
-                    }, {
-                        b: 7500
-                        , d: 1600
-                        , o: 1
-                        , r: 150
-                        , e: {
-                            r: 3
-                        }
-                    }]
-                    , [{
-                        b: 10000
-                        , d: 2000
-                        , x: -379
-                        , e: {
                             x: 7
+                            , t: 7
                         }
+                    }
                     }]
-                    , [{
-                        b: 10000
-                        , d: 2000
-                        , x: -379
-                        , e: {
-                            x: 7
-                        }
+
+
+
+                
+                , [{
+                    b: -1
+                    , d: 1
+                    , o: -1
+                    , sX: 9
+                    , sY: 9
+                    }, {
+                    b: 1000
+                    , d: 1000
+                    , o: 1
+                    , sX: -9
+                    , sY: -9
+                    , e: {
+                        sX: 2
+                        , sY: 2
+                    }
                     }]
-                    , [{
-                        b: -1
-                        , d: 1
-                        , o: -1
-                        , r: 288
-                        , sX: 9
-                        , sY: 9
+
+
+
+                
+                , [{
+                    b: -1
+                    , d: 1
+                    , o: -1
+                    , r: -180
+                    , sX: 9
+                    , sY: 9
                     }, {
-                        b: 9100
-                        , d: 900
-                        , x: -1400
-                        , y: -660
-                        , o: 1
-                        , r: -288
-                        , sX: -9
-                        , sY: -9
-                        , e: {
-                            r: 6
-                        }
+                    b: 2000
+                    , d: 1000
+                    , o: 1
+                    , r: 180
+                    , sX: -9
+                    , sY: -9
+                    , e: {
+                        r: 2
+                        , sX: 2
+                        , sY: 2
+                    }
+                    }]
+
+
+
+                
+                , [{
+                    b: -1
+                    , d: 1
+                    , o: -1
                     }, {
-                        b: 10000
-                        , d: 1600
-                        , x: -200
-                        , o: -1
-                        , e: {
-                            x: 16
-                        }
+                    b: 3000
+                    , d: 2000
+                    , y: 180
+                    , o: 1
+                    , e: {
+                        y: 16
+                    }
+                    }]
+
+
+
+                
+                , [{
+                    b: -1
+                    , d: 1
+                    , o: -1
+                    , r: -150
+                    }, {
+                    b: 7500
+                    , d: 1600
+                    , o: 1
+                    , r: 150
+                    , e: {
+                        r: 3
+                    }
+                    }]
+
+
+
+                
+                , [{
+                    b: 10000
+                    , d: 2000
+                    , x: -379
+                    , e: {
+                        x: 7
+                    }
+                    }]
+
+
+
+                
+                , [{
+                    b: 10000
+                    , d: 2000
+                    , x: -379
+                    , e: {
+                        x: 7
+                    }
+                    }]
+
+
+
+                
+                , [{
+                    b: -1
+                    , d: 1
+                    , o: -1
+                    , r: 288
+                    , sX: 9
+                    , sY: 9
+                    }, {
+                    b: 9100
+                    , d: 900
+                    , x: -1400
+                    , y: -660
+                    , o: 1
+                    , r: -288
+                    , sX: -9
+                    , sY: -9
+                    , e: {
+                        r: 6
+                    }
+                    }, {
+                    b: 10000
+                    , d: 1600
+                    , x: -200
+                    , o: -1
+                    , e: {
+                        x: 16
+                    }
                     }]
                 ];
 
 
 
-                var jssor_1_options = {
-                    $AutoPlay: true
-                    , $SlideDuration: 800
-                    , $SlideEasing: $Jease$.$OutQuint
-                    , $CaptionSliderOptions: {
-                        $Class: $JssorCaptionSlideo$
-                        , $Transitions: jssor_1_SlideoTransitions
-                    }
-                    , $ArrowNavigatorOptions: {
-                        $Class: $JssorArrowNavigator$
-                    }
-                    , $BulletNavigatorOptions: {
-                        $Class: $JssorBulletNavigator$
-                    }
-                };
-
-
-                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-                //responsive code begin
-                //you can remove responsive code if you don't want the slider scales while window resizing
-                function ScaleSlider() {
-                    var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                    if (refSize) {
-                        refSize = Math.min(refSize, 1920);
-                        jssor_1_slider.$ScaleWidth(refSize);
-                    } else {
-                        window.setTimeout(ScaleSlider, 30);
-                    }
+            var jssor_1_options = {
+                $AutoPlay: true
+                , $SlideDuration: 800
+                , $SlideEasing: $Jease$.$OutQuint
+                , $CaptionSliderOptions: {
+                    $Class: $JssorCaptionSlideo$
+                    , $Transitions: jssor_1_SlideoTransitions
                 }
-                ScaleSlider();
-                $Jssor$.$AddEvent(window, "load", ScaleSlider);
-                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-                //responsive code end
+                , $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                }
+                , $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
             };
-        </script>
-        <style>
-            /* jssor slider bullet navigator skin 05 css */
-            /*
+
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                } else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
             .jssorb05 div           (normal)
             .jssorb05 div:hover     (normal mouseover)
             .jssorb05 .av           (active)
             .jssorb05 .av:hover     (active mouseover)
             .jssorb05 .dn           (mousedown)
             */
-
-            .jssorb05 {
-                position: absolute;
-            }
-
-            .jssorb05 div,
-            .jssorb05 div:hover,
-            .jssorb05 .av {
-                position: absolute;
-                /* size of bullet elment */
-                width: 16px;
-                height: 16px;
-                background: url('img/b05.png') no-repeat;
-                overflow: hidden;
-                cursor: pointer;
-            }
-
-            .jssorb05 div {
-                background-position: -7px -7px;
-            }
-
-            .jssorb05 div:hover,
-            .jssorb05 .av:hover {
-                background-position: -37px -7px;
-            }
-
-            .jssorb05 .av {
-                background-position: -67px -7px;
-            }
-
-            .jssorb05 .dn,
-            .jssorb05 .dn:hover {
-                background-position: -97px -7px;
-            }
-            /* jssor slider arrow navigator skin 12 css */
-            /*
+        
+        .jssorb05 {
+            position: absolute;
+        }
+        
+        .jssorb05 div,
+        .jssorb05 div:hover,
+        .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .jssorb05 div {
+            background-position: -7px -7px;
+        }
+        
+        .jssorb05 div:hover,
+        .jssorb05 .av:hover {
+            background-position: -37px -7px;
+        }
+        
+        .jssorb05 .av {
+            background-position: -67px -7px;
+        }
+        
+        .jssorb05 .dn,
+        .jssorb05 .dn:hover {
+            background-position: -97px -7px;
+        }
+        /* jssor slider arrow navigator skin 12 css */
+        /*
             .jssora12l                  (normal)
             .jssora12r                  (normal)
             .jssora12l:hover            (normal mouseover)
@@ -472,94 +506,95 @@
             .jssora12l.jssora12ldn      (mousedown)
             .jssora12r.jssora12rdn      (mousedown)
             */
-
-            .jssora12l,
-            .jssora12r {
-                display: block;
-                position: absolute;
-                /* size of arrow element */
-                width: 30px;
-                height: 46px;
-                cursor: pointer;
-                background: url('img/a12.png') no-repeat;
-                overflow: hidden;
-            }
-
-            .jssora12l {
-                background-position: -16px -37px;
-            }
-
-            .jssora12r {
-                background-position: -75px -37px;
-            }
-
-            .jssora12l:hover {
-                background-position: -136px -37px;
-            }
-
-            .jssora12r:hover {
-                background-position: -195px -37px;
-            }
-
-            .jssora12l.jssora12ldn {
-                background-position: -256px -37px;
-            }
-
-            .jssora12r.jssora12rdn {
-                background-position: -315px -37px;
-            }
-        </style>
-        <div style="margin-top:-85px;z-index:1;">
-            <div id="jssor_1" style="position: relative; margin: 0 0; top: 0px; left: 0px; width: 1200px; height: 340px; overflow: hidden; visibility: hidden;">
-                <!-- Loading Screen -->
-                <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                    <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-                </div>
-                <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 340px; overflow: hidden;">
-                    <div data-p="112.50" style="display: none;">
-                        <img data-u="image" src="img/pic1.jpg" />
-                    </div>
-                    <div data-p="112.50" style="display: none;">
-                        <img data-u="image" src="img/pic2.jpg" />
-                    </div>
-                    <div data-p="112.50" style="display: none;">
-                        <img data-u="image" src="img/05.jpg" />
-                    </div>
-                    <div data-p="112.50" style="display: none;">
-                        <img data-u="image" src="img/09.jpg" />
-                    </div>
-                </div>
-                <!-- Bullet Navigator -->
-                <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
-                    <!-- bullet navigator item prototype -->
-                    <div data-u="prototype" style="width:16px;height:16px;"></div>
-                </div>
-                <!-- Arrow Navigator -->
-                <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
-                <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
-                <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
+        
+        .jssora12l,
+        .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        
+        .jssora12l {
+            background-position: -16px -37px;
+        }
+        
+        .jssora12r {
+            background-position: -75px -37px;
+        }
+        
+        .jssora12l:hover {
+            background-position: -136px -37px;
+        }
+        
+        .jssora12r:hover {
+            background-position: -195px -37px;
+        }
+        
+        .jssora12l.jssora12ldn {
+            background-position: -256px -37px;
+        }
+        
+        .jssora12r.jssora12rdn {
+            background-position: -315px -37px;
+        }
+    </style>
+    <div style="margin-top:-85px;z-index:1;">
+        <div id="jssor_1" style="position: relative; margin: 0 0; top: 0px; left: 0px; width: 1200px; height: 340px; overflow: hidden; visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
             </div>
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 340px; overflow: hidden;">
+                <div data-p="112.50" style="display: none;">
+                    <img data-u="image" src="img/pic1.jpg" />
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <img data-u="image" src="img/pic2.jpg" />
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <img data-u="image" src="img/05.jpg" />
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <img data-u="image" src="img/09.jpg" />
+                </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                <!-- bullet navigator item prototype -->
+                <div data-u="prototype" style="width:16px;height:16px;"></div>
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+            <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
         </div>
-        <div>
-            <section id="provService" class="provservice-section section">
-                <div class="col-md-4 fade-in">
-                    <h1>Micro Management</h1>
-                    <h3>The services provided to our esteemed customers are micro managed by senior management.</h3>
-                </div>
-                <div class="col-md-4  fade-in">
-                    <h1>Customer Focussed</h1>
-                    <h3>Our business is not just monetary but establishing a trustworthy long time relationship with our customers.</h3>
-                </div>
-                <div class="col-md-4  fade-in">
-                    <h1>Our Promise</h1>
-                    <h3>We Promise you to provide the market's best services.We win when you win.</h3>
-                </div>
-            </section>
-        </div>
-        <script>
-            jssor_1_slider_init();
-        </script>
-        <!-- #endregion Jssor Slider End -->
-    </body>
+    </div>
+    <div>
+        <section id="provService" class="provservice-section section">
+            <div class="col-md-4 fade-in">
+                <h1>Micro Management</h1>
+                <h3>The services provided to our esteemed customers are micro managed by senior management.</h3>
+            </div>
+            <div class="col-md-4  fade-in">
+                <h1>Customer Focussed</h1>
+                <h3>Our business is not just monetary but establishing a trustworthy long time relationship with our customers.</h3>
+            </div>
+            <div class="col-md-4  fade-in">
+                <h1>Our Promise</h1>
+                <h3>We Promise you to provide the market's best services.We win when you win.</h3>
+            </div>
+        </section>
+    </div>
+    <script>
+        jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+</body>
+
 </html>

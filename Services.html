@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.minNew.css">
+
+
+    <style>
+        html,
+        body,
+        .banner,
+        .container {
+            height: 100%;
+            text-align: center;
+        }
+        
+        .block {
+            height: 300px;
+            margin-bottom: 20px;
+            margin-left: 15px;
+            margin-right: 15px;
+            background-color: #D2E6CA;
+        }
+        
+        .foo {
+            margin-bottom: 30px;
+        }
+        
+        .bar {
+            /* background-color: rgba(134, 193, 30, 0.62);*/
+            height: 300px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            font-size: 3em;
+            border-radius: 50%;
+        }
+        
+        .navbar-nav li:hover ul {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .navbar-nav li ul {
+            background: #f6fdfe;
+            padding: 5px;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            width: 250px;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 9999;
+            -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+            -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+        }
+        
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            /* make things invisible upon start */
+            -webkit-animation: fadeIn ease-in 1;
+            /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+            -webkit-animation-fill-mode: forwards;
+            /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+        }
+        
+        .about-title {
+            color: #ffffff;
+            font-size: 85px;
+            font-family: Montserrat, sans-serif;
+            font-weight: bold;
+            line-height: 76px;
+            padding: 160px 90px 0px 90px;
+            text-align: center;
+            margin: 0;
+            -webkit-text-shadow: 0 4px 6px rgba(0, 0, 0, .73);
+            -moz-text-shadow: 0 4px 6px rgba(0, 0, 0, .73);
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.73);
+        }
+        
+        .about-section {
+            background: #fff url("./img/services-banner.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+            height: 380px;
+        }
+        
+        .founder-section img {
+            height: 90%;
+            width: 95%;
+            border-radius: 50%;
+            width: 50%;
+            box-shadow: 0px 5px 50px #888888;
+        }
+        
+        .subtitle {
+            font-family: Lato, sans-serif;
+            font-size: 40px;
+            font-style: italic;
+            font-variant: normal;
+            font-weight: 300;
+            letter-spacing: normal;
+            line-height: 1.5em;
+            text-transform: none;
+            color: white;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .divider {
+            padding: 5px 0px;
+        }
+        
+        body {
+            background-color: rgb(238, 247, 251);
+        }
+        
+        .wrapper.style1 {
+            background-color: #EEE;
+            color: #777;
+        }
+        
+        .wrapper {
+            padding: 3em 0 1em 0;
+            position: relative;
+        }
+        
+        .wrapper > .inner {
+            margin: 0 auto;
+            width: 70em;
+        }
+        
+        .wrapper.style1 .feature {
+            background-color: #fff;
+        }
+        
+        .feature.right {
+            -moz-flex-direction: row-reverse;
+            -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+        }
+        
+        .feature.left {
+            -moz-flex-direction: row;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            /* flex-direction: row; */
+        }
+        
+        .feature:last-child {
+            margin-bottom: 2em;
+        }
+        
+        .feature {
+            background-color: rgba(144, 144, 144, 0.075);
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            margin-bottom: 2em;
+            -webkit-border-radius: 6em;
+            -moz-border-radius: 6em;
+            border-radius: 6em;
+            min-height: 300px;
+        }
+        
+        .feature .image {
+            height: auto;
+            width: auto;
+        }
+        
+        .feature .content {
+            padding: 1em 2em 0.1em 2em;
+            width: 52%;
+        }
+        
+        ul.actions {
+            cursor: default;
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul {
+            list-style: disc;
+            margin: 0 0 2em 0;
+            padding-left: 1em;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        p {
+            margin: 0 0 2em 0;
+        }
+        
+        .wrapper.style1 h1,
+        .wrapper.style1 h2,
+        .wrapper.style1 h3,
+        .wrapper.style1 h4,
+        .wrapper.style1 h5,
+        .wrapper.style1 h6 {
+            color: #555;
+        }
+        
+        .image {
+            border-radius: 0;
+            border: 0;
+            display: inline-block;
+            position: relative;
+            height: 105%;
+        }
+        
+        .feature .image img {
+            max-width: 100%;
+        }
+        
+        .image img {
+            border-radius: 0;
+            display: block;
+        }
+        
+        ul.actions {
+            cursor: default;
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul {
+            list-style: disc;
+            margin: 0 0 2em 0;
+            padding-left: 1em;
+        }
+        
+        ul.actions > li:last-child {
+            padding-right: 0;
+        }
+        
+        ul.actions > li {
+            padding: 0 1em 0 0;
+            vertical-align: middle;
+        }
+        
+        ul li h4,
+        ul p {
+            color: #51BAA4 !important;
+            padding-left: 0.5em;
+        }
+        
+        htm ol,
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.smoove.js"></script>
+    <link rel="stylesheet" href="js/animate.css">
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <script src="js/jquery.easings. min.js"></script>
+
+    <script type="text/javascript">
+        //        $(document).ready(function () {
+        //            $('#fullpage').fullpage({
+        //                afterLoad: function (anchorLink, index) {
+        //                    //alert(index);
+        //                    if (index > 1 && index == 2) {
+        //                        $('#' + index).removeClass().addClass('slideInRight animated ').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend ', function () {
+        //                            $(this).removeClass();
+        //                        });
+        //                        //$('#').addClass('animated slideInLeft');
+        //                    } else if (index > 1 && index == 3) {
+        //                        // $('#' + index).addClass('animated slideInRight');
+        //                        $('#' + index).removeClass().addClass('slideInLeft animated ').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend ', function () {
+        //                            $(this).removeClass();
+        //                        });
+        //
+        //                    }
+        //
+        //
+        //                }
+        //
+        //            });
+        //        });
+    </script>
+
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <div>
+                <div id="navigation" class="navbar-collapse collapse">
+                    <!--            <img style="float:left;" src="Logo.png" windth="100px" height="100px" />-->
+                    <div id="logo" style="float:left;background-image:url('img/logo.png');background-size: 90% 100%;background-repeat: no-repeat;width:300px;height:100px;"></div>
+                    <!-- NAVIGATION LINKS -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="current">
+                            <a href="Home.html">Home</a>
+                        </li>
+                        <li class="current">
+                            <a href="#">Services</a>
+                            <ul>
+                                <li class="current">
+                                    <a href="Services.html" class="clearfix">
+                                        <div class="cln_cir nav_cir"></div>
+                                        <span>Integrated Facility Services</span>
+                                    </a>
+                                </li>
+                                <li class="current">
+                                    <a href="/pestcontrol" class="clearfix">
+                                        <div class="pest_cir nav_cir"></div>
+                                        <span>Staffing Solutions</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="current">
+                            <a href="AboutUs.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="LocateUs.html">Locate Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <svg preserveAspectRatio="none" viewBox="0 0 100 80" height="80" width="100%" version="1.1" style="position: relative;z-index:2">
+                    <!--     Upper top        -->
+                    <path d="M0 0  L0 30 L50 0 L100 30 L100 30 L100 0 Z" fill="#EEF7FB"></path>
+                    <path d="M100 30 L50 0 L0 30" fill="none" stroke="#b5cbd9" stroke-width="1"></path>
+                </svg>
+            </div>
+            <!-- #region Jssor Slider Begin -->
+            <!-- Generated by Jssor Slider Maker Online. -->
+            <!-- This demo works without jquery library. -->
+
+            <section class="about-section" style="margin-top:-85px;">
+                <div class="container">
+                    <div class="helpr-content" data-stellar-offset-parent="true">
+                        <div class="clearfix" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <h1 class="about-title">Our Services</h1>
+                            <!--<div class="subtitle">Passion for Hospitality. We present you our passion.</div>--></div>
+                    </div>
+                </div>
+            </section>
+            <section class="fade-in">
+                <i> <h3> Epic Hospitality services Private	Limited, its main core business is Food Catering and Housekeeping services for Corporates,Institutes, Industries, Event Management, Indoor and Outdoor catering.</h3>
+		<h3> Epic Hospitality owns their food production center by name,Central Kitchen, at Putlur, Tiruvallur District, Chennai.</h3>
+		<h3> Epic Hospitality, is also registered with Karnataka State Government for e-procurement in attending government tenders.</h3>
+            </i>
+            </section>
+        </div>
+        <div class="section">
+            <section class="wrapper style1">
+                <div id="2" class="inner">
+                    <article class="feature left" data-move-y="0px" data-move-x="-500px">
+
+                        <span class="image "><img src="img/housekeeping.jpg"  alt=" " /></span>
+                        <div class="content ">
+                            <h2>Housekeeping & Janitorial Services</h2>
+
+                            <ul class="actions ">
+                                <p>About the Housekeeping & Janitorial Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Consistent & Quality Oriented Services</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Specialized Cleaning</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> In-house Training</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Supply of Equipment & Machinery</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="feature right " data-move-y="0px" data-move-x="500px">
+                        <!--                    <article class="feature right " >-->
+                        <span class="image "><img src="img/pic04.jpg " alt=" " /></span>
+                        <div class="content ">
+                            <h2>Guest House Management</h2>
+                            <ul class="actions ">
+                                <p>About the Housekeeping & Janitorial Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Guest Relations</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Food Services</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Regular Maintenance</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Mechanised Housekeeping Services</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Laundry Services</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Occupancy Management</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Garden & Lawn Maintenance - Hard & Soft landscaping</h4>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </article>
+                    <!--2-->
+                    <article class="feature left" data-move-y="0px" data-move-x="-500px">
+
+                        <span class="image "><img src="img/pic05.jpg"  alt=" " /></span>
+                        <div class="content ">
+                            <h2>Glass/Façade Cleaning</h2>
+
+                            <ul class="actions ">
+                                <p>About the Housekeeping & Janitorial Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> By cradle trolley</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> By Spider-man Technique</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Aluminium Scaffolding Tower</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> JIB Davit / Trackless Trolley</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Telescopic rod and glass applicator</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="feature right " data-move-y="0px" data-move-x="500px">
+                        <!--                    <article class="feature right " >-->
+                        <span class="image "><img src="img/pic06.jpg " alt=" " /></span>
+                        <div class="content ">
+                            <h2>Security Services</h2>
+                            <ul class="actions ">
+                                <p>About the Housekeeping & Janitorial Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Residential Security services</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Commercial Security services</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Personal Security services</h4>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+        <div class="section ">
+            <section class="wrapper style1 ">
+                <div class="inner ">
+                    <article class="feature left" data-move-y="0px" data-move-x="-500px">
+                        <span class="image "><img src="img/pic07.jpg " alt=" " /></span>
+                        <div class="content ">
+                            <h2>Deep Cleaning and Water Tank Cleaning</h2>
+                            <p>About the Deep Cleaning and Water Tank Cleaning Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
+                            <ul class="actions ">
+                                <li>
+                                    <!--                            <a href="# " class="button alt ">More</a>-->
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="feature right" data-move-y="0px" data-move-x="500px">
+                        <span class="image "><img src="img/pic08.jpg " alt=" " /></span>
+                        <div class="content ">
+                            <h2>Carpet/Chair/Sofa Shampooing</h2>
+                            <p>About the Deep Cleaning and Water Tank Cleaning Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
+                            <ul class="actions ">
+                                <li>
+                                    <!--<a href="# " class="button alt ">More</a>--></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <script>
+        //        // Attach Smoove to elements and set default options
+        $(".feature ").smoove({
+            offset: '40%', // moveX is overridden to -200px for ".bar " object
+        });
+
+
+        // jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+
+
+</body>
+
+</html>
