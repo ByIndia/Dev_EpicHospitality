@@ -7,6 +7,8 @@
     <title></title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/cloudEffect.css">
+
     <link rel="stylesheet" href="css/bootstrap.minNew.css">
 
 
@@ -123,7 +125,7 @@
         }
         
         .about-section {
-            background: #fff url("./img/services-banner.jpg");
+            background: #fff url("./img/Catering.jpg");
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: cover;
@@ -161,8 +163,14 @@
         }
         
         .wrapper.style1 {
-            background-color: #EEE;
-            color: #777;
+            background: rgba(196, 196, 196, 1);
+            background: -moz-linear-gradient(-45deg, rgba(196, 196, 196, 1) 0%, rgba(181, 181, 181, 1) 51%, rgba(193, 197, 199, 1) 98%, rgba(219, 219, 219, 1) 100%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(196, 196, 196, 1)), color-stop(51%, rgba(181, 181, 181, 1)), color-stop(98%, rgba(193, 197, 199, 1)), color-stop(100%, rgba(219, 219, 219, 1)));
+            background: -webkit-linear-gradient(-45deg, rgba(196, 196, 196, 1) 0%, rgba(181, 181, 181, 1) 51%, rgba(193, 197, 199, 1) 98%, rgba(219, 219, 219, 1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(196, 196, 196, 1) 0%, rgba(181, 181, 181, 1) 51%, rgba(193, 197, 199, 1) 98%, rgba(219, 219, 219, 1) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(196, 196, 196, 1) 0%, rgba(181, 181, 181, 1) 51%, rgba(193, 197, 199, 1) 98%, rgba(219, 219, 219, 1) 100%);
+            background: linear-gradient(135deg, rgba(196, 196, 196, 1) 0%, rgba(181, 181, 181, 1) 51%, rgba(193, 197, 199, 1) 98%, rgba(219, 219, 219, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#c4c4c4', endColorstr='#dbdbdb', GradientType=1);
         }
         
         .wrapper {
@@ -184,6 +192,10 @@
             -webkit-flex-direction: row-reverse;
             -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+            background-color: rgba(252, 253, 254, 0.65);
+            -webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
         }
         
         .feature.left {
@@ -191,6 +203,10 @@
             -webkit-flex-direction: row;
             -ms-flex-direction: row;
             /* flex-direction: row; */
+            background-color: rgba(252, 253, 254, 0.65);
+            -webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
         }
         
         .feature:last-child {
@@ -199,9 +215,6 @@
         
         .feature {
             background-color: rgba(144, 144, 144, 0.075);
-        }
-        
-        .feature {
             display: -moz-flex;
             display: -webkit-flex;
             display: -ms-flex;
@@ -210,18 +223,20 @@
             -webkit-align-items: center;
             -ms-align-items: center;
             align-items: center;
-            margin-bottom: 3em;
-            -webkit-border-radius: 25px;
-            -moz-border-radius: 25px;
-            border-radius: 25px;
+            margin-bottom: 2em;
+            -webkit-border-radius: 6em;
+            -moz-border-radius: 6em;
+            border-radius: 6em;
+            min-height: 300px;
         }
         
         .feature .image {
-            width: 48%;
+            height: auto;
+            width: auto;
         }
         
         .feature .content {
-            padding: 2em 3em 0.1em 3em;
+            padding: 1em 2em 0.1em 2em;
             width: 52%;
         }
         
@@ -260,6 +275,7 @@
             border: 0;
             display: inline-block;
             position: relative;
+            height: 105%;
         }
         
         .feature .image img {
@@ -270,6 +286,36 @@
             border-radius: 0;
             display: block;
         }
+        
+        ul.actions {
+            cursor: default;
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul {
+            list-style: disc;
+            margin: 0 0 2em 0;
+            padding-left: 1em;
+        }
+        
+        ul.actions > li:last-child {
+            padding-right: 0;
+        }
+        
+        ul.actions > li {
+            padding: 0 1em 0 0;
+            vertical-align: middle;
+        }
+        
+        ul li h4,
+        ul p {
+            color: #51BAA4 !important;
+            padding-left: 0.5em;
+            text-align: justify;
+        }
+        
+        htm ol,
     </style>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.smoove.js"></script>
@@ -279,28 +325,6 @@
     <script src="js/jquery.easings. min.js"></script>
 
     <script type="text/javascript">
-        //        $(document).ready(function () {
-        //            $('#fullpage').fullpage({
-        //                afterLoad: function (anchorLink, index) {
-        //                    //alert(index);
-        //                    if (index > 1 && index == 2) {
-        //                        $('#' + index).removeClass().addClass('slideInRight animated ').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend ', function () {
-        //                            $(this).removeClass();
-        //                        });
-        //                        //$('#').addClass('animated slideInLeft');
-        //                    } else if (index > 1 && index == 3) {
-        //                        // $('#' + index).addClass('animated slideInRight');
-        //                        $('#' + index).removeClass().addClass('slideInLeft animated ').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend ', function () {
-        //                            $(this).removeClass();
-        //                        });
-        //
-        //                    }
-        //
-        //
-        //                }
-        //
-        //            });
-        //        });
     </script>
 
 </head>
@@ -321,15 +345,21 @@
                             <a href="#">Services</a>
                             <ul>
                                 <li class="current">
-                                    <a href="Services.html" class="clearfix">
+                                    <a href="IntegratedMgmtServices.html" class="clearfix">
                                         <div class="cln_cir nav_cir"></div>
                                         <span>Integrated Facility Services</span>
                                     </a>
                                 </li>
                                 <li class="current">
-                                    <a href="/pestcontrol" class="clearfix">
+                                    <a href="StaffingSolutions.html" class="clearfix">
                                         <div class="pest_cir nav_cir"></div>
                                         <span>Staffing Solutions</span>
+                                    </a>
+                                </li>
+                                <li class="current">
+                                    <a href="Catering.html" class="clearfix">
+                                        <div class="plm_cir nav_cir"></div>
+                                        <span>Catering Solutions</span>
                                     </a>
                                 </li>
                             </ul>
@@ -356,78 +386,127 @@
                 <div class="container">
                     <div class="helpr-content" data-stellar-offset-parent="true">
                         <div class="clearfix" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <h1 class="about-title">Our Services</h1>
+                            <h1 class="about-title">Catering Services</h1>
                             <!--<div class="subtitle">Passion for Hospitality. We present you our passion.</div>--></div>
                     </div>
                 </div>
             </section>
             <section class="fade-in">
-                <i> <h3> Epic Hospitality services Private	Limited, its main core business is Food Catering and Housekeeping services for Corporates,Institutes, Industries, Event Management, Indoor and Outdoor catering.</h3>
-		<h3> Epic Hospitality owns their food production center by name,Central Kitchen, at Putlur, Tiruvallur District, Chennai.</h3>
-		<h3> Epic Hospitality, is also registered with Karnataka State Government for e-procurement in attending government tenders.</h3>
+                <i> <h3></h3>
+		
             </i>
             </section>
         </div>
         <div class="section">
-            <section class="wrapper style1">
+            <section class="wrapper sky">
+                <div class="clouds_one"></div>
+                <div class="clouds_two"></div>
+                <div class="clouds_three"></div>
                 <div id="2" class="inner">
+                    <!--<div class="moon"></div>-->
+
                     <article class="feature left" data-move-y="0px" data-move-x="-500px">
 
-                        <span class="image "><img src="img/pic01.jpg " alt=" " /></span>
+                        <span class="image "><img src="img/OutdoorCatering.png"  alt=" " /></span>
                         <div class="content ">
-                            <h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
-                            <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                            <h2>Outdoor Catering</h2>
+
                             <ul class="actions ">
+                                <p>Your Location, Our Caterers.Most delicious, mouthwatering dishes for your foodie guests prepared by our connoisseur</p>
                                 <li>
-                                    <!--                            <a href="# " class="button alt ">More</a>-->
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Wedding Catering</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Birthday Catering</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Traditional Events Catering </h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Celebration Events Catering</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Ceremonial Catering</h4>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="feature right " data-move-y="0px" data-move-x="500px">
+                        <!--                    <article class="feature right " >-->
+                        <span class="image "><img src="img/IndoorCatering.png " alt=" " /></span>
+                        <div class="content ">
+                            <h2>Indoor Catering</h2>
+                            <ul class="actions ">
+                                <p>All types of indoor/inhouse catering services provided for all functions.</p>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Small Scale InHouse Catering </h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Marriage Hall Catering</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Ceremonies/Celebrations Catering</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Serve for Dine </h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <!--2-->
+                    <article class="feature left" data-move-y="0px" data-move-x="-500px">
+
+                        <span class="image "><img src="img/InstitutionalCatering.png"  alt=" " /></span>
+                        <div class="content ">
+                            <h2>Institutional Catering</h2>
+
+                            <ul class="actions ">
+                                <p>We provide catering services to all types of institutions catering variety of customers.Hygienic,qualitative,cost efficient foods served to keep institution's name high. </p>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> School Canteens</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> University/College Canteens</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Social/Clubs Restaurants</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Hospital Canteens</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Other Institutional Canteens</h4>
                                 </li>
                             </ul>
                         </div>
                     </article>
                     <article class="feature right " data-move-y="0px" data-move-x="500px">
                         <!--                    <article class="feature right " >-->
-                        <span class="image "><img src="img/pic02.jpg " alt=" " /></span>
+                        <span class="image "><img src="img/IndustrialCanteen.png " alt=" " /></span>
                         <div class="content ">
-                            <h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
-                            <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                            <h2> Industrial Catering</h2>
                             <ul class="actions ">
+                                <p>All Industries ranging from IT giants to Manufacturing giants can now rely on us to serve quality food to your employees.</p>
                                 <li>
-                                    <!--<a href="# " class="button alt ">More</a>--></li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> IT Company Food Courts</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Manufacturing Company Food Courts</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Small Company Canteens</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Food Court in Shopping Malls</h4>
+                                </li>
+
                             </ul>
                         </div>
                     </article>
                 </div>
             </section>
 
-        </div>
-        <div class="section ">
-            <section class="wrapper style1 ">
-                <div class="inner ">
-                    <article class="feature left" data-move-y="0px" data-move-x="-500px">
-                        <span class="image "><img src="img/pic01.jpg " alt=" " /></span>
-                        <div class="content ">
-                            <h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
-                            <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
-                            <ul class="actions ">
-                                <li>
-                                    <!--                            <a href="# " class="button alt ">More</a>-->
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="feature right" data-move-y="0px" data-move-x="500px">
-                        <span class="image "><img src="img/pic02.jpg " alt=" " /></span>
-                        <div class="content ">
-                            <h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
-                            <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
-                            <ul class="actions ">
-                                <li>
-                                    <!--<a href="# " class="button alt ">More</a>--></li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </section>
         </div>
 
     </div>

@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.minNew.css">
+    <link rel="stylesheet" type="text/css" href="css/cloudEffect.css">
+
 
 
     <style>
@@ -123,7 +125,7 @@
         }
         
         .about-section {
-            background: #fff url("./img/services-banner.jpg");
+            background: #fff url("./img/staffing-solutions.jpg");
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: cover;
@@ -161,8 +163,14 @@
         }
         
         .wrapper.style1 {
-            background-color: #EEE;
-            color: #777;
+            background: rgba(196, 196, 196, 1);
+            background: -moz-linear-gradient(-45deg, rgba(196, 196, 196, 1) 0%, rgba(181, 181, 181, 1) 51%, rgba(193, 197, 199, 1) 98%, rgba(219, 219, 219, 1) 100%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(196, 196, 196, 1)), color-stop(51%, rgba(181, 181, 181, 1)), color-stop(98%, rgba(193, 197, 199, 1)), color-stop(100%, rgba(219, 219, 219, 1)));
+            background: -webkit-linear-gradient(-45deg, rgba(196, 196, 196, 1) 0%, rgba(181, 181, 181, 1) 51%, rgba(193, 197, 199, 1) 98%, rgba(219, 219, 219, 1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(196, 196, 196, 1) 0%, rgba(181, 181, 181, 1) 51%, rgba(193, 197, 199, 1) 98%, rgba(219, 219, 219, 1) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(196, 196, 196, 1) 0%, rgba(181, 181, 181, 1) 51%, rgba(193, 197, 199, 1) 98%, rgba(219, 219, 219, 1) 100%);
+            background: linear-gradient(135deg, rgba(196, 196, 196, 1) 0%, rgba(181, 181, 181, 1) 51%, rgba(193, 197, 199, 1) 98%, rgba(219, 219, 219, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#c4c4c4', endColorstr='#dbdbdb', GradientType=1);
         }
         
         .wrapper {
@@ -184,6 +192,10 @@
             -webkit-flex-direction: row-reverse;
             -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+            background-color: rgba(252, 253, 254, 0.65);
+            -webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
         }
         
         .feature.left {
@@ -191,6 +203,10 @@
             -webkit-flex-direction: row;
             -ms-flex-direction: row;
             /* flex-direction: row; */
+            background-color: rgba(252, 253, 254, 0.65);
+            -webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
         }
         
         .feature:last-child {
@@ -296,6 +312,7 @@
         ul p {
             color: #51BAA4 !important;
             padding-left: 0.5em;
+            text-align: justify;
         }
         
         htm ol,
@@ -308,28 +325,6 @@
     <script src="js/jquery.easings. min.js"></script>
 
     <script type="text/javascript">
-        //        $(document).ready(function () {
-        //            $('#fullpage').fullpage({
-        //                afterLoad: function (anchorLink, index) {
-        //                    //alert(index);
-        //                    if (index > 1 && index == 2) {
-        //                        $('#' + index).removeClass().addClass('slideInRight animated ').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend ', function () {
-        //                            $(this).removeClass();
-        //                        });
-        //                        //$('#').addClass('animated slideInLeft');
-        //                    } else if (index > 1 && index == 3) {
-        //                        // $('#' + index).addClass('animated slideInRight');
-        //                        $('#' + index).removeClass().addClass('slideInLeft animated ').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend ', function () {
-        //                            $(this).removeClass();
-        //                        });
-        //
-        //                    }
-        //
-        //
-        //                }
-        //
-        //            });
-        //        });
     </script>
 
 </head>
@@ -350,15 +345,21 @@
                             <a href="#">Services</a>
                             <ul>
                                 <li class="current">
-                                    <a href="Services.html" class="clearfix">
+                                    <a href="IntegratedMgmtServices.html" class="clearfix">
                                         <div class="cln_cir nav_cir"></div>
                                         <span>Integrated Facility Services</span>
                                     </a>
                                 </li>
                                 <li class="current">
-                                    <a href="/pestcontrol" class="clearfix">
+                                    <a href="StaffingSolutions.html" class="clearfix">
                                         <div class="pest_cir nav_cir"></div>
                                         <span>Staffing Solutions</span>
+                                    </a>
+                                </li>
+                                <li class="current">
+                                    <a href="Catering.html" class="clearfix">
+                                        <div class="plm_cir nav_cir"></div>
+                                        <span>Catering Solutions</span>
                                     </a>
                                 </li>
                             </ul>
@@ -385,118 +386,120 @@
                 <div class="container">
                     <div class="helpr-content" data-stellar-offset-parent="true">
                         <div class="clearfix" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <h1 class="about-title">Our Services</h1>
+                            <h1 class="about-title">Staffing Solutions</h1>
                             <!--<div class="subtitle">Passion for Hospitality. We present you our passion.</div>--></div>
                     </div>
                 </div>
             </section>
             <section class="fade-in">
-                <i> <h3> Epic Hospitality services Private	Limited, its main core business is Food Catering and Housekeeping services for Corporates,Institutes, Industries, Event Management, Indoor and Outdoor catering.</h3>
-		<h3> Epic Hospitality owns their food production center by name,Central Kitchen, at Putlur, Tiruvallur District, Chennai.</h3>
-		<h3> Epic Hospitality, is also registered with Karnataka State Government for e-procurement in attending government tenders.</h3>
+                <i> <h3></h3>
+		
             </i>
             </section>
         </div>
         <div class="section">
-            <section class="wrapper style1">
+            <section class="wrapper sky">
+                <div class="clouds_one"></div>
+                <div class="clouds_two"></div>
+                <div class="clouds_three"></div>
                 <div id="2" class="inner">
                     <article class="feature left" data-move-y="0px" data-move-x="-500px">
 
-                        <span class="image "><img src="img/housekeeping.jpg"  alt=" " /></span>
+                        <span class="image "><img src="img/FrontDesk.png"  alt=" " /></span>
                         <div class="content ">
-                            <h2>Housekeeping & Janitorial Services</h2>
+                            <h2>Receptionist</h2>
 
                             <ul class="actions ">
-                                <p>About the Housekeeping & Janitorial Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
+                                <p>Hospitality starts from welcoming customers at reception desk.</p>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Consistent & Quality Oriented Services</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Charming Female Receptionist</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Specialized Cleaning</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Majestic Male Receptionist</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> In-house Training</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Welcome etiquette trained</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Supply of Equipment & Machinery</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Multi-Lingual operators</h4>
                                 </li>
+
                             </ul>
                         </div>
                     </article>
                     <article class="feature right " data-move-y="0px" data-move-x="500px">
                         <!--                    <article class="feature right " >-->
-                        <span class="image "><img src="img/pic04.jpg " alt=" " /></span>
+                        <span class="image "><img src="img/DataEntry.png " alt=" " /></span>
                         <div class="content ">
-                            <h2>Guest House Management</h2>
+                            <h2>Data entry Operators</h2>
                             <ul class="actions ">
-                                <p>About the Housekeeping & Janitorial Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
+                                <p>Data entry operators are on high demand but sparsely available. We provide you the service on demand.</p>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Guest Relations</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Trained and Certified </h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Food Services</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Cheap Labour</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Regular Maintenance</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Well Experienced operators</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Mechanised Housekeeping Services</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Speed and Quality Assured</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Laundry Services</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Gender Neutrality</h4>
                                 </li>
-                                <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Occupancy Management</h4>
-                                </li>
-                                <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Garden & Lawn Maintenance - Hard & Soft landscaping</h4>
-                                </li>
-
                             </ul>
                         </div>
                     </article>
                     <!--2-->
                     <article class="feature left" data-move-y="0px" data-move-x="-500px">
 
-                        <span class="image "><img src="img/pic05.jpg"  alt=" " /></span>
+                        <span class="image "><img src="img/TechSupport.png"  alt=" " /></span>
                         <div class="content ">
-                            <h2>Glass/Façade Cleaning</h2>
+                            <h2>Technical Staffing</h2>
 
                             <ul class="actions ">
-                                <p>About the Housekeeping & Janitorial Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
+                                <p>Technical staffs to handle and support your daily professional life makes business a cake-walk. </p>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> By cradle trolley</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Mail Management</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> By Spider-man Technique</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Office Assistant</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Aluminium Scaffolding Tower</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Front Desk Management</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> JIB Davit / Trackless Trolley</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Calendar Organiser</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Telescopic rod and glass applicator</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Property Managers</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Documentation</h4>
                                 </li>
                             </ul>
                         </div>
                     </article>
                     <article class="feature right " data-move-y="0px" data-move-x="500px">
                         <!--                    <article class="feature right " >-->
-                        <span class="image "><img src="img/pic06.jpg " alt=" " /></span>
+                        <span class="image "><img src="img/Support Staff.png " alt=" " /></span>
                         <div class="content ">
-                            <h2>Security Services</h2>
+                            <h2> Support Staffing</h2>
                             <ul class="actions ">
-                                <p>About the Housekeeping & Janitorial Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
+                                <p>We knew the pain of the finding these people.Supporting staff's for personal and industrial needs are supplied by us.</p>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Residential Security services</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Electrician</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Commercial Security services</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Plumbers</h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Personal Security services</h4>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Lift Operators</h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-left"><span class=" glyphicon glyphicon-thumbs-up"></span> Chaffeurs</h4>
                                 </li>
 
                             </ul>
@@ -505,35 +508,6 @@
                 </div>
             </section>
 
-        </div>
-        <div class="section ">
-            <section class="wrapper style1 ">
-                <div class="inner ">
-                    <article class="feature left" data-move-y="0px" data-move-x="-500px">
-                        <span class="image "><img src="img/pic07.jpg " alt=" " /></span>
-                        <div class="content ">
-                            <h2>Deep Cleaning and Water Tank Cleaning</h2>
-                            <p>About the Deep Cleaning and Water Tank Cleaning Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
-                            <ul class="actions ">
-                                <li>
-                                    <!--                            <a href="# " class="button alt ">More</a>-->
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="feature right" data-move-y="0px" data-move-x="500px">
-                        <span class="image "><img src="img/pic08.jpg " alt=" " /></span>
-                        <div class="content ">
-                            <h2>Carpet/Chair/Sofa Shampooing</h2>
-                            <p>About the Deep Cleaning and Water Tank Cleaning Services goes here adasd asdas dasdasd asd asda dasd ads aadsa dasdasd ad ada</p>
-                            <ul class="actions ">
-                                <li>
-                                    <!--<a href="# " class="button alt ">More</a>--></li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </section>
         </div>
 
     </div>
