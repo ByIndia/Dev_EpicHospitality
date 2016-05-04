@@ -7,11 +7,8 @@ var bodyParser = require('body-parser');
 var sendgrid = require('sendgrid');
 var app = express();
 
-//var emailUsername = process.env.SENDGRID_USERNAME || 'app49147512@heroku.com';
-//var emailPassword = process.env.SENDGRID_PASSWORD || 'zcoivf406887';
-
-var emailUsername = 'app49147512@heroku.com';
-var emailPassword = 'zcoivf406887';
+var emailUsername = process.env.SENDGRID_USERNAME;
+var emailPassword = process.env.SENDGRID_PASSWORD;
 var Email = require('./models/Email')(sendgrid(emailUsername, emailPassword)); //emailUsername, emailPassword);
 
 // Get Leads
