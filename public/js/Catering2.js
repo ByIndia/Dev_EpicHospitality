@@ -5,7 +5,11 @@
      });
      $('select').material_select();
      $(document).ready(function () {
-         $('.pgwSlider').pgwSlider();
+         var pgwSlider = $('.pgwSlider').pgwSlider({
+             maxHeight: 400
+             , verticalCentering: true
+         });
+         pgwSlider.stopSlide();
      });
  });
 

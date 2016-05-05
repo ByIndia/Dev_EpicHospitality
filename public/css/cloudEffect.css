@@ -16,7 +16,7 @@ body {
     -moz-transform: tr.skyanslate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
 */
-    -webkit-font-smoothing: antialiased
+    /*    -webkit-font-smoothing: antialiased*/
 }
 
 .sky {
@@ -34,7 +34,7 @@ body {
 }
 
 .moon {
-    background: url("images/moon.png");
+    background: url("img/moon.png");
     position: absolute;
     left: 0;
     height: 100%;
@@ -48,7 +48,7 @@ body {
 }
 
 .clouds_one {
-    background: url("../images/cloud_one.png");
+    background: url("../img/cloud_one.png");
     position: absolute;
     left: 0;
     top: 0;
@@ -63,7 +63,7 @@ body {
 }
 
 .clouds_two {
-    background: url("../images/cloud_two.png");
+    background: url("../img/cloud_two.png");
     position: absolute;
     left: 0;
     top: 0;
@@ -78,7 +78,7 @@ body {
 }
 
 .clouds_three {
-    background: url("../images/cloud_three.png");
+    background: url("../img/cloud_three.png");
     position: absolute;
     left: 0;
     top: 0;

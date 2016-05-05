@@ -35,7 +35,8 @@ article > div > h2 {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     line-height: 76px;
-    padding: 10px 90px 0px 90px;
+    /*    padding: 10px 90px 0px 90px;*/
+    padding: 85px 90px 0px 90px;
     text-align: center;
     margin: 0;
     -webkit-text-shadow: 0 4px 6px rgba(0, 0, 0, .73);
@@ -251,7 +252,8 @@ section .light-blue.lighten-4 {
 }*/
 
 section .light-blue.lighten-5 {
-    background-color: rgba(225, 245, 254, 0.89) !important;
+    /*background-color: rgba(225, 245, 254, 0.95) !important;*/
+    background-color: rgba(255, 255, 255, 0.95);
     text-align: justify;
 }
 
@@ -276,7 +278,7 @@ section .card-panel {
 .parallax-container {
     position: relative;
     overflow: hidden;
-    height: 250px;
+    height: 150px;
 }
 
 .chip {
