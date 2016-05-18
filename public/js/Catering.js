@@ -3,7 +3,7 @@
      $('.slider').slider({
 
      });
-     $('select').material_select();
+     $('select').material_select(); 
  });
 
  var mn = $("#logobarStatic");

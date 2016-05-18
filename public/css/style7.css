@@ -771,6 +771,7 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
     Styles .logobar img,
     .logobarStatic img {
         height: 50px;
+        width: 90px;
     }
     
     .container h3strong {
@@ -834,7 +835,6 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
 @media only screen and (max-width: 600px) {
     /* Styles */
     
-	
     .logobar img,
     .logobarStatic img,
     {

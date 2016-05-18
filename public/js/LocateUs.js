@@ -62,7 +62,7 @@
  function loadScript() {
      var script = document.createElement("script");
      script.type = "text/javascript";
-     script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDCykeItMY-sRpKvFqTrqDvmN79_ru33JM&sensor=false&callback=MapInit";
+     script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDCykeItMY-sRpKvFqTrqDvmN79_ru33JM&sensor=false&callback=MapInit";
      document.body.appendChild(script);
  }
 

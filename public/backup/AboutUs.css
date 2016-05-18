@@ -1,129 +1,29 @@
-.parallax {
-    z-index: 0;
-}
-
-.container {
-    z-index: 1;
-}
-
-.row .header {
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
-
-
 /*page style*/
 
-.BootstrapHack article,
-.BootstrapHack aside,
-.BootstrapHack details,
-.BootstrapHack figcaption,
-.BootstrapHack figure,
-.BootstrapHack footer,
-.BootstrapHack header,
-.BootstrapHack hgroup,
-.BootstrapHack main,
-.BootstrapHack menu,
-.BootstrapHack nav,
-.BootstrapHack section,
-.BootstrapHack summary {
-    display: flex;
+.founder-section img {
+    height: 250px;
+    border-radius: 50%;
+    width: 65%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-article > div > h2 {
-    color: rgb(79, 170, 233)
+.row .header h2 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
-.about-title {
-    color: #ffffff;
-    font-size: 3.5rem;
-    font-family: Montserrat, sans-serif;
-    font-weight: bold;
-    line-height: 76px;
-    /*    padding: 10px 90px 0px 90px;*/
-    padding: 85px 90px 0px 90px;
-    text-align: center;
-    margin: 0;
-    -webkit-text-shadow: 0 4px 6px rgba(0, 0, 0, .73);
-    -moz-text-shadow: 0 4px 6px rgba(0, 0, 0, .73);
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.73);
-}
-
-article > div > ul {
-    color: rgb(81, 186, 164);
-}
-
-.wrapper > .inner {
-    margin: 0 auto;
-    width: 70em;
-    margin: 0 auto;
-    width: 70em;
-    position: relative;
-    z-index: 2;
+.additionalpadding {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 
 }
-.feature.left {
-    -moz-flex-direction: row;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    /* flex-direction: row; */
-    
-    background-color: rgba(255, 255, 255, 0.8);
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-}
-.feature.right {
-    -moz-flex-direction: row-reverse;
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-    background-color: rgba(252, 253, 254, 0.65);
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-}
-.feature .content {
-    padding: 1em 2em 0.1em 2em;
-    width: 52%;
-}
-.feature {
-    background-color: rgba(144, 144, 144, 0.075);
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    margin-bottom: 2em;
-    -webkit-border-radius: 6em;
-    -moz-border-radius: 6em;
-    border-radius: 6em;
-    min-height: 300px;
-    z-index: 1000000;
-    position: relative;
-}
-.feature .image {
-    height: auto;
-    width: auto;
-}
-.image {
-    border-radius: 0;
-    border: 0;
-    display: inline-block;
-    position: relative;
-    height: 105%;
-}
-.feature .image img {
-    max-width: 100%;
-    height: 100%;
-}
-.image img {
-    border-radius: 0;
-    display: block;
+.bar {
+    height: 300px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 3em;
+    border-radius: 50%;
 }
 
 /* Page Style end*/
@@ -153,18 +53,7 @@ body {
 }
 
 /* additional sections */
-.container {
-    z-index: 0;
-}
-.parallax {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-}
-@m #home {
+#home {
     background: url(../images/home.jpg) no-repeat center center fixed;
     background-color: black;
     background-size: auto 100%;
@@ -192,11 +81,8 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
     display: block;
-    position: fixed;
-    left: 0px;
-    top: 0px;
+    position: absolute;
     width: 100%;
-    -webkit-transform: translateZ(0);
 }
 .container h4 strong {
     color: rgba(132, 192, 40, .97) !important;
@@ -236,9 +122,7 @@ section .light-blue.lighten-4 {
     background-color: rgba(179, 4229, 252, 0.89) !important;
 }*/
 section .light-blue.lighten-5 {
-    /*background-color: rgba(225, 245, 254, 0.95) !important;*/
-    
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(225, 245, 254, 0.89) !important;
     text-align: justify;
 }
 .swiper-slide h5 {
@@ -259,7 +143,8 @@ section .card-panel {
 .parallax-container {
     position: relative;
     overflow: hidden;
-    height: 250px;
+    height: 500px;
+    height: 100%;
 }
 .chip {
     margin: 3px 3px;
@@ -303,16 +188,12 @@ section .card-panel {
 }
 #Competitive1,
 #Competitive2,
-#Competitive3,
-#Competitive4,
-#Competitive5 {
+#Competitive3 {
     visibility: hidden;
 }
 #Competitive1.animated,
 #Competitive2.animated,
-#Competitive3.animated,
-#Competitive4.animated,
-#Competitive5.animated {
+#Competitive3.animated {
     visibility: visible !important;
 }
 
@@ -755,10 +636,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .main-nav-scrolled {
     position: fixed;
     width: 100%;
-    top: 0px;
-    left: 0px;
-}
-
+    top: 0;
 }
 
 /*****************/
@@ -794,12 +672,11 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         font-size: .9rem;
         text-shadow: 0px 1px 2px rgb(51, 51, 55);*/
         /*        color: rgba(132, 192, 40, .97) !important;*/
+        
         text-shadow: 0px 1px 2px rgb(51, 51, 55);
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica,
-        'Arial',
-        sans-serif !important;
+        font-family: Helvetica, 'Arial', sans-serif !important;
         font-weight: 700;
         font-size: 1.7rem;
         line-height: 5px;
@@ -824,11 +701,10 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         font-size: 2 rem !important;
         font-weight: 500;
 */
+        
         font-size: 1.5rem !important;
         font-weight: 500;
-        font-family: Helvetica,
-        'Arial',
-        sans-serif !important;
+        font-family: Helvetica, 'Arial', sans-serif !important;
         text-shadow: 0px 1px 1px rgb(105, 158, 36) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
@@ -847,9 +723,7 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         text-shadow: 0px 1px 2px rgb(105, 158, 36) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica,
-        'Arial',
-        sans-serif !important;
+        font-family: Helvetica, 'Arial', sans-serif !important;
         font-size: 2rem;
         font-weight: 700;
     }
@@ -858,9 +732,7 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         text-shadow: 0px 1px 2px rgb(255, 255, 255);
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica,
-        'Arial',
-        sans-serif !important;
+        font-family: Helvetica, 'Arial', sans-serif !important;
         font-weight: 700;
         font-size: 2.3rem;
     }
@@ -872,11 +744,6 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width: 992px) and (orientation:portrait) {
-    .parallax img {
-        display: block;
-        /*        transform: translate3d(-80%, 85px, 0px);
-        */
-    }
     Styles .logobar img,
     .logobarStatic img {
         height: 50px;
@@ -891,9 +758,7 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         text-shadow: 0px 1px 1px rgb(105, 158, 36) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica,
-        'Arial',
-        sans-serif !important;
+        font-family: Helvetica, 'Arial', sans-serif !important;
         font-size: .9em !important;
         font-weight: 500;
     }
@@ -914,9 +779,7 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         text-shadow: 0px 1px 2px rgb(105, 158, 36) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica,
-        'Arial',
-        sans-serif !important;
+        font-family: Helvetica, 'Arial', sans-serif !important;
         font-size: 2rem;
         font-weight: 700;
     }
@@ -925,9 +788,7 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         text-shadow: 0px 1px 2px rgb(255, 255, 255);
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica,
-        'Arial',
-        sans-serif !important;
+        font-family: Helvetica, 'Arial', sans-serif !important;
         font-weight: 700;
         font-size: 2.3rem;
     }
@@ -939,24 +800,6 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 600px) {
-    .feature .content {
-        padding: 1em 2em 0.1em 2em;
-        width: 100%;
-        text-align: center;
-    }
-    .parallax-container {
-        position: relative;
-        overflow: hidden;
-        height: 250px;
-    }
-    .parallax img {
-        display: block;
-        /*        transform: translate3d(-80%, 85px, 0px);*/
-    }
-    .about-title {
-        font-size: 2rem;
-        line-height: 2.25rem;
-    }
     .mobilecss_aboutUs {
         font-size: medium;
         margin-top: -20px;
@@ -992,9 +835,7 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         text-shadow: 0px 1px 1px rgb(105, 158, 36) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica,
-        'Arial',
-        sans-serif !important;
+        font-family: Helvetica, 'Arial', sans-serif !important;
         font-size: 1em;
         font-weight: 500;
     }
@@ -1011,17 +852,13 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
         font-size: 2.3rem;
-        font-family: Helvetica,
-        'Arial',
-        sans-serif !important;
+        font-family: Helvetica, 'Arial', sans-serif !important;
     }
     .container h3 span {
         text-shadow: 0px 1px 2px rgba(105, 158, 36, ) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica,
-        'Arial',
-        sans-serif !important;
+        font-family: Helvetica, 'Arial', sans-serif !important;
         font-size: 2.5rem;
         font-weight: 500;
     }
@@ -1033,11 +870,7 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         background-color: rgba(0, 0, 0, 0.6);
     }
     .slide-title {
-        font-family: "myriad",
-        Helvetica Neue,
-        Helvetica,
-        Arial,
-        sans-serif;
+        font-family: "myriad", Helvetica Neue, Helvetica, Arial, sans-serif;
         height: 100%;
         color: white;
         font-size: 1.05rem;

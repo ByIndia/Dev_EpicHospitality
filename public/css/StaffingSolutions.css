@@ -170,7 +170,7 @@ body {
     z-index: 0;
 }
 
-@m #home {
+ #home {
     background: url(../images/home.jpg) no-repeat center center fixed;
     background-color: black;
     background-size: auto 100%;
@@ -777,7 +777,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     width: 100%;
     top: 0px;
     left: 0px;
-}
+
 
 }
 

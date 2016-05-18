@@ -34,7 +34,7 @@ body {
 }
 
 .moon {
-    background: url("img/moon.png");
+    background: url("../images/moon.png");
     position: absolute;
     left: 0;
     height: 100%;
@@ -48,7 +48,7 @@ body {
 }
 
 .clouds_one {
-    background: url("../img/cloud_one.png");
+    background: url("../images/cloud_one.png");
     position: absolute;
     left: 0;
     top: 0;
@@ -63,7 +63,7 @@ body {
 }
 
 .clouds_two {
-    background: url("../img/cloud_two.png");
+    background: url("../images/cloud_two.png");
     position: absolute;
     left: 0;
     top: 0;
@@ -78,7 +78,7 @@ body {
 }
 
 .clouds_three {
-    background: url("../img/cloud_three.png");
+    background: url("../images/cloud_three.png");
     position: absolute;
     left: 0;
     top: 0;
@@ -157,15 +157,15 @@ body {
 
 @-moz-keyframes sky_background {
     0% {
-        background: #007fd5;
+        background: #9AC6E4;
         color: #007fd5
     }
     50% {
-        background: #FFF40E;
+        background: #DAEAF4;
         color: #a3d9ff
     }
     100% {
-        background: #007fd5;
+        background: #9AC6E4;
         color: #007fd5
     }
 }

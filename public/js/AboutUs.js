@@ -33,20 +33,10 @@
  }
  var options = [
      {
-         selector: '#staggered-test1'
-         , offset: 200
+         selector: '#image-test'
+         , offset: 500
          , callback: function () {
-             //Materialize.toast("This is our ScrollFire Demo!", 1500);
-             $('#Competitive1').addClass('animated slideInUp');
-
-         }
-     }, {
-         selector: '#staggered-test2'
-         , offset: 200
-         , callback: function () {
-             //Materialize.toast("Please continue scrolling!", 1500);
-             $('#Competitive2').addClass('animated slideInUp');
-
+             Materialize.fadeInImage("#image-test");
          }
      }
   ];
