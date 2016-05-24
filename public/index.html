@@ -7,55 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Materialize Css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-    <!--    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen,projection" />-->
-    <link href="css/Index.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <!--Import Animate css-->
     <link rel="stylesheet" href="css/animate.css">
-    <!--Import Swiper css-->
-    <link href="css/mislider.css" rel="stylesheet" type="text/css" />
-    <link href="css/mislider-skin-cameo.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/swiper.css">
-
+    <!--Import Page specific css-->
+    <link href="css/Index.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <title>Epic Hospitality</title>
-    <style>
 
-    </style>
+    <!--Import jQuery-->
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <!--Import roundabout.js for slider-->
+    <script type="text/javascript" src="js/jquery.roundabout.js"></script>
+    <script src="js/Index.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#carousel').roundabout({
+                minScale: .5
+                , childSelector: "li"
+                , autoplay: true
+                , autoplayDuration: 500000
+                , autoplayPauseOnHover: true
+                , btnNext: ".next"
+                , shape: "lazySusan"
+                , responsive: true
+                , reflect: true
+                , minOpacity: 0.95
+                , tilt: 0.5
+
+            });
+        });
+    </script>
 
 </head>
 
 <body>
-
-
-    <!--
-      <div class="container">
-        <br>
-        <br>
-        <h1 class="header center orange-text">Starter Template</h1>
-        <div class="row center">
-            <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-        </div>
-        <br>
-        <br>
-
-    </div>
-    -->
-    <!-- first section - Home -->
-    <!--    <div id="home" class="home">-->
     <div class="parallax-container" id="home" style="height:100%;">
         <div class="parallax"><img src="images/home.jpg"></div>
-
-
         <div class="row  transparent lighten-2">
 
             <div class="logo ">
-                <!--<div class="logo show-on-medium-and-down">-->
-                <!--                <div id="logoImg" class="logobar center logoAni"> <img class="center animated flipInX" src="images/home-logo.png" alt="Epic Wedding Logo"></div>-->
-                <div class="logobarStatic" id="logobarStatic" style="    position: relative;"> <img class=" animated flipInX" src="images/ContactUsLogo.png" alt="Epic Wedding Logo">
-
+                <!--Logo and menu section Start-->
+                <div class="logobarStatic" id="logobarStatic" style="    position: relative;">
+                    <img class=" animated flipInX" src="images/ContactUsLogo.png" alt="Epic Wedding Logo">
                     <ul class="nav navbar-nav navbar-right" style="float:right">
                         <li class="">
                             <a href="index.html">Home</a>
@@ -97,16 +91,21 @@
                         </li>
                     </ul>
                 </div>
+                <!--Logo and menu section End-->
+
+                <!--Tagline section Start-->
                 <div class="container">
                     <div class="valign-wrapper" style="    width: 100%;">
-                        <!--            center-align flow-text blue-text text-lighten-5-->
                         <h4 class="animated fadeInUp white-text text-lighten-5 valign center text-vcenter " style="width: 100%; ">
-    <!--                <strong >HOSPITALITY</strong><span> IS NOT JUST OUR BUSINESS</span>-->
-                        <strong>HOSPITALITY is</strong><span > not just our business</span>
-                                <span >but</span><br /><strong> OUR PASSION</strong>
-                </h4>
+
+                                <strong>HOSPITALITY is </strong><span >not just our business</span>
+                                    <span >but</span><br /><strong> OUR PASSION</strong>
+                            </h4>
                     </div>
                 </div>
+                <!--Tagline section End-->
+
+                <!--Carouse Section Start-->
                 <div class="container animated fadeInUp ">
 
                     <div id="carouse-wrap">
@@ -153,18 +152,14 @@
 
                                 <img src="images/GlassCleaning.png" alt="" class="slide" />
                             </li>
-
-
-
-
-
-
-
                         </ul>
                     </div>
                 </div>
+                <!--Carouse section End-->
 
             </div>
+
+            <!--Mobile section Start-->
             <div class="row animated fadeInUp  ">
                 <div class="col s12 m12 l4 hide-on-med-and-up ">
                     <section>
@@ -174,242 +169,16 @@
                             </header>
                             <div>
                                 <span class="black-text whoWeAre ">We at Epic Hospitality Services Private Limited., Some randome text abput tha company.We have the right mix of experience and youthful thinking. This gives us an advantage to be dynamic, well crafted, and synchronous and at the same time process oriented.
-              </span>
+                                    </span>
                             </div>
                         </div>
                     </section>
-
-                </div>
-                <!--<div class="col s12 m5 l4 hide-on-small-and-down ">
-    <section>
-        <div class="card-panel light-blue lighten-5 flow-text ">
-            <header>
-                <h4 class="flow-text center ">Our Catering Services    </h4>
-            </header>
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> Outdoor Catering
-            </div>
-
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> Indoor Catering
-            </div>
-
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> Institutional Catering
-            </div>
-
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle ">Industrial Catering
-            </div>
-
-
-
-        </div>
-    </section>
-
-</div>
-
-<div class="col s12 m7 l4 hide-on-small-and-down ">
-    <section>
-        <div class="card-panel light-blue lighten-5 flow-text ">
-            <header>
-                <h4 class="flow-text center ">Our Integrated Facilities Services
-    </h4>
-            </header>
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> Receptionists & Security Services
-            </div>
-
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> House keeping & Janitorial
-            </div>
-
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> Guest House Management
-            </div>
-
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> Deep Water & Tank Cleaning
-            </div>
-
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> Carpet, Chair, Sofa Shampooing
-            </div>
-
-
-            <span class="title ">Title</span>
-            <p>First Line
-                <br> Second Line
-            </p>
-            <ul class="collection ">
-                <li class="collection-item avatar ">
-                    <img src="images/yuna.jpg " alt=" " class="circle ">
-                    <span class="title ">Title</span>
-                    <p>First Line
-                        <br> Second Line
-                    </p>
-                    <a href="#! " class="secondary-content "><i class="material-icons ">grade</i></a>
-                </li>
-                <li class="collection-item avatar ">
-
-                    <a href="#! " class="secondary-content "><i class="material-icons ">grade</i></a>
-                </li>
-                <li class="collection-item avatar ">
-                    <i class="material-icons circle green ">insert_chart</i>
-                    <span class="title ">Title</span>
-                    <p>First Line
-                        <br> Second Line
-                    </p>
-                    <a href="#! " class="secondary-content "><i class="material-icons ">grade</i></a>
-                </li>
-                <li class="collection-item avatar ">
-                    <i class="material-icons circle red ">play_arrow</i>
-                    <span class="title ">Title</span>
-                    <p>First Line
-                        <br> Second Line
-                    </p>
-                    <a href="#! " class="secondary-content "><i class="material-icons ">grade</i></a>
-                </li>
-            </ul>
-
-        </div>
-    </section>
-
-</div>-->
-                <!--            <div class="col s10 offset-s1 m4 ">-->
-                <!--
-            <div class="col s12 m12 l4 hide-on-small-and-down ">
-
-    <section>
-        <div class="card-panel light-blue lighten-5 ">
-            <header>
-                <h4 class="flow-text center ">Our Staffing Solutions
-    </h4>
-            </header>
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> Front Desk Management & Office Assistants
-            </div>
-
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> Data entry Operators & Documentation
-
-            </div>
-
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle "> Mail Management & Receptionists
-            </div>
-
-
-            <div class="chip ">
-                <img src="images/tick.ico " alt=" " class="circle ">Other Tech and Support Staff like - • Property Manager• Electrician • Plumber • Liftman • Chauffeurs • Securit • Office Peons
-            </div>
-        </div>
-    </section>
-</div>
--->
-
-                <div class="col s12 center ">
-                    <!--
-                       <div class="arr-icon animated animated infinite fadeOutDown ">
-    <a class="scroll " href="#intro ">
-        <img src="images/arrow.png " alt="# ">
-    </a>
-</div>
--->
-
-
                 </div>
             </div>
-            <!-- /first section -->
+            <!--Mobile section End-->
 
         </div>
     </div>
-
-    </div>
-
-
-
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript " src="js/jquery-2.1.1.min.js "></script>
-    <!--    <script type="text/javascript " src="js/jquery-ui.min.js"></script>-->
-    <script type="text/javascript" src="js/jquery.roundabout.js"></script>
-
-    <!--    <script type="text/javascript " src="js/materialize.js "></script>-->
-    <!--Import jQuery before swiper.js-->
-
-    <script src="js/swiper.js "></script>
-    <!--Import jQuery before validation-->
-    <script type="text/javascript " src="js/jquery.validate.min.js "></script>
-
-    <script type="text/javascript " src="js/additional-methods.min.js "></script>
-    <script src="js/mislider.js" type="text/javascript"></script>
-
-
-    <!--    <script type="text/javascript " src="js/bootstrap.js "></script>-->
-    <script src="js/Index.js"></script>
-    <script>
-        //        $("#formValidate ").validate({
-        //            rules: {
-        //                name: {
-        //                    required: true
-        //                    , minlength: 5
-        //                }
-        //                , email: {
-        //                    required: true
-        //                    , email: true
-        //                }
-        //                , phone: {
-        //                    required: true
-        //                }
-        //                , shortMsg: {
-        //                    required: true
-        //                }
-        //                , msg: "required "
-        //                , shortMsg: "required "
-        //
-        //            }, //For custom messages
-        //            messages: {
-        //                name: {
-        //                    required: "Enter your Name "
-        //                    , minlength: "Enter at least 5 characters "
-        //                }
-        //            }
-        //            , errorElement: 'div'
-        //            , errorPlacement: function (error, element) {
-        //                    var placement = $(element).data('error');
-        //                    if (placement) {
-        //                        $(placement).append(error)
-        //                    } else {
-        //                        error.insertAfter(element);
-        //                    }
-        //                }
-        //                //         , submitHandler: function (form) {
-        //                //             form.submit();
-        //                //         }
-        //        });
-    </script>
-
-    <script>
-        (function ($) {
-
-            $('#carousel').roundabout({
-                minScale: .5
-                , childSelector: "li"
-                , autoplay: true
-                , autoplayDuration: 500000
-                , autoplayPauseOnHover: true
-                , btnNext: ".next"
-                , shape: "lazySusan"
-                , responsive: true
-                , reflect: true
-                , minOpacity: 0.95
-                , tilt: 0.5
-
-            });
-
-        }(jQuery));
-    </script>
-
 </body>
 
 </html>

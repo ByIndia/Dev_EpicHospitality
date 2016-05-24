@@ -132,35 +132,39 @@ body {
     height: 100%;
     width: 100%;
 }
-
 .row .header {
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-
 /* vertical-centered text */
-
 .text-vcenter {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-
 .text-vcenter h1 {
     font-size: 4.5em;
     font-weight: 700;
     margin: 0;
     padding: 0;
 }
-
 html,
 body {
     height: 100%;
 }
 
-
 /* additional sections */
-
+.container {
+    z-index: 0;
+}
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
 #home {
     background: url(../images/home.jpg) no-repeat center center fixed;
     background-color: black;
@@ -175,27 +179,26 @@ body {
     min-height: 800px;
     height: 100%;
 }
-
 .logo {
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    z-index: 5;
     height: 100%;
     min-height: 800px;
 }
-
 .logobar {
     background-color: rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 5;
 }
-
 .logobarStatic {
     background-color: rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 5;
     display: block;
-    position: absolute;
+    position: fixed;
+    left: 0px;
+    top: 0px;
     width: 100%;
+    -webkit-transform: translateZ(0);
 }
-
 .container h4 strong {
     color: rgba(132, 192, 40, .97) !important;
     text-shadow: 0px 1px 2px rgb(255, 255, 255);
@@ -204,7 +207,6 @@ body {
     font-family: Helvetica, 'Arial', sans-serif !important;
     font-weight: 700;
 }
-
 .container h3 strong {
     color: rgba(132, 192, 40, 1) !important;
     text-shadow: 0px 1px 2px rgb(255, 255, 255);
@@ -214,7 +216,6 @@ body {
     font-weight: 700;
     font-size: 2.8rem;
 }
-
 .container h3 span {
     text-shadow: 0px 1px 2px rgb(105, 158, 36) !important;
     -webkit-font-smoothing: antialiased;
@@ -223,7 +224,6 @@ body {
     font-size: 4rem;
     font-weight: 700;
 }
-
 .container h4 span {
     text-shadow: 0px 1px 2px rgb(105, 158, 36) !important;
     -webkit-font-smoothing: antialiased;
@@ -232,27 +232,24 @@ body {
     font-weight: 700;
 }
 
-
 /*
 section .light-blue.lighten-4 {
     background-color: rgba(179, 4229, 252, 0.89) !important;
 }*/
-
 section .light-blue.lighten-5 {
-    background-color: rgba(225, 245, 254, 0.89) !important;
+    /*background-color: rgba(225, 245, 254, 0.95) !important;*/
+    
+    background-color: rgba(255, 255, 255, 0.95);
     text-align: justify;
 }
-
 .swiper-slide h5 {
     width: 85%;
     margin: auto;
     margin-top: 10px;
 }
-
 .swiper-slide .row div {
     background-color: rgba(0, 0, 0, 0.7);
 }
-
 section .card-panel {
     padding: 15px;
     min-height: 300px;
@@ -260,14 +257,11 @@ section .card-panel {
     margin-left: 15px;
     margin-right: 15px;
 }
-
 .parallax-container {
     position: relative;
     overflow: hidden;
-    height: 500px;
-    height: 100%;
+    height: 250px;
 }
-
 .chip {
     margin: 3px 3px;
     margin: 3px 3px;
@@ -278,13 +272,11 @@ section .card-panel {
     width: 100%;
     background: transparent;
 }
-
 .whoWeAre {
     line-height: 2;
     font-stretch: ultra-condensed;
     font-size: 1rem;
 }
-
 
 }
 .icon-block .material-icons {
@@ -332,7 +324,6 @@ section .card-panel {
     font-size: 18px;
     background: #fff;
     /* Center slide text vertically */
-    
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -355,7 +346,11 @@ section .card-panel {
     padding-bottom: 10px;
 }
 .slide-title {
-    font-family: "myriad", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "myriad",
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
     height: 100%;
     color: white;
 }
@@ -598,7 +593,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 .navbar-nav li ul {
     /* background: #f6fdfe; */
-    
     background: rgba(0, 0, 0, .6);
     padding: 5px;
     position: absolute;
@@ -627,7 +621,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 .navbar-nav li ul {
     /* background: #f6fdfe; */
-    
     background: rgba(0, 0, 0, .6);
     padding: 5px;
     position: absolute;
@@ -668,7 +661,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .navbar-nav li ul {
     /*    background: #f6fdfe;
     */
-    
     background: rgba(0, 0, 0, .6);
     padding: 5px;
     position: absolute;
@@ -760,7 +752,10 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .main-nav-scrolled {
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 0px;
+    left: 0px;
+}
+
 }
 
 /*****************/
@@ -776,25 +771,20 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
 */
 @media only screen and (max-width: 992px) and (orientation:landscape) {
     /* Your code to swap higher DPI images */
-    
     .swiper-container {
         height: 15rem;
     }
-    
     .swiper-slide h5 {
         padding-bottom: 5px;
     }
-    
     .container h4 {
         min-height: 0px;
         margin: 0px;
     }
-    
     .logobar img,
     .logobarStatic img {
         height: 50px;
     }
-    
     .container h4 strong {
         /*
         font-weight: 700;
@@ -804,12 +794,13 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         text-shadow: 0px 1px 2px rgb(51, 51, 55);
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica, 'Arial', sans-serif !important;
+        font-family: Helvetica,
+        'Arial',
+        sans-serif !important;
         font-weight: 700;
         font-size: 1.7rem;
         line-height: 5px;
     }
-    
     #home {
         background: url(../images/home.jpg) no-repeat center center fixed;
         background-color: black;
@@ -824,7 +815,6 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         min-height: 800px;
         height: 100%;
     }
-    
     .container h4 span {
         /*
         
@@ -833,44 +823,44 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
 */
         font-size: 1.5rem !important;
         font-weight: 500;
-        font-family: Helvetica, 'Arial', sans-serif !important;
+        font-family: Helvetica,
+        'Arial',
+        sans-serif !important;
         text-shadow: 0px 1px 1px rgb(105, 158, 36) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
     }
-    
     section .card-panel {
         padding: 10px 15px;
         min-height: 150px;
     }
-    
     .bottom-margin-2 {
         margin-bottom: 2px;
     }
-    
     .whyepic {
         margin-top: 0px;
     }
-    
     .container h3 span {
         text-shadow: 0px 1px 2px rgb(105, 158, 36) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica, 'Arial', sans-serif !important;
+        font-family: Helvetica,
+        'Arial',
+        sans-serif !important;
         font-size: 2rem;
         font-weight: 700;
     }
-    
     .container h3 strong {
         color: rgba(132, 192, 40, 1) !important;
         text-shadow: 0px 1px 2px rgb(255, 255, 255);
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica, 'Arial', sans-serif !important;
+        font-family: Helvetica,
+        'Arial',
+        sans-serif !important;
         font-weight: 700;
         font-size: 2.3rem;
     }
-    
     .icon-block .material-icons {
         font-size: inherit;
         color: #84C028;
@@ -879,63 +869,65 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width: 992px) and (orientation:portrait) {
+    .parallax img {
+        display: block;
+        /*        transform: translate3d(-80%, 85px, 0px);
+        */
+    }
     Styles .logobar img,
     .logobarStatic img {
         height: 50px;
         width: 85px;
     }
-    
     .container h3strong {
         font-weight: 700;
         font-size: .9em;
         text-shadow: 0px 1px 2px rgb(51, 51, 55);
     }
-    
     .container h4 span {
         text-shadow: 0px 1px 1px rgb(105, 158, 36) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica, 'Arial', sans-serif !important;
+        font-family: Helvetica,
+        'Arial',
+        sans-serif !important;
         font-size: .9em !important;
         font-weight: 500;
     }
-    
     section .card-panel {
         padding: 10px 15px;
         min-height: 150px;
     }
-    
     .bottom-margin-2 {
         margin-bottom: 2px;
     }
-    
     .whyepic {
         margin-top: 20px;
     }
-    
     .whyepic h5 {
         font-size: .8rem;
     }
-    
     .container h3 span {
         text-shadow: 0px 1px 2px rgb(105, 158, 36) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica, 'Arial', sans-serif !important;
+        font-family: Helvetica,
+        'Arial',
+        sans-serif !important;
         font-size: 2rem;
         font-weight: 700;
     }
-    
     .container h3 strong {
         color: rgba(132, 192, 40, 1) !important;
         text-shadow: 0px 1px 2px rgb(255, 255, 255);
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica, 'Arial', sans-serif !important;
+        font-family: Helvetica,
+        'Arial',
+        sans-serif !important;
         font-weight: 700;
         font-size: 2.3rem;
     }
-    
     .icon-block .material-icons {
         font-size: inherit;
         color: #84C028;
@@ -944,57 +936,71 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 600px) {
+    .feature .content {
+        padding: 1em 2em 0.1em 2em;
+        width: 100%;
+        text-align: center;
+    }
+    .parallax-container {
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+    }
+    .parallax img {
+        display: block;
+        /*        transform: translate3d(-80%, 85px, 0px);*/
+    }
+    .about-title {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+    .mobilecss_aboutUs {
+        font-size: medium;
+        margin-top: -20px;
+    }
     .logobar img,
     .logobarStatic img,
     {
         height: 50px;
         width: 50px;
     }
-    
     .navbar-nav li ul li span {
         height: auto;
     }
-    
     .navbar-nav > li > a {
         padding: 0 5px;
         font-size: 1rem;
         margin-top: 5px;
     }
-    
     .navbar-nav li a {
         font-size: 1rem;
     }
-    
     .navbar-nav li ul li a {
         padding: 5px 2px;
     }
-    
     .navbar-nav li ul li.current a {
         height: 30px;
     }
-    
     .container h4 strong {
         font-weight: 700;
         text-shadow: 0px 1px 2px rgb(51, 51, 55);
     }
-    
     .container h4 span {
         text-shadow: 0px 1px 1px rgb(105, 158, 36) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica, 'Arial', sans-serif !important;
+        font-family: Helvetica,
+        'Arial',
+        sans-serif !important;
         font-size: 1em;
         font-weight: 500;
     }
-    
     .logo h4 {
         font-size: 1.5rem;
     }
-    
     .scroll img {
         height: 30px;
     }
-    
     .container h3 strong {
         font-weight: 700;
         text-shadow: 0px 1px 2px rgba(255, 255, 255, .9);
@@ -1002,42 +1008,44 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
         font-size: 2.3rem;
-        font-family: Helvetica, 'Arial', sans-serif !important;
+        font-family: Helvetica,
+        'Arial',
+        sans-serif !important;
     }
-    
     .container h3 span {
         text-shadow: 0px 1px 2px rgba(105, 158, 36, ) !important;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-        font-family: Helvetica, 'Arial', sans-serif !important;
+        font-family: Helvetica,
+        'Arial',
+        sans-serif !important;
         font-size: 2.5rem;
         font-weight: 500;
     }
-    
     .swiper-slide h5 {
         width: 85%;
         padding-bottom: 10px;
     }
-    
     f .swiper-slide .row div {
         background-color: rgba(0, 0, 0, 0.6);
     }
-    
     .slide-title {
-        font-family: "myriad", Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-family: "myriad",
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
         height: 100%;
         color: white;
         font-size: 1.05rem;
         margin-left: AUTO;
         MARGIN-RIGHT: AUTO;
     }
-    
     .slide-title b {
         color: rgba(132, 192, 40, 1);
         text-shadow: 0px 1px 1px rgb(0, 0, 0);
         font-size: 1.05rem;
     }
-    
     .icon-block .material-icons {
         font-size: inherit;
         color: #84C028; //84C028red
@@ -1047,16 +1055,13 @@ only screen and (min-resolution: 120dpi) and (orientation:landscape) {
 /* Desktop (portrait) ----------- */
 @media only screen and (min-width: 993px) {
     /* Styles */
-    
     .icon-block .material-icons {
         font-size: inherit;
         color: #84C028;
     }
-    
     .address {
         font-size: 1.35rem !important;
     }
-    
     .input-field label {
         font-size: 1.1rem;
     }

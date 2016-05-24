@@ -7,28 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-    <link href="css/boot.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/Catering2.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <!--Import Animate css-->
+    <!--Import cloudEffect Css-->
     <link rel="stylesheet" type="text/css" href="css/cloudEffect.css">
-
+    <!--Import Materialize Css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!--Import Bootstrap Css-->
+    <link href="css/boot.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!--Import Animate css-->
     <link rel="stylesheet" href="css/animate.css">
-    <!--Import Swiper css-->
-
+    <!--Import pgwslider css for Tiles Display-->
     <link rel="stylesheet" href="css/pgwslider.css">
+    <!--Import Page specific css-->
+    <link href="css/Services.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
     <title>Epic Hospitality</title>
-    <style>
-        /*
-      
-*/
-    </style>
-
 </head>
 
 <body>
 
+    <!--Logo and menu section Start-->
     <div class="parallax-container valign-wrapper " style="height:250px ; ">
         <div class="parallax "><img src="images/services-banner.jpg"></div>
         <div class="logobarStatic" id="logobarStatic"> <img class=" animated flipInX" src="images/ContactUsLogo.png" alt="Epic Wedding Logo">
@@ -74,44 +71,37 @@
                 </li>
             </ul>
         </div>
-
         <div id="filler" style="height: 100px; content:''; display: block;"></div>
         <br/>
         <div class="container animated fadeInUp" style="width:100%;   ">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br class="hide-on-med-and-down	">
-            <br class="hide-on-med-and-down	">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br class="hide-on-med-and-down	" />
+            <br class="hide-on-med-and-down	" />
             <div class="row">
                 <h2 class="header  white-text  center ">Integrated Facility Management Services</h2>
-                <h4 class="center white-text col s12 light mobilecss_aboutUs">Passion for Hospitality. We present you our passion.</h4>
+                <h4 class="center white-text col s12 light mobilecss_aboutUs">Heights or Threats, Filth or dirt. We are there for you.</h4>
 
             </div>
 
         </div>
-        <!--
-<div class="container" style="width:100%;   ">
-    <div class="row">
-        <h2 class=" about-title header white-text  center">Integrated Facility Management Services</h2>
-    </div>
-
-</div>
--->
 
     </div>
     <div class="divider"></div>
     <div class="section BootstrapHack ">
+        <!--Cloud Animation Start-->
         <section class=" wrapper sky ">
             <!--<div class="moon "></div>-->
             <div class="clouds_one "></div>
             <div class="clouds_two "></div>
             <div class="clouds_three "></div>
             <div id="2 " class="inner ">
-
-                <ul class="pgwSlider ">
-                    <!--
+                <!--Cloud inner Content Start-->
+                <div class="Sliderwrapper">
+                    <ul class="pgwSlider ">
+                        <!--
 <li><img src="img/bedrooms_mirrors.jpg" alt="Housekeeping & Janitorial Services" data-description="<i style='color:black'>We provide house keeping for both corporate and residential buildings. <br><span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> Consistent & Quality Oriented Services, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span Specialized Cleaning, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> In-house Training, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> Supply of Equipment & Machinery</i>"></li>
 
 <li>
@@ -120,45 +110,77 @@
                        <br><i style='color:black'> <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>  Guest Relations & Food Services, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>  Regular Maintenance, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>  Mechanised Housekeeping Services, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> Laundry Services, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>  Occupancy Management,<span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>   Garden & Lawn Maintenance - Hard & Soft landscaping</i>" />
 </li>
 -->
-                    <li><img src="images/GlassCleaning.png" alt="Glass/Façade Cleaning" data-description="Highly experiences and well equiped to provide glass and facade cleaning ranging from small buildings to landmark towers.
+                        <li><img src="images/GlassCleaning.png" alt="Glass/Façade Cleaning" data-description="Highly experiences and well equiped to provide glass and facade cleaning ranging from small buildings to landmark towers.
 
-                        <br><i style='color:black'> <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> By cradle trolley, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>   By Spider-man Technique, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>   Aluminium Scaffolding Tower, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>  JIB Davit / Trackless Trolley,<span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>  Telescopic rod and glass applicator</i>">
-                    </li>
+                        <br><i style='color:black'> 
+                            <div class='row'>
+                                <div class='col s6'>
+                                    <div class='col s12'>
+                            
+                                        <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> By cradle trolley
+                                    </div>
+                                    <div class='col s12'>
+                                        <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>   By Spider-man Technique
+                                    </div>
+                                    <div class='col s12'>
+                                       <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>  Telescopic rod and glass applicator
+                                    </div>
+                                </div>
+                                <div class='col s6'>
+                                    <div class='col s12'>
+                            
+                                        <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>   Aluminium Scaffolding Tower
+                                    </div>
+                                    <div class='col s12'>
+                                        <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span>  JIB Davit / Trackless Trolley,
+                                    </div>
+                                </div>
+                        </div>
+                    </i>">
+                        </li>
 
 
-                    <li>
-                        <!--
+                        <li>
+                            <!--
                         <a href="http://www.nyc.gov" target="_blank">
                             <img src="images/OutdoorCatering.png  ">
                             <span>New York, NY, USA</span>
                         </a>
                     -->
-                        <img src="images/Security.png" alt="Security Services" data-description="Our security services ensure to feel impeccable safety. Well trained, equiped and alert that builds confident in any atmosphere.
-                                                                                                       
-                        <br><i style='color:black'> <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> Residential Security services, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> Commercial Security services, <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> Personal Security services</i>" />
-                    </li>
+                            <img src="images/Security.png" alt="Security Services" data-description="Our security services ensure to feel impeccable safety. Well trained, equiped and alert that builds confident in any atmosphere.
+                             <br><i style='color:black'> 
+                            <div class='row'>
+                                <div class='col s6'>
+                                    <div class='col s12'>
+                            
+                                        <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> Residential Security services
+                                    </div>
+                                    <div class='col s12'>
+                                       <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> Personal Security services
+                                    </div>
+                                </div>
+                                <div class='col s6'>
+                                    <div class='col s12'>
+                            
+                                       <span style='color:#84C028' class='glyphicon glyphicon-thumbs-up'></span> Commercial Security services
+                                    </div>
+                                </div>
+                        </div>
+                    </i>" />
+                        </li>
 
-                    <li>
-                        <!--
-                        <a href="http://www.nyc.gov" target="_blank">
-                            <img src="images/OutdoorCatering.png  ">
-                            <span>New York, NY, USA</span>
-                        </a>
-                    -->
-                        <img src="images/TankCleaning.png" alt="Deep Cleaning and Water Tank Cleaning" data-description="Commercial water cleaning services involves in cleaning the huge water tanks that serves in corporates, malls, industries which requires skilled resources and equipments to clean in less span.Residential water tanks has residues of salt, sand and various minerals which needs regular cleaning for water quality. We also provide service in removing blocks created due to residues from water tanks.</i>" />
-                    </li>
+                        <li>
+                           <img src="images/TankCleaning.png" alt="Deep Cleaning and Water Tank Cleaning" data-description="Commercial water cleaning services involves in cleaning the huge water tanks that serves in corporates, malls, industries which requires skilled resources and equipments to clean in less span.Residential water tanks has residues of salt, sand and various minerals which needs regular cleaning for water quality. We also provide service in removing blocks created due to residues from water tanks.</i>" />
+                        </li>
 
-                    <li>
-                        <!--
-                        <a href="http://www.nyc.gov" target="_blank">
-                            <img src="images/OutdoorCatering.png  ">
-                            <span>New York, NY, USA</span>
-                        </a>
-                    -->
-                        <img src="images/CarpetCleaning.png" alt="Carpet/Chair/Sofa Shampooing" data-description="Carpet and Sofa cleaning is niche technique that involves lot of skill. Especially in India, use of carpet is still evolving.Shampooing of carpet,sofa,chair holds the technique of using right shampoo for right materials.We provide extremely great service in cleaning these delicate materials.</i>" />
-                    </li>
+                        <li>
+                       
+                            <img src="images/CarpetCleaning.png" alt="Carpet/Chair/Sofa Shampooing" data-description="Carpet and Sofa cleaning is niche technique that involves lot of skill. Especially in India, use of carpet is still evolving.Shampooing of carpet,sofa,chair holds the technique of using right shampoo for right materials.We provide extremely great service in cleaning these delicate materials.</i>" />
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
+                <!--Cloud inner Content End-->
 
             </div>
         </section>
@@ -167,16 +189,13 @@
 
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript " src="js/jquery-2.1.1.min.js "></script>
-    <script type="text/javascript " src="js/materialize.js "></script>
-    <!--Import jQuery before swiper.js-->
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js "></script>
+    <script type="text/javascript" src="js/materialize.js "></script>
 
-    <!--Import jQuery before validation-->
-    <script type="text/javascript " src="js/pgwslider.js"></script>
-
-
-    <!--    <script type="text/javascript " src="js/bootstrap.js "></script>-->
-    <script src="js/Catering2.js "></script>
+    <!--Import jQuery Tiles Layout Js-->
+    <script type="text/javascript" src="js/pgwslider.js"></script>
+    <!--Import Page Specific JS file-->
+    <script src="js/Services.js"></script>
 
 </body>
 

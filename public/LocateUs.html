@@ -7,16 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import cloudEffect Css-->
     <link rel="stylesheet" type="text/css" href="css/cloudEffect.css">
-
+    <!--Import Materialize Css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-    <!--    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen,projection" />-->
     <!--Import Animate css-->
     <link rel="stylesheet" href="css/animate.css">
-    <!--Import Swiper css-->
-    <link href="css/LocateUs2.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
-
+    <!--Import Page specific css-->
+    <link href="css/LocateUs.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <title>Epic Hospitality</title>
 
 
@@ -24,6 +22,7 @@
 
 <body>
 
+    <!--Logo and menu section Start-->
     <div class="parallax-container valign-wrapper  black-text" style="height:250px ; ">
         <div class="logobarStatic" id="logobarStatic"> <img class=" animated flipInX" src="images/ContactUsLogo.png" alt="Epic Wedding Logo">
 
@@ -68,7 +67,7 @@
                 </li>
             </ul>
         </div>
-        <div class="parallax "><img src="images/whyUsParallax.jpg "></div>
+        <div class="parallax "><img src="images/whyUsParallax.jpg"></div>
         <div id="filler" style="height: 100px; content:''; display: block;"></div>
         <br/>
         <div class="container animated fadeInUp" style="width:100%;   ">
@@ -83,33 +82,27 @@
                 <h4 class="center white-text col s12 light mobilecss_aboutUs">Passion for Hospitality. We present you our passion.</h4>
 
             </div>
-
         </div>
-        <!--        <h4 class="titleline white-text  center">Locate US</h4>-->
-
-
     </div>
+    <!--Logo and menu section End-->
     <div class="divider"></div>
     <div class=" BootstrapHack ">
+        <!--Cloud Animation Start-->
         <section class=" wrapper sky ">
-            <!--<div class="moon "></div>-->
             <div class="clouds_one "></div>
             <div class="clouds_two "></div>
             <div class="clouds_three "></div>
             <div id="2 " class="inner pgwSlider ">
-
-                <div id=" staggered-test1" class="blue lighten-5  black-text" style="
-    margin-top: 10px;">
-
+                <!--Cloud inner Content Start-->
+                <div id=" staggered-test1" class="blue lighten-5  black-text" style="margin-top: 10px;">
                     <br/>
-
                     <div id="Competitive1" class="animated slideInUp" style="width:100%;">
                         <div class="row ">
                             <div class="col s12 m6 ">
                                 <div class="col s12 right-alert ">
                                     <h4 class="titleline center">Head Office</h4>
                                     <div class="center">
-                                        <!-- Address form -->
+                                        <!-- Address form Start -->
                                         <h5 class="center">
   
                                         <p class="flow-text center address">Flat No 2,"Hari Harathmajm"
@@ -117,14 +110,19 @@
                                         <br/>Chennai - 600034
                                         <br/><i class="material-icons prefix">phone</i>Phone no:+91 4428171437
                                         <br/><i class="material-icons prefix">email</i>Email id:epichosp@gmail.com</p>
+                                        <!-- Address form End -->
+
                                 </h5>
                                     </div>
+                                    <!-- Google Map Start -->
                                     <section>
                                         <div id="googleMap" style="margin-top:10px;border:1px solid gray; float:right;width:100%;height:300px;    box-shadow: 0px 1px 3px rgb(74, 77, 79);"></div>
                                     </section>
-
+                                    <!-- Google Map End -->
                                 </div>
                             </div>
+                            <!-- ContactUS form Start -->
+
                             <div class="col s12 m6" id="contactfrom">
                                 <form class="col s12 right-alert" id="formValidate">
                                     <div class="row">
@@ -187,32 +185,33 @@
                                     </div>
                                 </form>
                             </div>
+                            <!-- ContactUS form End -->
+
                         </div>
 
 
 
                     </div>
                 </div>
+                <!--Cloud inner Content End-->
 
             </div>
         </section>
+        <!--Cloud Animation End-->
 
     </div>
 
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript " src="js/jquery-2.1.1.min.js "></script>
-    <script type="text/javascript " src="js/materialize.js "></script>
-    <!--Import jQuery before swiper.js-->
-
-    <script src="js/swiper.js "></script>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js "></script>
+    <script type="text/javascript" src="js/materialize.js "></script>
     <!--Import jQuery before validation-->
-    <script type="text/javascript " src="js/jquery.validate.min.js "></script>
-
-    <script type="text/javascript " src="js/additional-methods.min.js "></script>
-
-    <!--    <script type="text/javascript " src="js/bootstrap.js "></script>-->
+    <script type="text/javascript" src="js/jquery.validate.min.js "></script>
+    <script type="text/javascript" src="js/additional-methods.min.js "></script>
+    <!--Import Page Specific JS file-->
     <script src="js/LocateUs.js "></script>
+    <!--From validation Start-->
+
     <script>
         $("#formValidate ").validate({
             rules: {
@@ -268,7 +267,7 @@
             }
         });
     </script>
-
+    <!--From validation End-->
 </body>
 
 </html>

@@ -7,22 +7,21 @@
  * Released under the GNU GPLv3 license - http://opensource.org/licenses/gpl-3.0
  */
 
-.pgwSlider {
-    width: 100%;
-    color: #fff;
-    top: 10px;
-    position: relative;
+.Sliderwrapper {
+    position: static;
+    /*    width: calc(100% - 25px);*/
+    background-color: #D4EAF4;
+    padding: 10px;
 }
 
 .ps-caption {
-    background-color: rgb(212, 234, 244);
     color: black;
     font-size: 1.30rem;
-    /*    box-shadow: 1px 1px 20px #888888;
-    */
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-bottom: 10px;
+}
+
+.pgwSlider {
+    width: 100%;
+    color: #fff;
 }
 
 .pgwSlider a {

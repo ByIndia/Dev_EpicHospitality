@@ -33,10 +33,14 @@
  }
  var options = [
      {
-         selector: '#image-test'
-         , offset: 500
+         selector: '#staggered-test1'
+         , offset: 200
          , callback: function () {
-             Materialize.fadeInImage("#image-test");
+             //Materialize.toast("This is our ScrollFire Demo!", 1500);
+             $('#Competitive1').addClass('animated fadeInLeft');
+             $('#Competitive2').addClass('animated fadeInRight');
+
+
          }
      }
   ];
