@@ -249,7 +249,7 @@
             }
             , submitHandler: function (form, e) {
                 //form.submit();
-                $.post("./Thanks", $("#formValidate").serialize(), function (data) {
+                $.post("http://epichospitality.in/test/testmail.php", $("#formValidate").serialize(), function (data) {
                     //                    var res = JSON.parse(data);
                     if (data["msg"] == "sent") {
 
