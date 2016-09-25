@@ -1,24 +1,16 @@
- $(document).ready(function () {
-     //     $('.parallax').parallax();
-     //     $('.slider').slider({
-     //
-     //     });
-     //     $('select').material_select();
-     //
-     //
-     //     $(".button-collapse").sideNav();
+        $(document).ready(function () {
+            $('#carousel').roundabout({
+                minScale: .5
+                , childSelector: "li"
+                , autoplay: true
+                , autoplayDuration: 500000
+                , autoplayPauseOnHover: true
+                , btnNext: ".next"
+                , shape: "lazySusan"
+                , responsive: true
+                , reflect: true
+                , minOpacity: 0.95
+                , tilt: 0.5
 
-
-//     var slider = $('.mis-stage').miSlider({
-//         stageHeight: 380
-//         , slidesOnStage: false
-//         , slidePosition: 'center'
-//         , slideStart: 'mid'
-//         , slideScaling: 150
-//         , offsetV: -5
-//         , centerV: true
-//         , navButtonsOpacity: 1
-//     });
-
-//     $(function () {});
- });
+            });
+        });

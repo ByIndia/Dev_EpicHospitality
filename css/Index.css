@@ -221,7 +221,7 @@ body {
 }
 
 .logo {
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
     height: 100%;
     min-height: 800px;

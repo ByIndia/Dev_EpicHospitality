@@ -1,9 +1,63 @@
  $(document).ready(function () {
      $('.parallax').parallax();
-     $('.slider').slider({
-
-     });
+     $('.slider').slider({});
      $('select').material_select();
+     //From validation Start
+     $("#formValidate ").validate({
+            rules: {
+                name: {
+                    required: true
+                    , minlength: 5
+                }
+                , email: {
+                    required: true
+                    , email: true
+                }
+                , phone: {
+                    required: true
+                }
+                , shortMsg: {
+                    required: true
+                }
+                , msg: "required"
+                , shortMsg: "required"
+            }, //For custom messages
+            messages: {
+                name: {
+                    required: "Enter your Name "
+                    , minlength: "Enter at least 5 characters "
+                }
+            }
+            , errorElement: 'div'
+            , errorPlacement: function (error, element) {
+                var placement = $(element).data('error');
+                if (placement) {
+                    $(placement).append(error)
+                } else {
+                    error.insertAfter(element);
+                }
+            }
+            , submitHandler: function (form, e) {
+                //form.submit();
+                $.post("../contactsupport.php", $("#formValidate").serialize(), function (data) {
+                    //                    var res = JSON.parse(data);
+                    if (data["msg"] == "sent") {
+
+                        $('#formValidate').addClass('animated bounceOut');
+
+                        $('#contactfrom').html("<h5 class='valign center'>Thankyou</h5><h4 class=' valign center'>We got your mail <br/>Soon our team will get in touch with you  </h4>");
+                            alert('hi');
+                    } else {
+                        alert(data["msg"]);
+                    }
+                });
+                e.preventDefault();
+                return false;
+
+            }
+        });
+    //From validation End
+
  });
 
  var mn = $("#logobarStatic");
@@ -75,3 +129,4 @@
          $('#googleMap div').css('pointer-events', 'none');
      });
  })
+

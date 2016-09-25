@@ -89,8 +89,6 @@ article > div > ul {
     z-index: 2;
 }
 
-
-}
 .feature.left {
     -moz-flex-direction: row;
     -webkit-flex-direction: row;
@@ -305,7 +303,6 @@ section .card-panel {
     font-size: 1rem;
 }
 
-}
 .icon-block .material-icons {
     font-size: 3.56rem;
     color: #84C028;
