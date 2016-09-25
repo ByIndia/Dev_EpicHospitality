@@ -1,0 +1,8036 @@
+.BootstrapHack {
+    /*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+    /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+    /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+}
+
+.BootstrapHack html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.BootstrapHack body {
+    margin: 0;
+}
+
+.BootstrapHack article,
+.BootstrapHack aside,
+.BootstrapHack details,
+.BootstrapHack figcaption,
+.BootstrapHack figure,
+.BootstrapHack footer,
+.BootstrapHack header,
+.BootstrapHack hgroup,
+.BootstrapHack main,
+.BootstrapHack menu,
+.BootstrapHack nav,
+.BootstrapHack section,
+.BootstrapHack summary {
+    display: block;
+}
+
+.BootstrapHack audio,
+.BootstrapHack canvas,
+.BootstrapHack progress,
+.BootstrapHack video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.BootstrapHack audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+.BootstrapHack [hidden],
+.BootstrapHack template {
+    display: none;
+}
+
+.BootstrapHack a {
+    background-color: transparent;
+}
+
+.BootstrapHack a:active,
+.BootstrapHack a:hover {
+    outline: 0;
+}
+
+.BootstrapHack abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+.BootstrapHack b,
+.BootstrapHack strong {
+    font-weight: bold;
+}
+
+.BootstrapHack dfn {
+    font-style: italic;
+}
+
+.BootstrapHack h1 {
+    margin: .67em 0;
+    font-size: 2em;
+}
+
+.BootstrapHack mark {
+    color: #000;
+    background: #ff0;
+}
+
+.BootstrapHack small {
+    font-size: 80%;
+}
+
+.BootstrapHack sub,
+.BootstrapHack sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+.BootstrapHack sup {
+    top: -0.5em;
+}
+
+.BootstrapHack sub {
+    bottom: -0.25em;
+}
+
+.BootstrapHack img {
+    border: 0;
+}
+
+.BootstrapHack svg:not(:root) {
+    overflow: hidden;
+}
+
+.BootstrapHack figure {
+    margin: 1em 40px;
+}
+
+.BootstrapHack hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.BootstrapHack pre {
+    overflow: auto;
+}
+
+.BootstrapHack code,
+.BootstrapHack kbd,
+.BootstrapHack pre,
+.BootstrapHack samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.BootstrapHack button,
+.BootstrapHack input,
+.BootstrapHack optgroup,
+.BootstrapHack select,
+.BootstrapHack textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+.BootstrapHack button {
+    overflow: visible;
+}
+
+.BootstrapHack button,
+.BootstrapHack select {
+    text-transform: none;
+}
+
+.BootstrapHack button,
+.BootstrapHack html input[type="button"],
+.BootstrapHack input[type="reset"],
+.BootstrapHack input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.BootstrapHack button[disabled],
+.BootstrapHack html input[disabled] {
+    cursor: default;
+}
+
+.BootstrapHack button::-moz-focus-inner,
+.BootstrapHack input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.BootstrapHack input {
+    line-height: normal;
+}
+
+.BootstrapHack input[type="checkbox"],
+.BootstrapHack input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.BootstrapHack input[type="number"]::-webkit-inner-spin-button,
+.BootstrapHack input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+.BootstrapHack input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+
+.BootstrapHack input[type="search"]::-webkit-search-cancel-button,
+.BootstrapHack input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+.BootstrapHack fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid #c0c0c0;
+}
+
+.BootstrapHack legend {
+    padding: 0;
+    border: 0;
+}
+
+.BootstrapHack textarea {
+    overflow: auto;
+}
+
+.BootstrapHack optgroup {
+    font-weight: bold;
+}
+
+.BootstrapHack table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.BootstrapHack td,
+.BootstrapHack th {
+    padding: 0;
+}
+
+@media print {
+    .BootstrapHack *,
+    .BootstrapHack *:before,
+    .BootstrapHack *:after {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: transparent !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    .BootstrapHack a,
+    .BootstrapHack a:visited {
+        text-decoration: underline;
+    }
+    .BootstrapHack a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    .BootstrapHack abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    .BootstrapHack a[href^="#"]:after,
+    .BootstrapHack a[href^="javascript:"]:after {
+        content: "";
+    }
+    .BootstrapHack pre,
+    .BootstrapHack blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    .BootstrapHack thead {
+        display: table-header-group;
+    }
+    .BootstrapHack tr,
+    .BootstrapHack img {
+        page-break-inside: avoid;
+    }
+    .BootstrapHack img {
+        max-width: 100% !important;
+    }
+    .BootstrapHack p,
+    .BootstrapHack h2,
+    .BootstrapHack h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    .BootstrapHack h2,
+    .BootstrapHack h3 {
+        page-break-after: avoid;
+    }
+    .BootstrapHack .navbar {
+        display: none;
+    }
+    .BootstrapHack .btn > .caret,
+    .BootstrapHack .dropup > .btn > .caret {
+        border-top-color: #000 !important;
+    }
+    .BootstrapHack .label {
+        border: 1px solid #000;
+    }
+    .BootstrapHack .table {
+        border-collapse: collapse !important;
+    }
+    .BootstrapHack .table td,
+    .BootstrapHack .table th {
+        background-color: #fff !important;
+    }
+    .BootstrapHack .table-bordered th,
+    .BootstrapHack .table-bordered td {
+        border: 1px solid #ddd !important;
+    }
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.BootstrapHack .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.BootstrapHack .glyphicon-asterisk:before {
+    content: "\002a";
+}
+
+.BootstrapHack .glyphicon-plus:before {
+    content: "\002b";
+}
+
+.BootstrapHack .glyphicon-euro:before,
+.BootstrapHack .glyphicon-eur:before {
+    content: "\20ac";
+}
+
+.BootstrapHack .glyphicon-minus:before {
+    content: "\2212";
+}
+
+.BootstrapHack .glyphicon-cloud:before {
+    content: "\2601";
+}
+
+.BootstrapHack .glyphicon-envelope:before {
+    content: "\2709";
+}
+
+.BootstrapHack .glyphicon-pencil:before {
+    content: "\270f";
+}
+
+.BootstrapHack .glyphicon-glass:before {
+    content: "\e001";
+}
+
+.BootstrapHack .glyphicon-music:before {
+    content: "\e002";
+}
+
+.BootstrapHack .glyphicon-search:before {
+    content: "\e003";
+}
+
+.BootstrapHack .glyphicon-heart:before {
+    content: "\e005";
+}
+
+.BootstrapHack .glyphicon-star:before {
+    content: "\e006";
+}
+
+.BootstrapHack .glyphicon-star-empty:before {
+    content: "\e007";
+}
+
+.BootstrapHack .glyphicon-user:before {
+    content: "\e008";
+}
+
+.BootstrapHack .glyphicon-film:before {
+    content: "\e009";
+}
+
+.BootstrapHack .glyphicon-th-large:before {
+    content: "\e010";
+}
+
+.BootstrapHack .glyphicon-th:before {
+    content: "\e011";
+}
+
+.BootstrapHack .glyphicon-th-list:before {
+    content: "\e012";
+}
+
+.BootstrapHack .glyphicon-ok:before {
+    content: "\e013";
+}
+
+.BootstrapHack .glyphicon-remove:before {
+    content: "\e014";
+}
+
+.BootstrapHack .glyphicon-zoom-in:before {
+    content: "\e015";
+}
+
+.BootstrapHack .glyphicon-zoom-out:before {
+    content: "\e016";
+}
+
+.BootstrapHack .glyphicon-off:before {
+    content: "\e017";
+}
+
+.BootstrapHack .glyphicon-signal:before {
+    content: "\e018";
+}
+
+.BootstrapHack .glyphicon-cog:before {
+    content: "\e019";
+}
+
+.BootstrapHack .glyphicon-trash:before {
+    content: "\e020";
+}
+
+.BootstrapHack .glyphicon-home:before {
+    content: "\e021";
+}
+
+.BootstrapHack .glyphicon-file:before {
+    content: "\e022";
+}
+
+.BootstrapHack .glyphicon-time:before {
+    content: "\e023";
+}
+
+.BootstrapHack .glyphicon-road:before {
+    content: "\e024";
+}
+
+.BootstrapHack .glyphicon-download-alt:before {
+    content: "\e025";
+}
+
+.BootstrapHack .glyphicon-download:before {
+    content: "\e026";
+}
+
+.BootstrapHack .glyphicon-upload:before {
+    content: "\e027";
+}
+
+.BootstrapHack .glyphicon-inbox:before {
+    content: "\e028";
+}
+
+.BootstrapHack .glyphicon-play-circle:before {
+    content: "\e029";
+}
+
+.BootstrapHack .glyphicon-repeat:before {
+    content: "\e030";
+}
+
+.BootstrapHack .glyphicon-refresh:before {
+    content: "\e031";
+}
+
+.BootstrapHack .glyphicon-list-alt:before {
+    content: "\e032";
+}
+
+.BootstrapHack .glyphicon-lock:before {
+    content: "\e033";
+}
+
+.BootstrapHack .glyphicon-flag:before {
+    content: "\e034";
+}
+
+.BootstrapHack .glyphicon-headphones:before {
+    content: "\e035";
+}
+
+.BootstrapHack .glyphicon-volume-off:before {
+    content: "\e036";
+}
+
+.BootstrapHack .glyphicon-volume-down:before {
+    content: "\e037";
+}
+
+.BootstrapHack .glyphicon-volume-up:before {
+    content: "\e038";
+}
+
+.BootstrapHack .glyphicon-qrcode:before {
+    content: "\e039";
+}
+
+.BootstrapHack .glyphicon-barcode:before {
+    content: "\e040";
+}
+
+.BootstrapHack .glyphicon-tag:before {
+    content: "\e041";
+}
+
+.BootstrapHack .glyphicon-tags:before {
+    content: "\e042";
+}
+
+.BootstrapHack .glyphicon-book:before {
+    content: "\e043";
+}
+
+.BootstrapHack .glyphicon-bookmark:before {
+    content: "\e044";
+}
+
+.BootstrapHack .glyphicon-print:before {
+    content: "\e045";
+}
+
+.BootstrapHack .glyphicon-camera:before {
+    content: "\e046";
+}
+
+.BootstrapHack .glyphicon-font:before {
+    content: "\e047";
+}
+
+.BootstrapHack .glyphicon-bold:before {
+    content: "\e048";
+}
+
+.BootstrapHack .glyphicon-italic:before {
+    content: "\e049";
+}
+
+.BootstrapHack .glyphicon-text-height:before {
+    content: "\e050";
+}
+
+.BootstrapHack .glyphicon-text-width:before {
+    content: "\e051";
+}
+
+.BootstrapHack .glyphicon-align-left:before {
+    content: "\e052";
+}
+
+.BootstrapHack .glyphicon-align-center:before {
+    content: "\e053";
+}
+
+.BootstrapHack .glyphicon-align-right:before {
+    content: "\e054";
+}
+
+.BootstrapHack .glyphicon-align-justify:before {
+    content: "\e055";
+}
+
+.BootstrapHack .glyphicon-list:before {
+    content: "\e056";
+}
+
+.BootstrapHack .glyphicon-indent-left:before {
+    content: "\e057";
+}
+
+.BootstrapHack .glyphicon-indent-right:before {
+    content: "\e058";
+}
+
+.BootstrapHack .glyphicon-facetime-video:before {
+    content: "\e059";
+}
+
+.BootstrapHack .glyphicon-picture:before {
+    content: "\e060";
+}
+
+.BootstrapHack .glyphicon-map-marker:before {
+    content: "\e062";
+}
+
+.BootstrapHack .glyphicon-adjust:before {
+    content: "\e063";
+}
+
+.BootstrapHack .glyphicon-tint:before {
+    content: "\e064";
+}
+
+.BootstrapHack .glyphicon-edit:before {
+    content: "\e065";
+}
+
+.BootstrapHack .glyphicon-share:before {
+    content: "\e066";
+}
+
+.BootstrapHack .glyphicon-check:before {
+    content: "\e067";
+}
+
+.BootstrapHack .glyphicon-move:before {
+    content: "\e068";
+}
+
+.BootstrapHack .glyphicon-step-backward:before {
+    content: "\e069";
+}
+
+.BootstrapHack .glyphicon-fast-backward:before {
+    content: "\e070";
+}
+
+.BootstrapHack .glyphicon-backward:before {
+    content: "\e071";
+}
+
+.BootstrapHack .glyphicon-play:before {
+    content: "\e072";
+}
+
+.BootstrapHack .glyphicon-pause:before {
+    content: "\e073";
+}
+
+.BootstrapHack .glyphicon-stop:before {
+    content: "\e074";
+}
+
+.BootstrapHack .glyphicon-forward:before {
+    content: "\e075";
+}
+
+.BootstrapHack .glyphicon-fast-forward:before {
+    content: "\e076";
+}
+
+.BootstrapHack .glyphicon-step-forward:before {
+    content: "\e077";
+}
+
+.BootstrapHack .glyphicon-eject:before {
+    content: "\e078";
+}
+
+.BootstrapHack .glyphicon-chevron-left:before {
+    content: "\e079";
+}
+
+.BootstrapHack .glyphicon-chevron-right:before {
+    content: "\e080";
+}
+
+.BootstrapHack .glyphicon-plus-sign:before {
+    content: "\e081";
+}
+
+.BootstrapHack .glyphicon-minus-sign:before {
+    content: "\e082";
+}
+
+.BootstrapHack .glyphicon-remove-sign:before {
+    content: "\e083";
+}
+
+.BootstrapHack .glyphicon-ok-sign:before {
+    content: "\e084";
+}
+
+.BootstrapHack .glyphicon-question-sign:before {
+    content: "\e085";
+}
+
+.BootstrapHack .glyphicon-info-sign:before {
+    content: "\e086";
+}
+
+.BootstrapHack .glyphicon-screenshot:before {
+    content: "\e087";
+}
+
+.BootstrapHack .glyphicon-remove-circle:before {
+    content: "\e088";
+}
+
+.BootstrapHack .glyphicon-ok-circle:before {
+    content: "\e089";
+}
+
+.BootstrapHack .glyphicon-ban-circle:before {
+    content: "\e090";
+}
+
+.BootstrapHack .glyphicon-arrow-left:before {
+    content: "\e091";
+}
+
+.BootstrapHack .glyphicon-arrow-right:before {
+    content: "\e092";
+}
+
+.BootstrapHack .glyphicon-arrow-up:before {
+    content: "\e093";
+}
+
+.BootstrapHack .glyphicon-arrow-down:before {
+    content: "\e094";
+}
+
+.BootstrapHack .glyphicon-share-alt:before {
+    content: "\e095";
+}
+
+.BootstrapHack .glyphicon-resize-full:before {
+    content: "\e096";
+}
+
+.BootstrapHack .glyphicon-resize-small:before {
+    content: "\e097";
+}
+
+.BootstrapHack .glyphicon-exclamation-sign:before {
+    content: "\e101";
+}
+
+.BootstrapHack .glyphicon-gift:before {
+    content: "\e102";
+}
+
+.BootstrapHack .glyphicon-leaf:before {
+    content: "\e103";
+}
+
+.BootstrapHack .glyphicon-fire:before {
+    content: "\e104";
+}
+
+.BootstrapHack .glyphicon-eye-open:before {
+    content: "\e105";
+}
+
+.BootstrapHack .glyphicon-eye-close:before {
+    content: "\e106";
+}
+
+.BootstrapHack .glyphicon-warning-sign:before {
+    content: "\e107";
+}
+
+.BootstrapHack .glyphicon-plane:before {
+    content: "\e108";
+}
+
+.BootstrapHack .glyphicon-calendar:before {
+    content: "\e109";
+}
+
+.BootstrapHack .glyphicon-random:before {
+    content: "\e110";
+}
+
+.BootstrapHack .glyphicon-comment:before {
+    content: "\e111";
+}
+
+.BootstrapHack .glyphicon-magnet:before {
+    content: "\e112";
+}
+
+.BootstrapHack .glyphicon-chevron-up:before {
+    content: "\e113";
+}
+
+.BootstrapHack .glyphicon-chevron-down:before {
+    content: "\e114";
+}
+
+.BootstrapHack .glyphicon-retweet:before {
+    content: "\e115";
+}
+
+.BootstrapHack .glyphicon-shopping-cart:before {
+    content: "\e116";
+}
+
+.BootstrapHack .glyphicon-folder-close:before {
+    content: "\e117";
+}
+
+.BootstrapHack .glyphicon-folder-open:before {
+    content: "\e118";
+}
+
+.BootstrapHack .glyphicon-resize-vertical:before {
+    content: "\e119";
+}
+
+.BootstrapHack .glyphicon-resize-horizontal:before {
+    content: "\e120";
+}
+
+.BootstrapHack .glyphicon-hdd:before {
+    content: "\e121";
+}
+
+.BootstrapHack .glyphicon-bullhorn:before {
+    content: "\e122";
+}
+
+.BootstrapHack .glyphicon-bell:before {
+    content: "\e123";
+}
+
+.BootstrapHack .glyphicon-certificate:before {
+    content: "\e124";
+}
+
+.BootstrapHack .glyphicon-thumbs-up:before {
+    content: "\e125";
+}
+
+.BootstrapHack .glyphicon-thumbs-down:before {
+    content: "\e126";
+}
+
+.BootstrapHack .glyphicon-hand-right:before {
+    content: "\e127";
+}
+
+.BootstrapHack .glyphicon-hand-left:before {
+    content: "\e128";
+}
+
+.BootstrapHack .glyphicon-hand-up:before {
+    content: "\e129";
+}
+
+.BootstrapHack .glyphicon-hand-down:before {
+    content: "\e130";
+}
+
+.BootstrapHack .glyphicon-circle-arrow-right:before {
+    content: "\e131";
+}
+
+.BootstrapHack .glyphicon-circle-arrow-left:before {
+    content: "\e132";
+}
+
+.BootstrapHack .glyphicon-circle-arrow-up:before {
+    content: "\e133";
+}
+
+.BootstrapHack .glyphicon-circle-arrow-down:before {
+    content: "\e134";
+}
+
+.BootstrapHack .glyphicon-globe:before {
+    content: "\e135";
+}
+
+.BootstrapHack .glyphicon-wrench:before {
+    content: "\e136";
+}
+
+.BootstrapHack .glyphicon-tasks:before {
+    content: "\e137";
+}
+
+.BootstrapHack .glyphicon-filter:before {
+    content: "\e138";
+}
+
+.BootstrapHack .glyphicon-briefcase:before {
+    content: "\e139";
+}
+
+.BootstrapHack .glyphicon-fullscreen:before {
+    content: "\e140";
+}
+
+.BootstrapHack .glyphicon-dashboard:before {
+    content: "\e141";
+}
+
+.BootstrapHack .glyphicon-paperclip:before {
+    content: "\e142";
+}
+
+.BootstrapHack .glyphicon-heart-empty:before {
+    content: "\e143";
+}
+
+.BootstrapHack .glyphicon-link:before {
+    content: "\e144";
+}
+
+.BootstrapHack .glyphicon-phone:before {
+    content: "\e145";
+}
+
+.BootstrapHack .glyphicon-pushpin:before {
+    content: "\e146";
+}
+
+.BootstrapHack .glyphicon-usd:before {
+    content: "\e148";
+}
+
+.BootstrapHack .glyphicon-gbp:before {
+    content: "\e149";
+}
+
+.BootstrapHack .glyphicon-sort:before {
+    content: "\e150";
+}
+
+.BootstrapHack .glyphicon-sort-by-alphabet:before {
+    content: "\e151";
+}
+
+.BootstrapHack .glyphicon-sort-by-alphabet-alt:before {
+    content: "\e152";
+}
+
+.BootstrapHack .glyphicon-sort-by-order:before {
+    content: "\e153";
+}
+
+.BootstrapHack .glyphicon-sort-by-order-alt:before {
+    content: "\e154";
+}
+
+.BootstrapHack .glyphicon-sort-by-attributes:before {
+    content: "\e155";
+}
+
+.BootstrapHack .glyphicon-sort-by-attributes-alt:before {
+    content: "\e156";
+}
+
+.BootstrapHack .glyphicon-unchecked:before {
+    content: "\e157";
+}
+
+.BootstrapHack .glyphicon-expand:before {
+    content: "\e158";
+}
+
+.BootstrapHack .glyphicon-collapse-down:before {
+    content: "\e159";
+}
+
+.BootstrapHack .glyphicon-collapse-up:before {
+    content: "\e160";
+}
+
+.BootstrapHack .glyphicon-log-in:before {
+    content: "\e161";
+}
+
+.BootstrapHack .glyphicon-flash:before {
+    content: "\e162";
+}
+
+.BootstrapHack .glyphicon-log-out:before {
+    content: "\e163";
+}
+
+.BootstrapHack .glyphicon-new-window:before {
+    content: "\e164";
+}
+
+.BootstrapHack .glyphicon-record:before {
+    content: "\e165";
+}
+
+.BootstrapHack .glyphicon-save:before {
+    content: "\e166";
+}
+
+.BootstrapHack .glyphicon-open:before {
+    content: "\e167";
+}
+
+.BootstrapHack .glyphicon-saved:before {
+    content: "\e168";
+}
+
+.BootstrapHack .glyphicon-import:before {
+    content: "\e169";
+}
+
+.BootstrapHack .glyphicon-export:before {
+    content: "\e170";
+}
+
+.BootstrapHack .glyphicon-send:before {
+    content: "\e171";
+}
+
+.BootstrapHack .glyphicon-floppy-disk:before {
+    content: "\e172";
+}
+
+.BootstrapHack .glyphicon-floppy-saved:before {
+    content: "\e173";
+}
+
+.BootstrapHack .glyphicon-floppy-remove:before {
+    content: "\e174";
+}
+
+.BootstrapHack .glyphicon-floppy-save:before {
+    content: "\e175";
+}
+
+.BootstrapHack .glyphicon-floppy-open:before {
+    content: "\e176";
+}
+
+.BootstrapHack .glyphicon-credit-card:before {
+    content: "\e177";
+}
+
+.BootstrapHack .glyphicon-transfer:before {
+    content: "\e178";
+}
+
+.BootstrapHack .glyphicon-cutlery:before {
+    content: "\e179";
+}
+
+.BootstrapHack .glyphicon-header:before {
+    content: "\e180";
+}
+
+.BootstrapHack .glyphicon-compressed:before {
+    content: "\e181";
+}
+
+.BootstrapHack .glyphicon-earphone:before {
+    content: "\e182";
+}
+
+.BootstrapHack .glyphicon-phone-alt:before {
+    content: "\e183";
+}
+
+.BootstrapHack .glyphicon-tower:before {
+    content: "\e184";
+}
+
+.BootstrapHack .glyphicon-stats:before {
+    content: "\e185";
+}
+
+.BootstrapHack .glyphicon-sd-video:before {
+    content: "\e186";
+}
+
+.BootstrapHack .glyphicon-hd-video:before {
+    content: "\e187";
+}
+
+.BootstrapHack .glyphicon-subtitles:before {
+    content: "\e188";
+}
+
+.BootstrapHack .glyphicon-sound-stereo:before {
+    content: "\e189";
+}
+
+.BootstrapHack .glyphicon-sound-dolby:before {
+    content: "\e190";
+}
+
+.BootstrapHack .glyphicon-sound-5-1:before {
+    content: "\e191";
+}
+
+.BootstrapHack .glyphicon-sound-6-1:before {
+    content: "\e192";
+}
+
+.BootstrapHack .glyphicon-sound-7-1:before {
+    content: "\e193";
+}
+
+.BootstrapHack .glyphicon-copyright-mark:before {
+    content: "\e194";
+}
+
+.BootstrapHack .glyphicon-registration-mark:before {
+    content: "\e195";
+}
+
+.BootstrapHack .glyphicon-cloud-download:before {
+    content: "\e197";
+}
+
+.BootstrapHack .glyphicon-cloud-upload:before {
+    content: "\e198";
+}
+
+.BootstrapHack .glyphicon-tree-conifer:before {
+    content: "\e199";
+}
+
+.BootstrapHack .glyphicon-tree-deciduous:before {
+    content: "\e200";
+}
+
+.BootstrapHack .glyphicon-cd:before {
+    content: "\e201";
+}
+
+.BootstrapHack .glyphicon-save-file:before {
+    content: "\e202";
+}
+
+.BootstrapHack .glyphicon-open-file:before {
+    content: "\e203";
+}
+
+.BootstrapHack .glyphicon-level-up:before {
+    content: "\e204";
+}
+
+.BootstrapHack .glyphicon-copy:before {
+    content: "\e205";
+}
+
+.BootstrapHack .glyphicon-paste:before {
+    content: "\e206";
+}
+
+.BootstrapHack .glyphicon-alert:before {
+    content: "\e209";
+}
+
+.BootstrapHack .glyphicon-equalizer:before {
+    content: "\e210";
+}
+
+.BootstrapHack .glyphicon-king:before {
+    content: "\e211";
+}
+
+.BootstrapHack .glyphicon-queen:before {
+    content: "\e212";
+}
+
+.BootstrapHack .glyphicon-pawn:before {
+    content: "\e213";
+}
+
+.BootstrapHack .glyphicon-bishop:before {
+    content: "\e214";
+}
+
+.BootstrapHack .glyphicon-knight:before {
+    content: "\e215";
+}
+
+.BootstrapHack .glyphicon-baby-formula:before {
+    content: "\e216";
+}
+
+.BootstrapHack .glyphicon-tent:before {
+    content: "\26fa";
+}
+
+.BootstrapHack .glyphicon-blackboard:before {
+    content: "\e218";
+}
+
+.BootstrapHack .glyphicon-bed:before {
+    content: "\e219";
+}
+
+.BootstrapHack .glyphicon-apple:before {
+    content: "\f8ff";
+}
+
+.BootstrapHack .glyphicon-erase:before {
+    content: "\e221";
+}
+
+.BootstrapHack .glyphicon-hourglass:before {
+    content: "\231b";
+}
+
+.BootstrapHack .glyphicon-lamp:before {
+    content: "\e223";
+}
+
+.BootstrapHack .glyphicon-duplicate:before {
+    content: "\e224";
+}
+
+.BootstrapHack .glyphicon-piggy-bank:before {
+    content: "\e225";
+}
+
+.BootstrapHack .glyphicon-scissors:before {
+    content: "\e226";
+}
+
+.BootstrapHack .glyphicon-bitcoin:before {
+    content: "\e227";
+}
+
+.BootstrapHack .glyphicon-btc:before {
+    content: "\e227";
+}
+
+.BootstrapHack .glyphicon-xbt:before {
+    content: "\e227";
+}
+
+.BootstrapHack .glyphicon-yen:before {
+    content: "\00a5";
+}
+
+.BootstrapHack .glyphicon-jpy:before {
+    content: "\00a5";
+}
+
+.BootstrapHack .glyphicon-ruble:before {
+    content: "\20bd";
+}
+
+.BootstrapHack .glyphicon-rub:before {
+    content: "\20bd";
+}
+
+.BootstrapHack .glyphicon-scale:before {
+    content: "\e230";
+}
+
+.BootstrapHack .glyphicon-ice-lolly:before {
+    content: "\e231";
+}
+
+.BootstrapHack .glyphicon-ice-lolly-tasted:before {
+    content: "\e232";
+}
+
+.BootstrapHack .glyphicon-education:before {
+    content: "\e233";
+}
+
+.BootstrapHack .glyphicon-option-horizontal:before {
+    content: "\e234";
+}
+
+.BootstrapHack .glyphicon-option-vertical:before {
+    content: "\e235";
+}
+
+.BootstrapHack .glyphicon-menu-hamburger:before {
+    content: "\e236";
+}
+
+.BootstrapHack .glyphicon-modal-window:before {
+    content: "\e237";
+}
+
+.BootstrapHack .glyphicon-oil:before {
+    content: "\e238";
+}
+
+.BootstrapHack .glyphicon-grain:before {
+    content: "\e239";
+}
+
+.BootstrapHack .glyphicon-sunglasses:before {
+    content: "\e240";
+}
+
+.BootstrapHack .glyphicon-text-size:before {
+    content: "\e241";
+}
+
+.BootstrapHack .glyphicon-text-color:before {
+    content: "\e242";
+}
+
+.BootstrapHack .glyphicon-text-background:before {
+    content: "\e243";
+}
+
+.BootstrapHack .glyphicon-object-align-top:before {
+    content: "\e244";
+}
+
+.BootstrapHack .glyphicon-object-align-bottom:before {
+    content: "\e245";
+}
+
+.BootstrapHack .glyphicon-object-align-horizontal:before {
+    content: "\e246";
+}
+
+.BootstrapHack .glyphicon-object-align-left:before {
+    content: "\e247";
+}
+
+.BootstrapHack .glyphicon-object-align-vertical:before {
+    content: "\e248";
+}
+
+.BootstrapHack .glyphicon-object-align-right:before {
+    content: "\e249";
+}
+
+.BootstrapHack .glyphicon-triangle-right:before {
+    content: "\e250";
+}
+
+.BootstrapHack .glyphicon-triangle-left:before {
+    content: "\e251";
+}
+
+.BootstrapHack .glyphicon-triangle-bottom:before {
+    content: "\e252";
+}
+
+.BootstrapHack .glyphicon-triangle-top:before {
+    content: "\e253";
+}
+
+.BootstrapHack .glyphicon-console:before {
+    content: "\e254";
+}
+
+.BootstrapHack .glyphicon-superscript:before {
+    content: "\e255";
+}
+
+.BootstrapHack .glyphicon-subscript:before {
+    content: "\e256";
+}
+
+.BootstrapHack .glyphicon-menu-left:before {
+    content: "\e257";
+}
+
+.BootstrapHack .glyphicon-menu-right:before {
+    content: "\e258";
+}
+
+.BootstrapHack .glyphicon-menu-down:before {
+    content: "\e259";
+}
+
+.BootstrapHack .glyphicon-menu-up:before {
+    content: "\e260";
+}
+
+.BootstrapHack * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.BootstrapHack *:before,
+.BootstrapHack *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.BootstrapHack html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.BootstrapHack body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.BootstrapHack input,
+.BootstrapHack button,
+.BootstrapHack select,
+.BootstrapHack textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.BootstrapHack a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.BootstrapHack a:hover,
+.BootstrapHack a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.BootstrapHack a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.BootstrapHack figure {
+    margin: 0;
+}
+
+.BootstrapHack img {
+    vertical-align: middle;
+}
+
+.BootstrapHack .img-responsive,
+.BootstrapHack .thumbnail > img,
+.BootstrapHack .thumbnail a > img,
+.BootstrapHack .carousel-inner > .item > img,
+.BootstrapHack .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.BootstrapHack .img-rounded {
+    border-radius: 6px;
+}
+
+.BootstrapHack .img-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.BootstrapHack .img-circle {
+    border-radius: 50%;
+}
+
+.BootstrapHack hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.BootstrapHack .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.BootstrapHack .sr-only-focusable:active,
+.BootstrapHack .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
+.BootstrapHack [role="button"] {
+    cursor: pointer;
+}
+
+.BootstrapHack h1,
+.BootstrapHack h2,
+.BootstrapHack h3,
+.BootstrapHack h4,
+.BootstrapHack h5,
+.BootstrapHack h6,
+.BootstrapHack .h1,
+.BootstrapHack .h2,
+.BootstrapHack .h3,
+.BootstrapHack .h4,
+.BootstrapHack .h5,
+.BootstrapHack .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.BootstrapHack h1 small,
+.BootstrapHack h2 small,
+.BootstrapHack h3 small,
+.BootstrapHack h4 small,
+.BootstrapHack h5 small,
+.BootstrapHack h6 small,
+.BootstrapHack .h1 small,
+.BootstrapHack .h2 small,
+.BootstrapHack .h3 small,
+.BootstrapHack .h4 small,
+.BootstrapHack .h5 small,
+.BootstrapHack .h6 small,
+.BootstrapHack h1 .small,
+.BootstrapHack h2 .small,
+.BootstrapHack h3 .small,
+.BootstrapHack h4 .small,
+.BootstrapHack h5 .small,
+.BootstrapHack h6 .small,
+.BootstrapHack .h1 .small,
+.BootstrapHack .h2 .small,
+.BootstrapHack .h3 .small,
+.BootstrapHack .h4 .small,
+.BootstrapHack .h5 .small,
+.BootstrapHack .h6 .small {
+    font-weight: normal;
+    line-height: 1;
+    color: #777;
+}
+
+.BootstrapHack h1,
+.BootstrapHack .h1,
+.BootstrapHack h2,
+.BootstrapHack .h2,
+.BootstrapHack h3,
+.BootstrapHack .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.BootstrapHack h1 small,
+.BootstrapHack .h1 small,
+.BootstrapHack h2 small,
+.BootstrapHack .h2 small,
+.BootstrapHack h3 small,
+.BootstrapHack .h3 small,
+.BootstrapHack h1 .small,
+.BootstrapHack .h1 .small,
+.BootstrapHack h2 .small,
+.BootstrapHack .h2 .small,
+.BootstrapHack h3 .small,
+.BootstrapHack .h3 .small {
+    font-size: 65%;
+}
+
+.BootstrapHack h4,
+.BootstrapHack .h4,
+.BootstrapHack h5,
+.BootstrapHack .h5,
+.BootstrapHack h6,
+.BootstrapHack .h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.BootstrapHack h4 small,
+.BootstrapHack .h4 small,
+.BootstrapHack h5 small,
+.BootstrapHack .h5 small,
+.BootstrapHack h6 small,
+.BootstrapHack .h6 small,
+.BootstrapHack h4 .small,
+.BootstrapHack .h4 .small,
+.BootstrapHack h5 .small,
+.BootstrapHack .h5 .small,
+.BootstrapHack h6 .small,
+.BootstrapHack .h6 .small {
+    font-size: 75%;
+}
+
+.BootstrapHack h1,
+.BootstrapHack .h1 {
+    font-size: 36px;
+}
+
+.BootstrapHack h2,
+.BootstrapHack .h2 {
+    font-size: 30px;
+}
+
+.BootstrapHack h3,
+.BootstrapHack .h3 {
+    font-size: 24px;
+}
+
+.BootstrapHack h4,
+.BootstrapHack .h4 {
+    font-size: 18px;
+}
+
+.BootstrapHack h5,
+.BootstrapHack .h5 {
+    font-size: 14px;
+}
+
+.BootstrapHack h6,
+.BootstrapHack .h6 {
+    font-size: 12px;
+}
+
+.BootstrapHack p {
+    margin: 0 0 10px;
+}
+
+.BootstrapHack .lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .lead {
+        font-size: 21px;
+    }
+}
+
+.BootstrapHack small,
+.BootstrapHack .small {
+    font-size: 85%;
+}
+
+.BootstrapHack mark,
+.BootstrapHack .mark {
+    padding: .2em;
+    background-color: #fcf8e3;
+}
+
+.BootstrapHack .text-left {
+    text-align: left;
+}
+
+.BootstrapHack .text-right {
+    text-align: right;
+}
+
+.BootstrapHack .text-center {
+    text-align: center;
+}
+
+.BootstrapHack .text-justify {
+    text-align: justify;
+}
+
+.BootstrapHack .text-nowrap {
+    white-space: nowrap;
+}
+
+.BootstrapHack .text-lowercase {
+    text-transform: lowercase;
+}
+
+.BootstrapHack .text-uppercase {
+    text-transform: uppercase;
+}
+
+.BootstrapHack .text-capitalize {
+    text-transform: capitalize;
+}
+
+.BootstrapHack .text-muted {
+    color: #777;
+}
+
+.BootstrapHack .text-primary {
+    color: #337ab7;
+}
+
+.BootstrapHack a.text-primary:hover,
+.BootstrapHack a.text-primary:focus {
+    color: #286090;
+}
+
+.BootstrapHack .text-success {
+    color: #3c763d;
+}
+
+.BootstrapHack a.text-success:hover,
+.BootstrapHack a.text-success:focus {
+    color: #2b542c;
+}
+
+.BootstrapHack .text-info {
+    color: #31708f;
+}
+
+.BootstrapHack a.text-info:hover,
+.BootstrapHack a.text-info:focus {
+    color: #245269;
+}
+
+.BootstrapHack .text-warning {
+    color: #8a6d3b;
+}
+
+.BootstrapHack a.text-warning:hover,
+.BootstrapHack a.text-warning:focus {
+    color: #66512c;
+}
+
+.BootstrapHack .text-danger {
+    color: #a94442;
+}
+
+.BootstrapHack a.text-danger:hover,
+.BootstrapHack a.text-danger:focus {
+    color: #843534;
+}
+
+.BootstrapHack .bg-primary {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.BootstrapHack a.bg-primary:hover,
+.BootstrapHack a.bg-primary:focus {
+    background-color: #286090;
+}
+
+.BootstrapHack .bg-success {
+    background-color: #dff0d8;
+}
+
+.BootstrapHack a.bg-success:hover,
+.BootstrapHack a.bg-success:focus {
+    background-color: #c1e2b3;
+}
+
+.BootstrapHack .bg-info {
+    background-color: #d9edf7;
+}
+
+.BootstrapHack a.bg-info:hover,
+.BootstrapHack a.bg-info:focus {
+    background-color: #afd9ee;
+}
+
+.BootstrapHack .bg-warning {
+    background-color: #fcf8e3;
+}
+
+.BootstrapHack a.bg-warning:hover,
+.BootstrapHack a.bg-warning:focus {
+    background-color: #f7ecb5;
+}
+
+.BootstrapHack .bg-danger {
+    background-color: #f2dede;
+}
+
+.BootstrapHack a.bg-danger:hover,
+.BootstrapHack a.bg-danger:focus {
+    background-color: #e4b9b9;
+}
+
+.BootstrapHack .page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.BootstrapHack ul,
+.BootstrapHack ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.BootstrapHack ul ul,
+.BootstrapHack ol ul,
+.BootstrapHack ul ol,
+.BootstrapHack ol ol {
+    margin-bottom: 0;
+}
+
+.BootstrapHack .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.BootstrapHack .list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.BootstrapHack .list-inline > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.BootstrapHack dl {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.BootstrapHack dt,
+.BootstrapHack dd {
+    line-height: 1.42857143;
+}
+
+.BootstrapHack dt {
+    font-weight: bold;
+}
+
+.BootstrapHack dd {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .dl-horizontal dt {
+        float: left;
+        width: 160px;
+        overflow: hidden;
+        clear: left;
+        text-align: right;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .BootstrapHack .dl-horizontal dd {
+        margin-left: 180px;
+    }
+}
+
+.BootstrapHack abbr[title],
+.BootstrapHack abbr[data-original-title] {
+    cursor: help;
+    border-bottom: 1px dotted #777;
+}
+
+.BootstrapHack .initialism {
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+.BootstrapHack blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+}
+
+.BootstrapHack blockquote p:last-child,
+.BootstrapHack blockquote ul:last-child,
+.BootstrapHack blockquote ol:last-child {
+    margin-bottom: 0;
+}
+
+.BootstrapHack blockquote footer,
+.BootstrapHack blockquote small,
+.BootstrapHack blockquote .small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #777;
+}
+
+.BootstrapHack blockquote footer:before,
+.BootstrapHack blockquote small:before,
+.BootstrapHack blockquote .small:before {
+    content: '\2014 \00A0';
+}
+
+.BootstrapHack .blockquote-reverse,
+.BootstrapHack blockquote.pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    text-align: right;
+    border-right: 5px solid #eee;
+    border-left: 0;
+}
+
+.BootstrapHack .blockquote-reverse footer:before,
+.BootstrapHack blockquote.pull-right footer:before,
+.BootstrapHack .blockquote-reverse small:before,
+.BootstrapHack blockquote.pull-right small:before,
+.BootstrapHack .blockquote-reverse .small:before,
+.BootstrapHack blockquote.pull-right .small:before {
+    content: '';
+}
+
+.BootstrapHack .blockquote-reverse footer:after,
+.BootstrapHack blockquote.pull-right footer:after,
+.BootstrapHack .blockquote-reverse small:after,
+.BootstrapHack blockquote.pull-right small:after,
+.BootstrapHack .blockquote-reverse .small:after,
+.BootstrapHack blockquote.pull-right .small:after {
+    content: '\00A0 \2014';
+}
+
+.BootstrapHack address {
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.42857143;
+}
+
+.BootstrapHack code,
+.BootstrapHack kbd,
+.BootstrapHack pre,
+.BootstrapHack samp {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.BootstrapHack code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+.BootstrapHack kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.BootstrapHack kbd kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: bold;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.BootstrapHack pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.BootstrapHack pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.BootstrapHack .pre-scrollable {
+    max-height: 340px;
+    overflow-y: scroll;
+}
+
+.BootstrapHack .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .BootstrapHack .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .BootstrapHack .container {
+        width: 1170px;
+    }
+}
+
+.BootstrapHack .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.BootstrapHack .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.BootstrapHack .col-xs-1,
+.BootstrapHack .col-sm-1,
+.BootstrapHack .col-md-1,
+.BootstrapHack .col-lg-1,
+.BootstrapHack .col-xs-2,
+.BootstrapHack .col-sm-2,
+.BootstrapHack .col-md-2,
+.BootstrapHack .col-lg-2,
+.BootstrapHack .col-xs-3,
+.BootstrapHack .col-sm-3,
+.BootstrapHack .col-md-3,
+.BootstrapHack .col-lg-3,
+.BootstrapHack .col-xs-4,
+.BootstrapHack .col-sm-4,
+.BootstrapHack .col-md-4,
+.BootstrapHack .col-lg-4,
+.BootstrapHack .col-xs-5,
+.BootstrapHack .col-sm-5,
+.BootstrapHack .col-md-5,
+.BootstrapHack .col-lg-5,
+.BootstrapHack .col-xs-6,
+.BootstrapHack .col-sm-6,
+.BootstrapHack .col-md-6,
+.BootstrapHack .col-lg-6,
+.BootstrapHack .col-xs-7,
+.BootstrapHack .col-sm-7,
+.BootstrapHack .col-md-7,
+.BootstrapHack .col-lg-7,
+.BootstrapHack .col-xs-8,
+.BootstrapHack .col-sm-8,
+.BootstrapHack .col-md-8,
+.BootstrapHack .col-lg-8,
+.BootstrapHack .col-xs-9,
+.BootstrapHack .col-sm-9,
+.BootstrapHack .col-md-9,
+.BootstrapHack .col-lg-9,
+.BootstrapHack .col-xs-10,
+.BootstrapHack .col-sm-10,
+.BootstrapHack .col-md-10,
+.BootstrapHack .col-lg-10,
+.BootstrapHack .col-xs-11,
+.BootstrapHack .col-sm-11,
+.BootstrapHack .col-md-11,
+.BootstrapHack .col-lg-11,
+.BootstrapHack .col-xs-12,
+.BootstrapHack .col-sm-12,
+.BootstrapHack .col-md-12,
+.BootstrapHack .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.BootstrapHack .col-xs-1,
+.BootstrapHack .col-xs-2,
+.BootstrapHack .col-xs-3,
+.BootstrapHack .col-xs-4,
+.BootstrapHack .col-xs-5,
+.BootstrapHack .col-xs-6,
+.BootstrapHack .col-xs-7,
+.BootstrapHack .col-xs-8,
+.BootstrapHack .col-xs-9,
+.BootstrapHack .col-xs-10,
+.BootstrapHack .col-xs-11,
+.BootstrapHack .col-xs-12 {
+    float: left;
+}
+
+.BootstrapHack .col-xs-12 {
+    width: 100%;
+}
+
+.BootstrapHack .col-xs-11 {
+    width: 91.66666667%;
+}
+
+.BootstrapHack .col-xs-10 {
+    width: 83.33333333%;
+}
+
+.BootstrapHack .col-xs-9 {
+    width: 75%;
+}
+
+.BootstrapHack .col-xs-8 {
+    width: 66.66666667%;
+}
+
+.BootstrapHack .col-xs-7 {
+    width: 58.33333333%;
+}
+
+.BootstrapHack .col-xs-6 {
+    width: 50%;
+}
+
+.BootstrapHack .col-xs-5 {
+    width: 41.66666667%;
+}
+
+.BootstrapHack .col-xs-4 {
+    width: 33.33333333%;
+}
+
+.BootstrapHack .col-xs-3 {
+    width: 25%;
+}
+
+.BootstrapHack .col-xs-2 {
+    width: 16.66666667%;
+}
+
+.BootstrapHack .col-xs-1 {
+    width: 8.33333333%;
+}
+
+.BootstrapHack .col-xs-pull-12 {
+    right: 100%;
+}
+
+.BootstrapHack .col-xs-pull-11 {
+    right: 91.66666667%;
+}
+
+.BootstrapHack .col-xs-pull-10 {
+    right: 83.33333333%;
+}
+
+.BootstrapHack .col-xs-pull-9 {
+    right: 75%;
+}
+
+.BootstrapHack .col-xs-pull-8 {
+    right: 66.66666667%;
+}
+
+.BootstrapHack .col-xs-pull-7 {
+    right: 58.33333333%;
+}
+
+.BootstrapHack .col-xs-pull-6 {
+    right: 50%;
+}
+
+.BootstrapHack .col-xs-pull-5 {
+    right: 41.66666667%;
+}
+
+.BootstrapHack .col-xs-pull-4 {
+    right: 33.33333333%;
+}
+
+.BootstrapHack .col-xs-pull-3 {
+    right: 25%;
+}
+
+.BootstrapHack .col-xs-pull-2 {
+    right: 16.66666667%;
+}
+
+.BootstrapHack .col-xs-pull-1 {
+    right: 8.33333333%;
+}
+
+.BootstrapHack .col-xs-pull-0 {
+    right: auto;
+}
+
+.BootstrapHack .col-xs-push-12 {
+    left: 100%;
+}
+
+.BootstrapHack .col-xs-push-11 {
+    left: 91.66666667%;
+}
+
+.BootstrapHack .col-xs-push-10 {
+    left: 83.33333333%;
+}
+
+.BootstrapHack .col-xs-push-9 {
+    left: 75%;
+}
+
+.BootstrapHack .col-xs-push-8 {
+    left: 66.66666667%;
+}
+
+.BootstrapHack .col-xs-push-7 {
+    left: 58.33333333%;
+}
+
+.BootstrapHack .col-xs-push-6 {
+    left: 50%;
+}
+
+.BootstrapHack .col-xs-push-5 {
+    left: 41.66666667%;
+}
+
+.BootstrapHack .col-xs-push-4 {
+    left: 33.33333333%;
+}
+
+.BootstrapHack .col-xs-push-3 {
+    left: 25%;
+}
+
+.BootstrapHack .col-xs-push-2 {
+    left: 16.66666667%;
+}
+
+.BootstrapHack .col-xs-push-1 {
+    left: 8.33333333%;
+}
+
+.BootstrapHack .col-xs-push-0 {
+    left: auto;
+}
+
+.BootstrapHack .col-xs-offset-12 {
+    margin-left: 100%;
+}
+
+.BootstrapHack .col-xs-offset-11 {
+    margin-left: 91.66666667%;
+}
+
+.BootstrapHack .col-xs-offset-10 {
+    margin-left: 83.33333333%;
+}
+
+.BootstrapHack .col-xs-offset-9 {
+    margin-left: 75%;
+}
+
+.BootstrapHack .col-xs-offset-8 {
+    margin-left: 66.66666667%;
+}
+
+.BootstrapHack .col-xs-offset-7 {
+    margin-left: 58.33333333%;
+}
+
+.BootstrapHack .col-xs-offset-6 {
+    margin-left: 50%;
+}
+
+.BootstrapHack .col-xs-offset-5 {
+    margin-left: 41.66666667%;
+}
+
+.BootstrapHack .col-xs-offset-4 {
+    margin-left: 33.33333333%;
+}
+
+.BootstrapHack .col-xs-offset-3 {
+    margin-left: 25%;
+}
+
+.BootstrapHack .col-xs-offset-2 {
+    margin-left: 16.66666667%;
+}
+
+.BootstrapHack .col-xs-offset-1 {
+    margin-left: 8.33333333%;
+}
+
+.BootstrapHack .col-xs-offset-0 {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .col-sm-1,
+    .BootstrapHack .col-sm-2,
+    .BootstrapHack .col-sm-3,
+    .BootstrapHack .col-sm-4,
+    .BootstrapHack .col-sm-5,
+    .BootstrapHack .col-sm-6,
+    .BootstrapHack .col-sm-7,
+    .BootstrapHack .col-sm-8,
+    .BootstrapHack .col-sm-9,
+    .BootstrapHack .col-sm-10,
+    .BootstrapHack .col-sm-11,
+    .BootstrapHack .col-sm-12 {
+        float: left;
+    }
+    .BootstrapHack .col-sm-12 {
+        width: 100%;
+    }
+    .BootstrapHack .col-sm-11 {
+        width: 91.66666667%;
+    }
+    .BootstrapHack .col-sm-10 {
+        width: 83.33333333%;
+    }
+    .BootstrapHack .col-sm-9 {
+        width: 75%;
+    }
+    .BootstrapHack .col-sm-8 {
+        width: 66.66666667%;
+    }
+    .BootstrapHack .col-sm-7 {
+        width: 58.33333333%;
+    }
+    .BootstrapHack .col-sm-6 {
+        width: 50%;
+    }
+    .BootstrapHack .col-sm-5 {
+        width: 41.66666667%;
+    }
+    .BootstrapHack .col-sm-4 {
+        width: 33.33333333%;
+    }
+    .BootstrapHack .col-sm-3 {
+        width: 25%;
+    }
+    .BootstrapHack .col-sm-2 {
+        width: 16.66666667%;
+    }
+    .BootstrapHack .col-sm-1 {
+        width: 8.33333333%;
+    }
+    .BootstrapHack .col-sm-pull-12 {
+        right: 100%;
+    }
+    .BootstrapHack .col-sm-pull-11 {
+        right: 91.66666667%;
+    }
+    .BootstrapHack .col-sm-pull-10 {
+        right: 83.33333333%;
+    }
+    .BootstrapHack .col-sm-pull-9 {
+        right: 75%;
+    }
+    .BootstrapHack .col-sm-pull-8 {
+        right: 66.66666667%;
+    }
+    .BootstrapHack .col-sm-pull-7 {
+        right: 58.33333333%;
+    }
+    .BootstrapHack .col-sm-pull-6 {
+        right: 50%;
+    }
+    .BootstrapHack .col-sm-pull-5 {
+        right: 41.66666667%;
+    }
+    .BootstrapHack .col-sm-pull-4 {
+        right: 33.33333333%;
+    }
+    .BootstrapHack .col-sm-pull-3 {
+        right: 25%;
+    }
+    .BootstrapHack .col-sm-pull-2 {
+        right: 16.66666667%;
+    }
+    .BootstrapHack .col-sm-pull-1 {
+        right: 8.33333333%;
+    }
+    .BootstrapHack .col-sm-pull-0 {
+        right: auto;
+    }
+    .BootstrapHack .col-sm-push-12 {
+        left: 100%;
+    }
+    .BootstrapHack .col-sm-push-11 {
+        left: 91.66666667%;
+    }
+    .BootstrapHack .col-sm-push-10 {
+        left: 83.33333333%;
+    }
+    .BootstrapHack .col-sm-push-9 {
+        left: 75%;
+    }
+    .BootstrapHack .col-sm-push-8 {
+        left: 66.66666667%;
+    }
+    .BootstrapHack .col-sm-push-7 {
+        left: 58.33333333%;
+    }
+    .BootstrapHack .col-sm-push-6 {
+        left: 50%;
+    }
+    .BootstrapHack .col-sm-push-5 {
+        left: 41.66666667%;
+    }
+    .BootstrapHack .col-sm-push-4 {
+        left: 33.33333333%;
+    }
+    .BootstrapHack .col-sm-push-3 {
+        left: 25%;
+    }
+    .BootstrapHack .col-sm-push-2 {
+        left: 16.66666667%;
+    }
+    .BootstrapHack .col-sm-push-1 {
+        left: 8.33333333%;
+    }
+    .BootstrapHack .col-sm-push-0 {
+        left: auto;
+    }
+    .BootstrapHack .col-sm-offset-12 {
+        margin-left: 100%;
+    }
+    .BootstrapHack .col-sm-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    .BootstrapHack .col-sm-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    .BootstrapHack .col-sm-offset-9 {
+        margin-left: 75%;
+    }
+    .BootstrapHack .col-sm-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    .BootstrapHack .col-sm-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    .BootstrapHack .col-sm-offset-6 {
+        margin-left: 50%;
+    }
+    .BootstrapHack .col-sm-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    .BootstrapHack .col-sm-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    .BootstrapHack .col-sm-offset-3 {
+        margin-left: 25%;
+    }
+    .BootstrapHack .col-sm-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    .BootstrapHack .col-sm-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    .BootstrapHack .col-sm-offset-0 {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .BootstrapHack .col-md-1,
+    .BootstrapHack .col-md-2,
+    .BootstrapHack .col-md-3,
+    .BootstrapHack .col-md-4,
+    .BootstrapHack .col-md-5,
+    .BootstrapHack .col-md-6,
+    .BootstrapHack .col-md-7,
+    .BootstrapHack .col-md-8,
+    .BootstrapHack .col-md-9,
+    .BootstrapHack .col-md-10,
+    .BootstrapHack .col-md-11,
+    .BootstrapHack .col-md-12 {
+        float: left;
+    }
+    .BootstrapHack .col-md-12 {
+        width: 100%;
+    }
+    .BootstrapHack .col-md-11 {
+        width: 91.66666667%;
+    }
+    .BootstrapHack .col-md-10 {
+        width: 83.33333333%;
+    }
+    .BootstrapHack .col-md-9 {
+        width: 75%;
+    }
+    .BootstrapHack .col-md-8 {
+        width: 66.66666667%;
+    }
+    .BootstrapHack .col-md-7 {
+        width: 58.33333333%;
+    }
+    .BootstrapHack .col-md-6 {
+        width: 50%;
+    }
+    .BootstrapHack .col-md-5 {
+        width: 41.66666667%;
+    }
+    .BootstrapHack .col-md-4 {
+        width: 33.33333333%;
+    }
+    .BootstrapHack .col-md-3 {
+        width: 25%;
+    }
+    .BootstrapHack .col-md-2 {
+        width: 16.66666667%;
+    }
+    .BootstrapHack .col-md-1 {
+        width: 8.33333333%;
+    }
+    .BootstrapHack .col-md-pull-12 {
+        right: 100%;
+    }
+    .BootstrapHack .col-md-pull-11 {
+        right: 91.66666667%;
+    }
+    .BootstrapHack .col-md-pull-10 {
+        right: 83.33333333%;
+    }
+    .BootstrapHack .col-md-pull-9 {
+        right: 75%;
+    }
+    .BootstrapHack .col-md-pull-8 {
+        right: 66.66666667%;
+    }
+    .BootstrapHack .col-md-pull-7 {
+        right: 58.33333333%;
+    }
+    .BootstrapHack .col-md-pull-6 {
+        right: 50%;
+    }
+    .BootstrapHack .col-md-pull-5 {
+        right: 41.66666667%;
+    }
+    .BootstrapHack .col-md-pull-4 {
+        right: 33.33333333%;
+    }
+    .BootstrapHack .col-md-pull-3 {
+        right: 25%;
+    }
+    .BootstrapHack .col-md-pull-2 {
+        right: 16.66666667%;
+    }
+    .BootstrapHack .col-md-pull-1 {
+        right: 8.33333333%;
+    }
+    .BootstrapHack .col-md-pull-0 {
+        right: auto;
+    }
+    .BootstrapHack .col-md-push-12 {
+        left: 100%;
+    }
+    .BootstrapHack .col-md-push-11 {
+        left: 91.66666667%;
+    }
+    .BootstrapHack .col-md-push-10 {
+        left: 83.33333333%;
+    }
+    .BootstrapHack .col-md-push-9 {
+        left: 75%;
+    }
+    .BootstrapHack .col-md-push-8 {
+        left: 66.66666667%;
+    }
+    .BootstrapHack .col-md-push-7 {
+        left: 58.33333333%;
+    }
+    .BootstrapHack .col-md-push-6 {
+        left: 50%;
+    }
+    .BootstrapHack .col-md-push-5 {
+        left: 41.66666667%;
+    }
+    .BootstrapHack .col-md-push-4 {
+        left: 33.33333333%;
+    }
+    .BootstrapHack .col-md-push-3 {
+        left: 25%;
+    }
+    .BootstrapHack .col-md-push-2 {
+        left: 16.66666667%;
+    }
+    .BootstrapHack .col-md-push-1 {
+        left: 8.33333333%;
+    }
+    .BootstrapHack .col-md-push-0 {
+        left: auto;
+    }
+    .BootstrapHack .col-md-offset-12 {
+        margin-left: 100%;
+    }
+    .BootstrapHack .col-md-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    .BootstrapHack .col-md-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    .BootstrapHack .col-md-offset-9 {
+        margin-left: 75%;
+    }
+    .BootstrapHack .col-md-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    .BootstrapHack .col-md-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    .BootstrapHack .col-md-offset-6 {
+        margin-left: 50%;
+    }
+    .BootstrapHack .col-md-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    .BootstrapHack .col-md-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    .BootstrapHack .col-md-offset-3 {
+        margin-left: 25%;
+    }
+    .BootstrapHack .col-md-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    .BootstrapHack .col-md-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    .BootstrapHack .col-md-offset-0 {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .BootstrapHack .col-lg-1,
+    .BootstrapHack .col-lg-2,
+    .BootstrapHack .col-lg-3,
+    .BootstrapHack .col-lg-4,
+    .BootstrapHack .col-lg-5,
+    .BootstrapHack .col-lg-6,
+    .BootstrapHack .col-lg-7,
+    .BootstrapHack .col-lg-8,
+    .BootstrapHack .col-lg-9,
+    .BootstrapHack .col-lg-10,
+    .BootstrapHack .col-lg-11,
+    .BootstrapHack .col-lg-12 {
+        float: left;
+    }
+    .BootstrapHack .col-lg-12 {
+        width: 100%;
+    }
+    .BootstrapHack .col-lg-11 {
+        width: 91.66666667%;
+    }
+    .BootstrapHack .col-lg-10 {
+        width: 83.33333333%;
+    }
+    .BootstrapHack .col-lg-9 {
+        width: 75%;
+    }
+    .BootstrapHack .col-lg-8 {
+        width: 66.66666667%;
+    }
+    .BootstrapHack .col-lg-7 {
+        width: 58.33333333%;
+    }
+    .BootstrapHack .col-lg-6 {
+        width: 50%;
+    }
+    .BootstrapHack .col-lg-5 {
+        width: 41.66666667%;
+    }
+    .BootstrapHack .col-lg-4 {
+        width: 33.33333333%;
+    }
+    .BootstrapHack .col-lg-3 {
+        width: 25%;
+    }
+    .BootstrapHack .col-lg-2 {
+        width: 16.66666667%;
+    }
+    .BootstrapHack .col-lg-1 {
+        width: 8.33333333%;
+    }
+    .BootstrapHack .col-lg-pull-12 {
+        right: 100%;
+    }
+    .BootstrapHack .col-lg-pull-11 {
+        right: 91.66666667%;
+    }
+    .BootstrapHack .col-lg-pull-10 {
+        right: 83.33333333%;
+    }
+    .BootstrapHack .col-lg-pull-9 {
+        right: 75%;
+    }
+    .BootstrapHack .col-lg-pull-8 {
+        right: 66.66666667%;
+    }
+    .BootstrapHack .col-lg-pull-7 {
+        right: 58.33333333%;
+    }
+    .BootstrapHack .col-lg-pull-6 {
+        right: 50%;
+    }
+    .BootstrapHack .col-lg-pull-5 {
+        right: 41.66666667%;
+    }
+    .BootstrapHack .col-lg-pull-4 {
+        right: 33.33333333%;
+    }
+    .BootstrapHack .col-lg-pull-3 {
+        right: 25%;
+    }
+    .BootstrapHack .col-lg-pull-2 {
+        right: 16.66666667%;
+    }
+    .BootstrapHack .col-lg-pull-1 {
+        right: 8.33333333%;
+    }
+    .BootstrapHack .col-lg-pull-0 {
+        right: auto;
+    }
+    .BootstrapHack .col-lg-push-12 {
+        left: 100%;
+    }
+    .BootstrapHack .col-lg-push-11 {
+        left: 91.66666667%;
+    }
+    .BootstrapHack .col-lg-push-10 {
+        left: 83.33333333%;
+    }
+    .BootstrapHack .col-lg-push-9 {
+        left: 75%;
+    }
+    .BootstrapHack .col-lg-push-8 {
+        left: 66.66666667%;
+    }
+    .BootstrapHack .col-lg-push-7 {
+        left: 58.33333333%;
+    }
+    .BootstrapHack .col-lg-push-6 {
+        left: 50%;
+    }
+    .BootstrapHack .col-lg-push-5 {
+        left: 41.66666667%;
+    }
+    .BootstrapHack .col-lg-push-4 {
+        left: 33.33333333%;
+    }
+    .BootstrapHack .col-lg-push-3 {
+        left: 25%;
+    }
+    .BootstrapHack .col-lg-push-2 {
+        left: 16.66666667%;
+    }
+    .BootstrapHack .col-lg-push-1 {
+        left: 8.33333333%;
+    }
+    .BootstrapHack .col-lg-push-0 {
+        left: auto;
+    }
+    .BootstrapHack .col-lg-offset-12 {
+        margin-left: 100%;
+    }
+    .BootstrapHack .col-lg-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    .BootstrapHack .col-lg-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    .BootstrapHack .col-lg-offset-9 {
+        margin-left: 75%;
+    }
+    .BootstrapHack .col-lg-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    .BootstrapHack .col-lg-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    .BootstrapHack .col-lg-offset-6 {
+        margin-left: 50%;
+    }
+    .BootstrapHack .col-lg-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    .BootstrapHack .col-lg-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    .BootstrapHack .col-lg-offset-3 {
+        margin-left: 25%;
+    }
+    .BootstrapHack .col-lg-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    .BootstrapHack .col-lg-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    .BootstrapHack .col-lg-offset-0 {
+        margin-left: 0;
+    }
+}
+
+.BootstrapHack table {
+    background-color: transparent;
+}
+
+.BootstrapHack caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777;
+    text-align: left;
+}
+
+.BootstrapHack th {
+    text-align: left;
+}
+
+.BootstrapHack .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.BootstrapHack .table > thead > tr > th,
+.BootstrapHack .table > tbody > tr > th,
+.BootstrapHack .table > tfoot > tr > th,
+.BootstrapHack .table > thead > tr > td,
+.BootstrapHack .table > tbody > tr > td,
+.BootstrapHack .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.BootstrapHack .table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+
+.BootstrapHack .table > caption + thead > tr:first-child > th,
+.BootstrapHack .table > colgroup + thead > tr:first-child > th,
+.BootstrapHack .table > thead:first-child > tr:first-child > th,
+.BootstrapHack .table > caption + thead > tr:first-child > td,
+.BootstrapHack .table > colgroup + thead > tr:first-child > td,
+.BootstrapHack .table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+
+.BootstrapHack .table > tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+
+.BootstrapHack .table .table {
+    background-color: #fff;
+}
+
+.BootstrapHack .table-condensed > thead > tr > th,
+.BootstrapHack .table-condensed > tbody > tr > th,
+.BootstrapHack .table-condensed > tfoot > tr > th,
+.BootstrapHack .table-condensed > thead > tr > td,
+.BootstrapHack .table-condensed > tbody > tr > td,
+.BootstrapHack .table-condensed > tfoot > tr > td {
+    padding: 5px;
+}
+
+.BootstrapHack .table-bordered {
+    border: 1px solid #ddd;
+}
+
+.BootstrapHack .table-bordered > thead > tr > th,
+.BootstrapHack .table-bordered > tbody > tr > th,
+.BootstrapHack .table-bordered > tfoot > tr > th,
+.BootstrapHack .table-bordered > thead > tr > td,
+.BootstrapHack .table-bordered > tbody > tr > td,
+.BootstrapHack .table-bordered > tfoot > tr > td {
+    border: 1px solid #ddd;
+}
+
+.BootstrapHack .table-bordered > thead > tr > th,
+.BootstrapHack .table-bordered > thead > tr > td {
+    border-bottom-width: 2px;
+}
+
+.BootstrapHack .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.BootstrapHack .table-hover > tbody > tr:hover {
+    background-color: #f5f5f5;
+}
+
+.BootstrapHack table col[class*="col-"] {
+    position: static;
+    display: table-column;
+    float: none;
+}
+
+.BootstrapHack table td[class*="col-"],
+.BootstrapHack table th[class*="col-"] {
+    position: static;
+    display: table-cell;
+    float: none;
+}
+
+.BootstrapHack .table > thead > tr > td.active,
+.BootstrapHack .table > tbody > tr > td.active,
+.BootstrapHack .table > tfoot > tr > td.active,
+.BootstrapHack .table > thead > tr > th.active,
+.BootstrapHack .table > tbody > tr > th.active,
+.BootstrapHack .table > tfoot > tr > th.active,
+.BootstrapHack .table > thead > tr.active > td,
+.BootstrapHack .table > tbody > tr.active > td,
+.BootstrapHack .table > tfoot > tr.active > td,
+.BootstrapHack .table > thead > tr.active > th,
+.BootstrapHack .table > tbody > tr.active > th,
+.BootstrapHack .table > tfoot > tr.active > th {
+    background-color: #f5f5f5;
+}
+
+.BootstrapHack .table-hover > tbody > tr > td.active:hover,
+.BootstrapHack .table-hover > tbody > tr > th.active:hover,
+.BootstrapHack .table-hover > tbody > tr.active:hover > td,
+.BootstrapHack .table-hover > tbody > tr:hover > .active,
+.BootstrapHack .table-hover > tbody > tr.active:hover > th {
+    background-color: #e8e8e8;
+}
+
+.BootstrapHack .table > thead > tr > td.success,
+.BootstrapHack .table > tbody > tr > td.success,
+.BootstrapHack .table > tfoot > tr > td.success,
+.BootstrapHack .table > thead > tr > th.success,
+.BootstrapHack .table > tbody > tr > th.success,
+.BootstrapHack .table > tfoot > tr > th.success,
+.BootstrapHack .table > thead > tr.success > td,
+.BootstrapHack .table > tbody > tr.success > td,
+.BootstrapHack .table > tfoot > tr.success > td,
+.BootstrapHack .table > thead > tr.success > th,
+.BootstrapHack .table > tbody > tr.success > th,
+.BootstrapHack .table > tfoot > tr.success > th {
+    background-color: #dff0d8;
+}
+
+.BootstrapHack .table-hover > tbody > tr > td.success:hover,
+.BootstrapHack .table-hover > tbody > tr > th.success:hover,
+.BootstrapHack .table-hover > tbody > tr.success:hover > td,
+.BootstrapHack .table-hover > tbody > tr:hover > .success,
+.BootstrapHack .table-hover > tbody > tr.success:hover > th {
+    background-color: #d0e9c6;
+}
+
+.BootstrapHack .table > thead > tr > td.info,
+.BootstrapHack .table > tbody > tr > td.info,
+.BootstrapHack .table > tfoot > tr > td.info,
+.BootstrapHack .table > thead > tr > th.info,
+.BootstrapHack .table > tbody > tr > th.info,
+.BootstrapHack .table > tfoot > tr > th.info,
+.BootstrapHack .table > thead > tr.info > td,
+.BootstrapHack .table > tbody > tr.info > td,
+.BootstrapHack .table > tfoot > tr.info > td,
+.BootstrapHack .table > thead > tr.info > th,
+.BootstrapHack .table > tbody > tr.info > th,
+.BootstrapHack .table > tfoot > tr.info > th {
+    background-color: #d9edf7;
+}
+
+.BootstrapHack .table-hover > tbody > tr > td.info:hover,
+.BootstrapHack .table-hover > tbody > tr > th.info:hover,
+.BootstrapHack .table-hover > tbody > tr.info:hover > td,
+.BootstrapHack .table-hover > tbody > tr:hover > .info,
+.BootstrapHack .table-hover > tbody > tr.info:hover > th {
+    background-color: #c4e3f3;
+}
+
+.BootstrapHack .table > thead > tr > td.warning,
+.BootstrapHack .table > tbody > tr > td.warning,
+.BootstrapHack .table > tfoot > tr > td.warning,
+.BootstrapHack .table > thead > tr > th.warning,
+.BootstrapHack .table > tbody > tr > th.warning,
+.BootstrapHack .table > tfoot > tr > th.warning,
+.BootstrapHack .table > thead > tr.warning > td,
+.BootstrapHack .table > tbody > tr.warning > td,
+.BootstrapHack .table > tfoot > tr.warning > td,
+.BootstrapHack .table > thead > tr.warning > th,
+.BootstrapHack .table > tbody > tr.warning > th,
+.BootstrapHack .table > tfoot > tr.warning > th {
+    background-color: #fcf8e3;
+}
+
+.BootstrapHack .table-hover > tbody > tr > td.warning:hover,
+.BootstrapHack .table-hover > tbody > tr > th.warning:hover,
+.BootstrapHack .table-hover > tbody > tr.warning:hover > td,
+.BootstrapHack .table-hover > tbody > tr:hover > .warning,
+.BootstrapHack .table-hover > tbody > tr.warning:hover > th {
+    background-color: #faf2cc;
+}
+
+.BootstrapHack .table > thead > tr > td.danger,
+.BootstrapHack .table > tbody > tr > td.danger,
+.BootstrapHack .table > tfoot > tr > td.danger,
+.BootstrapHack .table > thead > tr > th.danger,
+.BootstrapHack .table > tbody > tr > th.danger,
+.BootstrapHack .table > tfoot > tr > th.danger,
+.BootstrapHack .table > thead > tr.danger > td,
+.BootstrapHack .table > tbody > tr.danger > td,
+.BootstrapHack .table > tfoot > tr.danger > td,
+.BootstrapHack .table > thead > tr.danger > th,
+.BootstrapHack .table > tbody > tr.danger > th,
+.BootstrapHack .table > tfoot > tr.danger > th {
+    background-color: #f2dede;
+}
+
+.BootstrapHack .table-hover > tbody > tr > td.danger:hover,
+.BootstrapHack .table-hover > tbody > tr > th.danger:hover,
+.BootstrapHack .table-hover > tbody > tr.danger:hover > td,
+.BootstrapHack .table-hover > tbody > tr:hover > .danger,
+.BootstrapHack .table-hover > tbody > tr.danger:hover > th {
+    background-color: #ebcccc;
+}
+
+.BootstrapHack .table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .BootstrapHack .table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+    }
+    .BootstrapHack .table-responsive > .table {
+        margin-bottom: 0;
+    }
+    .BootstrapHack .table-responsive > .table > thead > tr > th,
+    .BootstrapHack .table-responsive > .table > tbody > tr > th,
+    .BootstrapHack .table-responsive > .table > tfoot > tr > th,
+    .BootstrapHack .table-responsive > .table > thead > tr > td,
+    .BootstrapHack .table-responsive > .table > tbody > tr > td,
+    .BootstrapHack .table-responsive > .table > tfoot > tr > td {
+        white-space: nowrap;
+    }
+    .BootstrapHack .table-responsive > .table-bordered {
+        border: 0;
+    }
+    .BootstrapHack .table-responsive > .table-bordered > thead > tr > th:first-child,
+    .BootstrapHack .table-responsive > .table-bordered > tbody > tr > th:first-child,
+    .BootstrapHack .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+    .BootstrapHack .table-responsive > .table-bordered > thead > tr > td:first-child,
+    .BootstrapHack .table-responsive > .table-bordered > tbody > tr > td:first-child,
+    .BootstrapHack .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+        border-left: 0;
+    }
+    .BootstrapHack .table-responsive > .table-bordered > thead > tr > th:last-child,
+    .BootstrapHack .table-responsive > .table-bordered > tbody > tr > th:last-child,
+    .BootstrapHack .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+    .BootstrapHack .table-responsive > .table-bordered > thead > tr > td:last-child,
+    .BootstrapHack .table-responsive > .table-bordered > tbody > tr > td:last-child,
+    .BootstrapHack .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+        border-right: 0;
+    }
+    .BootstrapHack .table-responsive > .table-bordered > tbody > tr:last-child > th,
+    .BootstrapHack .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+    .BootstrapHack .table-responsive > .table-bordered > tbody > tr:last-child > td,
+    .BootstrapHack .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+        border-bottom: 0;
+    }
+}
+
+.BootstrapHack fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.BootstrapHack legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.BootstrapHack label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.BootstrapHack input[type="search"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.BootstrapHack input[type="radio"],
+.BootstrapHack input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+
+.BootstrapHack input[type="file"] {
+    display: block;
+}
+
+.BootstrapHack input[type="range"] {
+    display: block;
+    width: 100%;
+}
+
+.BootstrapHack select[multiple],
+.BootstrapHack select[size] {
+    height: auto;
+}
+
+.BootstrapHack input[type="file"]:focus,
+.BootstrapHack input[type="radio"]:focus,
+.BootstrapHack input[type="checkbox"]:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.BootstrapHack output {
+    display: block;
+    padding-top: 7px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+
+.BootstrapHack .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.BootstrapHack .form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.BootstrapHack .form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.BootstrapHack .form-control:-ms-input-placeholder {
+    color: #999;
+}
+
+.BootstrapHack .form-control::-webkit-input-placeholder {
+    color: #999;
+}
+
+.BootstrapHack .form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+
+.BootstrapHack .form-control[disabled],
+.BootstrapHack .form-control[readonly],
+.BootstrapHack fieldset[disabled] .form-control {
+    background-color: #eee;
+    opacity: 1;
+}
+
+.BootstrapHack .form-control[disabled],
+.BootstrapHack fieldset[disabled] .form-control {
+    cursor: not-allowed;
+}
+
+.BootstrapHack textarea.form-control {
+    height: auto;
+}
+
+.BootstrapHack input[type="search"] {
+    -webkit-appearance: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .BootstrapHack input[type="date"].form-control,
+    .BootstrapHack input[type="time"].form-control,
+    .BootstrapHack input[type="datetime-local"].form-control,
+    .BootstrapHack input[type="month"].form-control {
+        line-height: 34px;
+    }
+    .BootstrapHack input[type="date"].input-sm,
+    .BootstrapHack input[type="time"].input-sm,
+    .BootstrapHack input[type="datetime-local"].input-sm,
+    .BootstrapHack input[type="month"].input-sm,
+    .BootstrapHack .input-group-sm input[type="date"],
+    .BootstrapHack .input-group-sm input[type="time"],
+    .BootstrapHack .input-group-sm input[type="datetime-local"],
+    .BootstrapHack .input-group-sm input[type="month"] {
+        line-height: 30px;
+    }
+    .BootstrapHack input[type="date"].input-lg,
+    .BootstrapHack input[type="time"].input-lg,
+    .BootstrapHack input[type="datetime-local"].input-lg,
+    .BootstrapHack input[type="month"].input-lg,
+    .BootstrapHack .input-group-lg input[type="date"],
+    .BootstrapHack .input-group-lg input[type="time"],
+    .BootstrapHack .input-group-lg input[type="datetime-local"],
+    .BootstrapHack .input-group-lg input[type="month"] {
+        line-height: 46px;
+    }
+}
+
+.BootstrapHack .form-group {
+    margin-bottom: 15px;
+}
+
+.BootstrapHack .radio,
+.BootstrapHack .checkbox {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.BootstrapHack .radio label,
+.BootstrapHack .checkbox label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.BootstrapHack .radio input[type="radio"],
+.BootstrapHack .radio-inline input[type="radio"],
+.BootstrapHack .checkbox input[type="checkbox"],
+.BootstrapHack .checkbox-inline input[type="checkbox"] {
+    position: absolute;
+    margin-top: 4px \9;
+    margin-left: -20px;
+}
+
+.BootstrapHack .radio + .radio,
+.BootstrapHack .checkbox + .checkbox {
+    margin-top: -5px;
+}
+
+.BootstrapHack .radio-inline,
+.BootstrapHack .checkbox-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.BootstrapHack .radio-inline + .radio-inline,
+.BootstrapHack .checkbox-inline + .checkbox-inline {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.BootstrapHack input[type="radio"][disabled],
+.BootstrapHack input[type="checkbox"][disabled],
+.BootstrapHack input[type="radio"].disabled,
+.BootstrapHack input[type="checkbox"].disabled,
+.BootstrapHack fieldset[disabled] input[type="radio"],
+.BootstrapHack fieldset[disabled] input[type="checkbox"] {
+    cursor: not-allowed;
+}
+
+.BootstrapHack .radio-inline.disabled,
+.BootstrapHack .checkbox-inline.disabled,
+.BootstrapHack fieldset[disabled] .radio-inline,
+.BootstrapHack fieldset[disabled] .checkbox-inline {
+    cursor: not-allowed;
+}
+
+.BootstrapHack .radio.disabled label,
+.BootstrapHack .checkbox.disabled label,
+.BootstrapHack fieldset[disabled] .radio label,
+.BootstrapHack fieldset[disabled] .checkbox label {
+    cursor: not-allowed;
+}
+
+.BootstrapHack .form-control-static {
+    min-height: 34px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 0;
+}
+
+.BootstrapHack .form-control-static.input-lg,
+.BootstrapHack .form-control-static.input-sm {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.BootstrapHack .input-sm {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.BootstrapHack select.input-sm {
+    height: 30px;
+    line-height: 30px;
+}
+
+.BootstrapHack textarea.input-sm,
+.BootstrapHack select[multiple].input-sm {
+    height: auto;
+}
+
+.BootstrapHack .form-group-sm .form-control {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.BootstrapHack .form-group-sm select.form-control {
+    height: 30px;
+    line-height: 30px;
+}
+
+.BootstrapHack .form-group-sm textarea.form-control,
+.BootstrapHack .form-group-sm select[multiple].form-control {
+    height: auto;
+}
+
+.BootstrapHack .form-group-sm .form-control-static {
+    height: 30px;
+    min-height: 32px;
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.BootstrapHack .input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.BootstrapHack select.input-lg {
+    height: 46px;
+    line-height: 46px;
+}
+
+.BootstrapHack textarea.input-lg,
+.BootstrapHack select[multiple].input-lg {
+    height: auto;
+}
+
+.BootstrapHack .form-group-lg .form-control {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.BootstrapHack .form-group-lg select.form-control {
+    height: 46px;
+    line-height: 46px;
+}
+
+.BootstrapHack .form-group-lg textarea.form-control,
+.BootstrapHack .form-group-lg select[multiple].form-control {
+    height: auto;
+}
+
+.BootstrapHack .form-group-lg .form-control-static {
+    height: 46px;
+    min-height: 38px;
+    padding: 11px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+
+.BootstrapHack .has-feedback {
+    position: relative;
+}
+
+.BootstrapHack .has-feedback .form-control {
+    padding-right: 42.5px;
+}
+
+.BootstrapHack .form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.BootstrapHack .input-lg + .form-control-feedback,
+.BootstrapHack .input-group-lg + .form-control-feedback,
+.BootstrapHack .form-group-lg .form-control + .form-control-feedback {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.BootstrapHack .input-sm + .form-control-feedback,
+.BootstrapHack .input-group-sm + .form-control-feedback,
+.BootstrapHack .form-group-sm .form-control + .form-control-feedback {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.BootstrapHack .has-success .help-block,
+.BootstrapHack .has-success .control-label,
+.BootstrapHack .has-success .radio,
+.BootstrapHack .has-success .checkbox,
+.BootstrapHack .has-success .radio-inline,
+.BootstrapHack .has-success .checkbox-inline,
+.BootstrapHack .has-success.radio label,
+.BootstrapHack .has-success.checkbox label,
+.BootstrapHack .has-success.radio-inline label,
+.BootstrapHack .has-success.checkbox-inline label {
+    color: #3c763d;
+}
+
+.BootstrapHack .has-success .form-control {
+    border-color: #3c763d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.BootstrapHack .has-success .form-control:focus {
+    border-color: #2b542c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+}
+
+.BootstrapHack .has-success .input-group-addon {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #3c763d;
+}
+
+.BootstrapHack .has-success .form-control-feedback {
+    color: #3c763d;
+}
+
+.BootstrapHack .has-warning .help-block,
+.BootstrapHack .has-warning .control-label,
+.BootstrapHack .has-warning .radio,
+.BootstrapHack .has-warning .checkbox,
+.BootstrapHack .has-warning .radio-inline,
+.BootstrapHack .has-warning .checkbox-inline,
+.BootstrapHack .has-warning.radio label,
+.BootstrapHack .has-warning.checkbox label,
+.BootstrapHack .has-warning.radio-inline label,
+.BootstrapHack .has-warning.checkbox-inline label {
+    color: #8a6d3b;
+}
+
+.BootstrapHack .has-warning .form-control {
+    border-color: #8a6d3b;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.BootstrapHack .has-warning .form-control:focus {
+    border-color: #66512c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+}
+
+.BootstrapHack .has-warning .input-group-addon {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #8a6d3b;
+}
+
+.BootstrapHack .has-warning .form-control-feedback {
+    color: #8a6d3b;
+}
+
+.BootstrapHack .has-error .help-block,
+.BootstrapHack .has-error .control-label,
+.BootstrapHack .has-error .radio,
+.BootstrapHack .has-error .checkbox,
+.BootstrapHack .has-error .radio-inline,
+.BootstrapHack .has-error .checkbox-inline,
+.BootstrapHack .has-error.radio label,
+.BootstrapHack .has-error.checkbox label,
+.BootstrapHack .has-error.radio-inline label,
+.BootstrapHack .has-error.checkbox-inline label {
+    color: #a94442;
+}
+
+.BootstrapHack .has-error .form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.BootstrapHack .has-error .form-control:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+
+.BootstrapHack .has-error .input-group-addon {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #a94442;
+}
+
+.BootstrapHack .has-error .form-control-feedback {
+    color: #a94442;
+}
+
+.BootstrapHack .has-feedback label ~ .form-control-feedback {
+    top: 25px;
+}
+
+.BootstrapHack .has-feedback label.sr-only ~ .form-control-feedback {
+    top: 0;
+}
+
+.BootstrapHack .help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .form-inline .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .BootstrapHack .form-inline .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+    .BootstrapHack .form-inline .form-control-static {
+        display: inline-block;
+    }
+    .BootstrapHack .form-inline .input-group {
+        display: inline-table;
+        vertical-align: middle;
+    }
+    .BootstrapHack .form-inline .input-group .input-group-addon,
+    .BootstrapHack .form-inline .input-group .input-group-btn,
+    .BootstrapHack .form-inline .input-group .form-control {
+        width: auto;
+    }
+    .BootstrapHack .form-inline .input-group > .form-control {
+        width: 100%;
+    }
+    .BootstrapHack .form-inline .control-label {
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .BootstrapHack .form-inline .radio,
+    .BootstrapHack .form-inline .checkbox {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .BootstrapHack .form-inline .radio label,
+    .BootstrapHack .form-inline .checkbox label {
+        padding-left: 0;
+    }
+    .BootstrapHack .form-inline .radio input[type="radio"],
+    .BootstrapHack .form-inline .checkbox input[type="checkbox"] {
+        position: relative;
+        margin-left: 0;
+    }
+    .BootstrapHack .form-inline .has-feedback .form-control-feedback {
+        top: 0;
+    }
+}
+
+.BootstrapHack .form-horizontal .radio,
+.BootstrapHack .form-horizontal .checkbox,
+.BootstrapHack .form-horizontal .radio-inline,
+.BootstrapHack .form-horizontal .checkbox-inline {
+    padding-top: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.BootstrapHack .form-horizontal .radio,
+.BootstrapHack .form-horizontal .checkbox {
+    min-height: 27px;
+}
+
+.BootstrapHack .form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .form-horizontal .control-label {
+        padding-top: 7px;
+        margin-bottom: 0;
+        text-align: right;
+    }
+}
+
+.BootstrapHack .form-horizontal .has-feedback .form-control-feedback {
+    right: 15px;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .form-horizontal .form-group-lg .control-label {
+        padding-top: 11px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .form-horizontal .form-group-sm .control-label {
+        padding-top: 6px;
+        font-size: 12px;
+    }
+}
+
+.BootstrapHack .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.BootstrapHack .btn:focus,
+.BootstrapHack .btn:active:focus,
+.BootstrapHack .btn.active:focus,
+.BootstrapHack .btn.focus,
+.BootstrapHack .btn:active.focus,
+.BootstrapHack .btn.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.BootstrapHack .btn:hover,
+.BootstrapHack .btn:focus,
+.BootstrapHack .btn.focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.BootstrapHack .btn:active,
+.BootstrapHack .btn.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.BootstrapHack .btn.disabled,
+.BootstrapHack .btn[disabled],
+.BootstrapHack fieldset[disabled] .btn {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}
+
+.BootstrapHack a.btn.disabled,
+.BootstrapHack fieldset[disabled] a.btn {
+    pointer-events: none;
+}
+
+.BootstrapHack .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.BootstrapHack .btn-default:focus,
+.BootstrapHack .btn-default.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+
+.BootstrapHack .btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.BootstrapHack .btn-default:active,
+.BootstrapHack .btn-default.active,
+.BootstrapHack .open > .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.BootstrapHack .btn-default:active:hover,
+.BootstrapHack .btn-default.active:hover,
+.BootstrapHack .open > .dropdown-toggle.btn-default:hover,
+.BootstrapHack .btn-default:active:focus,
+.BootstrapHack .btn-default.active:focus,
+.BootstrapHack .open > .dropdown-toggle.btn-default:focus,
+.BootstrapHack .btn-default:active.focus,
+.BootstrapHack .btn-default.active.focus,
+.BootstrapHack .open > .dropdown-toggle.btn-default.focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+
+.BootstrapHack .btn-default:active,
+.BootstrapHack .btn-default.active,
+.BootstrapHack .open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+
+.BootstrapHack .btn-default.disabled:hover,
+.BootstrapHack .btn-default[disabled]:hover,
+.BootstrapHack fieldset[disabled] .btn-default:hover,
+.BootstrapHack .btn-default.disabled:focus,
+.BootstrapHack .btn-default[disabled]:focus,
+.BootstrapHack fieldset[disabled] .btn-default:focus,
+.BootstrapHack .btn-default.disabled.focus,
+.BootstrapHack .btn-default[disabled].focus,
+.BootstrapHack fieldset[disabled] .btn-default.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.BootstrapHack .btn-default .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+.BootstrapHack .btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.BootstrapHack .btn-primary:focus,
+.BootstrapHack .btn-primary.focus {
+    color: #fff;
+    background-color: #286090;
+    border-color: #122b40;
+}
+
+.BootstrapHack .btn-primary:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.BootstrapHack .btn-primary:active,
+.BootstrapHack .btn-primary.active,
+.BootstrapHack .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.BootstrapHack .btn-primary:active:hover,
+.BootstrapHack .btn-primary.active:hover,
+.BootstrapHack .open > .dropdown-toggle.btn-primary:hover,
+.BootstrapHack .btn-primary:active:focus,
+.BootstrapHack .btn-primary.active:focus,
+.BootstrapHack .open > .dropdown-toggle.btn-primary:focus,
+.BootstrapHack .btn-primary:active.focus,
+.BootstrapHack .btn-primary.active.focus,
+.BootstrapHack .open > .dropdown-toggle.btn-primary.focus {
+    color: #fff;
+    background-color: #204d74;
+    border-color: #122b40;
+}
+
+.BootstrapHack .btn-primary:active,
+.BootstrapHack .btn-primary.active,
+.BootstrapHack .open > .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.BootstrapHack .btn-primary.disabled:hover,
+.BootstrapHack .btn-primary[disabled]:hover,
+.BootstrapHack fieldset[disabled] .btn-primary:hover,
+.BootstrapHack .btn-primary.disabled:focus,
+.BootstrapHack .btn-primary[disabled]:focus,
+.BootstrapHack fieldset[disabled] .btn-primary:focus,
+.BootstrapHack .btn-primary.disabled.focus,
+.BootstrapHack .btn-primary[disabled].focus,
+.BootstrapHack fieldset[disabled] .btn-primary.focus {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.BootstrapHack .btn-primary .badge {
+    color: #337ab7;
+    background-color: #fff;
+}
+
+.BootstrapHack .btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.BootstrapHack .btn-success:focus,
+.BootstrapHack .btn-success.focus {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #255625;
+}
+
+.BootstrapHack .btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.BootstrapHack .btn-success:active,
+.BootstrapHack .btn-success.active,
+.BootstrapHack .open > .dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.BootstrapHack .btn-success:active:hover,
+.BootstrapHack .btn-success.active:hover,
+.BootstrapHack .open > .dropdown-toggle.btn-success:hover,
+.BootstrapHack .btn-success:active:focus,
+.BootstrapHack .btn-success.active:focus,
+.BootstrapHack .open > .dropdown-toggle.btn-success:focus,
+.BootstrapHack .btn-success:active.focus,
+.BootstrapHack .btn-success.active.focus,
+.BootstrapHack .open > .dropdown-toggle.btn-success.focus {
+    color: #fff;
+    background-color: #398439;
+    border-color: #255625;
+}
+
+.BootstrapHack .btn-success:active,
+.BootstrapHack .btn-success.active,
+.BootstrapHack .open > .dropdown-toggle.btn-success {
+    background-image: none;
+}
+
+.BootstrapHack .btn-success.disabled:hover,
+.BootstrapHack .btn-success[disabled]:hover,
+.BootstrapHack fieldset[disabled] .btn-success:hover,
+.BootstrapHack .btn-success.disabled:focus,
+.BootstrapHack .btn-success[disabled]:focus,
+.BootstrapHack fieldset[disabled] .btn-success:focus,
+.BootstrapHack .btn-success.disabled.focus,
+.BootstrapHack .btn-success[disabled].focus,
+.BootstrapHack fieldset[disabled] .btn-success.focus {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.BootstrapHack .btn-success .badge {
+    color: #5cb85c;
+    background-color: #fff;
+}
+
+.BootstrapHack .btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.BootstrapHack .btn-info:focus,
+.BootstrapHack .btn-info.focus {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #1b6d85;
+}
+
+.BootstrapHack .btn-info:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.BootstrapHack .btn-info:active,
+.BootstrapHack .btn-info.active,
+.BootstrapHack .open > .dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.BootstrapHack .btn-info:active:hover,
+.BootstrapHack .btn-info.active:hover,
+.BootstrapHack .open > .dropdown-toggle.btn-info:hover,
+.BootstrapHack .btn-info:active:focus,
+.BootstrapHack .btn-info.active:focus,
+.BootstrapHack .open > .dropdown-toggle.btn-info:focus,
+.BootstrapHack .btn-info:active.focus,
+.BootstrapHack .btn-info.active.focus,
+.BootstrapHack .open > .dropdown-toggle.btn-info.focus {
+    color: #fff;
+    background-color: #269abc;
+    border-color: #1b6d85;
+}
+
+.BootstrapHack .btn-info:active,
+.BootstrapHack .btn-info.active,
+.BootstrapHack .open > .dropdown-toggle.btn-info {
+    background-image: none;
+}
+
+.BootstrapHack .btn-info.disabled:hover,
+.BootstrapHack .btn-info[disabled]:hover,
+.BootstrapHack fieldset[disabled] .btn-info:hover,
+.BootstrapHack .btn-info.disabled:focus,
+.BootstrapHack .btn-info[disabled]:focus,
+.BootstrapHack fieldset[disabled] .btn-info:focus,
+.BootstrapHack .btn-info.disabled.focus,
+.BootstrapHack .btn-info[disabled].focus,
+.BootstrapHack fieldset[disabled] .btn-info.focus {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.BootstrapHack .btn-info .badge {
+    color: #5bc0de;
+    background-color: #fff;
+}
+
+.BootstrapHack .btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.BootstrapHack .btn-warning:focus,
+.BootstrapHack .btn-warning.focus {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #985f0d;
+}
+
+.BootstrapHack .btn-warning:hover {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.BootstrapHack .btn-warning:active,
+.BootstrapHack .btn-warning.active,
+.BootstrapHack .open > .dropdown-toggle.btn-warning {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.BootstrapHack .btn-warning:active:hover,
+.BootstrapHack .btn-warning.active:hover,
+.BootstrapHack .open > .dropdown-toggle.btn-warning:hover,
+.BootstrapHack .btn-warning:active:focus,
+.BootstrapHack .btn-warning.active:focus,
+.BootstrapHack .open > .dropdown-toggle.btn-warning:focus,
+.BootstrapHack .btn-warning:active.focus,
+.BootstrapHack .btn-warning.active.focus,
+.BootstrapHack .open > .dropdown-toggle.btn-warning.focus {
+    color: #fff;
+    background-color: #d58512;
+    border-color: #985f0d;
+}
+
+.BootstrapHack .btn-warning:active,
+.BootstrapHack .btn-warning.active,
+.BootstrapHack .open > .dropdown-toggle.btn-warning {
+    background-image: none;
+}
+
+.BootstrapHack .btn-warning.disabled:hover,
+.BootstrapHack .btn-warning[disabled]:hover,
+.BootstrapHack fieldset[disabled] .btn-warning:hover,
+.BootstrapHack .btn-warning.disabled:focus,
+.BootstrapHack .btn-warning[disabled]:focus,
+.BootstrapHack fieldset[disabled] .btn-warning:focus,
+.BootstrapHack .btn-warning.disabled.focus,
+.BootstrapHack .btn-warning[disabled].focus,
+.BootstrapHack fieldset[disabled] .btn-warning.focus {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.BootstrapHack .btn-warning .badge {
+    color: #f0ad4e;
+    background-color: #fff;
+}
+
+.BootstrapHack .btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.BootstrapHack .btn-danger:focus,
+.BootstrapHack .btn-danger.focus {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #761c19;
+}
+
+.BootstrapHack .btn-danger:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.BootstrapHack .btn-danger:active,
+.BootstrapHack .btn-danger.active,
+.BootstrapHack .open > .dropdown-toggle.btn-danger {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.BootstrapHack .btn-danger:active:hover,
+.BootstrapHack .btn-danger.active:hover,
+.BootstrapHack .open > .dropdown-toggle.btn-danger:hover,
+.BootstrapHack .btn-danger:active:focus,
+.BootstrapHack .btn-danger.active:focus,
+.BootstrapHack .open > .dropdown-toggle.btn-danger:focus,
+.BootstrapHack .btn-danger:active.focus,
+.BootstrapHack .btn-danger.active.focus,
+.BootstrapHack .open > .dropdown-toggle.btn-danger.focus {
+    color: #fff;
+    background-color: #ac2925;
+    border-color: #761c19;
+}
+
+.BootstrapHack .btn-danger:active,
+.BootstrapHack .btn-danger.active,
+.BootstrapHack .open > .dropdown-toggle.btn-danger {
+    background-image: none;
+}
+
+.BootstrapHack .btn-danger.disabled:hover,
+.BootstrapHack .btn-danger[disabled]:hover,
+.BootstrapHack fieldset[disabled] .btn-danger:hover,
+.BootstrapHack .btn-danger.disabled:focus,
+.BootstrapHack .btn-danger[disabled]:focus,
+.BootstrapHack fieldset[disabled] .btn-danger:focus,
+.BootstrapHack .btn-danger.disabled.focus,
+.BootstrapHack .btn-danger[disabled].focus,
+.BootstrapHack fieldset[disabled] .btn-danger.focus {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.BootstrapHack .btn-danger .badge {
+    color: #d9534f;
+    background-color: #fff;
+}
+
+.BootstrapHack .btn-link {
+    font-weight: normal;
+    color: #337ab7;
+    border-radius: 0;
+}
+
+.BootstrapHack .btn-link,
+.BootstrapHack .btn-link:active,
+.BootstrapHack .btn-link.active,
+.BootstrapHack .btn-link[disabled],
+.BootstrapHack fieldset[disabled] .btn-link {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.BootstrapHack .btn-link,
+.BootstrapHack .btn-link:hover,
+.BootstrapHack .btn-link:focus,
+.BootstrapHack .btn-link:active {
+    border-color: transparent;
+}
+
+.BootstrapHack .btn-link:hover,
+.BootstrapHack .btn-link:focus {
+    color: #23527c;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.BootstrapHack .btn-link[disabled]:hover,
+.BootstrapHack fieldset[disabled] .btn-link:hover,
+.BootstrapHack .btn-link[disabled]:focus,
+.BootstrapHack fieldset[disabled] .btn-link:focus {
+    color: #777;
+    text-decoration: none;
+}
+
+.BootstrapHack .btn-lg,
+.BootstrapHack .btn-group-lg > .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.BootstrapHack .btn-sm,
+.BootstrapHack .btn-group-sm > .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.BootstrapHack .btn-xs,
+.BootstrapHack .btn-group-xs > .btn {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.BootstrapHack .btn-block {
+    display: block;
+    width: 100%;
+}
+
+.BootstrapHack .btn-block + .btn-block {
+    margin-top: 5px;
+}
+
+.BootstrapHack input[type="submit"].btn-block,
+.BootstrapHack input[type="reset"].btn-block,
+.BootstrapHack input[type="button"].btn-block {
+    width: 100%;
+}
+
+.BootstrapHack .fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.BootstrapHack .fade.in {
+    opacity: 1;
+}
+
+.BootstrapHack .collapse {
+    display: none;
+}
+
+.BootstrapHack .collapse.in {
+    display: block;
+}
+
+.BootstrapHack tr.collapse.in {
+    display: table-row;
+}
+
+.BootstrapHack tbody.collapse.in {
+    display: table-row-group;
+}
+
+.BootstrapHack .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: .35s;
+    -o-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-property: height, visibility;
+    -o-transition-property: height, visibility;
+    transition-property: height, visibility;
+}
+
+.BootstrapHack .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.BootstrapHack .dropup,
+.BootstrapHack .dropdown {
+    position: relative;
+}
+
+.BootstrapHack .dropdown-toggle:focus {
+    outline: 0;
+}
+
+.BootstrapHack .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.BootstrapHack .dropdown-menu.pull-right {
+    right: 0;
+    left: auto;
+}
+
+.BootstrapHack .dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.BootstrapHack .dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.BootstrapHack .dropdown-menu > li > a:hover,
+.BootstrapHack .dropdown-menu > li > a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.BootstrapHack .dropdown-menu > .active > a,
+.BootstrapHack .dropdown-menu > .active > a:hover,
+.BootstrapHack .dropdown-menu > .active > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #337ab7;
+    outline: 0;
+}
+
+.BootstrapHack .dropdown-menu > .disabled > a,
+.BootstrapHack .dropdown-menu > .disabled > a:hover,
+.BootstrapHack .dropdown-menu > .disabled > a:focus {
+    color: #777;
+}
+
+.BootstrapHack .dropdown-menu > .disabled > a:hover,
+.BootstrapHack .dropdown-menu > .disabled > a:focus {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+    background-image: none;
+}
+
+.BootstrapHack .open > .dropdown-menu {
+    display: block;
+}
+
+.BootstrapHack .open > a {
+    outline: 0;
+}
+
+.BootstrapHack .dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+.BootstrapHack .dropdown-menu-left {
+    right: auto;
+    left: 0;
+}
+
+.BootstrapHack .dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #777;
+    white-space: nowrap;
+}
+
+.BootstrapHack .dropdown-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 990;
+}
+
+.BootstrapHack .pull-right > .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.BootstrapHack .dropup .caret,
+.BootstrapHack .navbar-fixed-bottom .dropdown .caret {
+    content: "";
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid \9;
+}
+
+.BootstrapHack .dropup .dropdown-menu,
+.BootstrapHack .navbar-fixed-bottom .dropdown .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 2px;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-right .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+    .BootstrapHack .navbar-right .dropdown-menu-left {
+        right: auto;
+        left: 0;
+    }
+}
+
+.BootstrapHack .btn-group,
+.BootstrapHack .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.BootstrapHack .btn-group > .btn,
+.BootstrapHack .btn-group-vertical > .btn {
+    position: relative;
+    float: left;
+}
+
+.BootstrapHack .btn-group > .btn:hover,
+.BootstrapHack .btn-group-vertical > .btn:hover,
+.BootstrapHack .btn-group > .btn:focus,
+.BootstrapHack .btn-group-vertical > .btn:focus,
+.BootstrapHack .btn-group > .btn:active,
+.BootstrapHack .btn-group-vertical > .btn:active,
+.BootstrapHack .btn-group > .btn.active,
+.BootstrapHack .btn-group-vertical > .btn.active {
+    z-index: 2;
+}
+
+.BootstrapHack .btn-group .btn + .btn,
+.BootstrapHack .btn-group .btn + .btn-group,
+.BootstrapHack .btn-group .btn-group + .btn,
+.BootstrapHack .btn-group .btn-group + .btn-group {
+    margin-left: -1px;
+}
+
+.BootstrapHack .btn-toolbar {
+    margin-left: -5px;
+}
+
+.BootstrapHack .btn-toolbar .btn,
+.BootstrapHack .btn-toolbar .btn-group,
+.BootstrapHack .btn-toolbar .input-group {
+    float: left;
+}
+
+.BootstrapHack .btn-toolbar > .btn,
+.BootstrapHack .btn-toolbar > .btn-group,
+.BootstrapHack .btn-toolbar > .input-group {
+    margin-left: 5px;
+}
+
+.BootstrapHack .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0;
+}
+
+.BootstrapHack .btn-group > .btn:first-child {
+    margin-left: 0;
+}
+
+.BootstrapHack .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.BootstrapHack .btn-group > .btn:last-child:not(:first-child),
+.BootstrapHack .btn-group > .dropdown-toggle:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.BootstrapHack .btn-group > .btn-group {
+    float: left;
+}
+
+.BootstrapHack .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+    border-radius: 0;
+}
+
+.BootstrapHack .btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.BootstrapHack .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.BootstrapHack .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.BootstrapHack .btn-group .dropdown-toggle:active,
+.BootstrapHack .btn-group.open .dropdown-toggle {
+    outline: 0;
+}
+
+.BootstrapHack .btn-group > .btn + .dropdown-toggle {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.BootstrapHack .btn-group > .btn-lg + .dropdown-toggle {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.BootstrapHack .btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.BootstrapHack .btn-group.open .dropdown-toggle.btn-link {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.BootstrapHack .btn .caret {
+    margin-left: 0;
+}
+
+.BootstrapHack .btn-lg .caret {
+    border-width: 5px 5px 0;
+    border-bottom-width: 0;
+}
+
+.BootstrapHack .dropup .btn-lg .caret {
+    border-width: 0 5px 5px;
+}
+
+.BootstrapHack .btn-group-vertical > .btn,
+.BootstrapHack .btn-group-vertical > .btn-group,
+.BootstrapHack .btn-group-vertical > .btn-group > .btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+}
+
+.BootstrapHack .btn-group-vertical > .btn-group > .btn {
+    float: none;
+}
+
+.BootstrapHack .btn-group-vertical > .btn + .btn,
+.BootstrapHack .btn-group-vertical > .btn + .btn-group,
+.BootstrapHack .btn-group-vertical > .btn-group + .btn,
+.BootstrapHack .btn-group-vertical > .btn-group + .btn-group {
+    margin-top: -1px;
+    margin-left: 0;
+}
+
+.BootstrapHack .btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+
+.BootstrapHack .btn-group-vertical > .btn:first-child:not(:last-child) {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.BootstrapHack .btn-group-vertical > .btn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.BootstrapHack .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+    border-radius: 0;
+}
+
+.BootstrapHack .btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.BootstrapHack .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.BootstrapHack .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.BootstrapHack .btn-group-justified {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+
+.BootstrapHack .btn-group-justified > .btn,
+.BootstrapHack .btn-group-justified > .btn-group {
+    display: table-cell;
+    float: none;
+    width: 1%;
+}
+
+.BootstrapHack .btn-group-justified > .btn-group .btn {
+    width: 100%;
+}
+
+.BootstrapHack .btn-group-justified > .btn-group .dropdown-menu {
+    left: auto;
+}
+
+.BootstrapHack [data-toggle="buttons"] > .btn input[type="radio"],
+.BootstrapHack [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+.BootstrapHack [data-toggle="buttons"] > .btn input[type="checkbox"],
+.BootstrapHack [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+.BootstrapHack .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.BootstrapHack .input-group[class*="col-"] {
+    float: none;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.BootstrapHack .input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.BootstrapHack .input-group .form-control:focus {
+    z-index: 3;
+}
+
+.BootstrapHack .input-group-lg > .form-control,
+.BootstrapHack .input-group-lg > .input-group-addon,
+.BootstrapHack .input-group-lg > .input-group-btn > .btn {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.BootstrapHack select.input-group-lg > .form-control,
+.BootstrapHack select.input-group-lg > .input-group-addon,
+.BootstrapHack select.input-group-lg > .input-group-btn > .btn {
+    height: 46px;
+    line-height: 46px;
+}
+
+.BootstrapHack textarea.input-group-lg > .form-control,
+.BootstrapHack textarea.input-group-lg > .input-group-addon,
+.BootstrapHack textarea.input-group-lg > .input-group-btn > .btn,
+.BootstrapHack select[multiple].input-group-lg > .form-control,
+.BootstrapHack select[multiple].input-group-lg > .input-group-addon,
+.BootstrapHack select[multiple].input-group-lg > .input-group-btn > .btn {
+    height: auto;
+}
+
+.BootstrapHack .input-group-sm > .form-control,
+.BootstrapHack .input-group-sm > .input-group-addon,
+.BootstrapHack .input-group-sm > .input-group-btn > .btn {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.BootstrapHack select.input-group-sm > .form-control,
+.BootstrapHack select.input-group-sm > .input-group-addon,
+.BootstrapHack select.input-group-sm > .input-group-btn > .btn {
+    height: 30px;
+    line-height: 30px;
+}
+
+.BootstrapHack textarea.input-group-sm > .form-control,
+.BootstrapHack textarea.input-group-sm > .input-group-addon,
+.BootstrapHack textarea.input-group-sm > .input-group-btn > .btn,
+.BootstrapHack select[multiple].input-group-sm > .form-control,
+.BootstrapHack select[multiple].input-group-sm > .input-group-addon,
+.BootstrapHack select[multiple].input-group-sm > .input-group-btn > .btn {
+    height: auto;
+}
+
+.BootstrapHack .input-group-addon,
+.BootstrapHack .input-group-btn,
+.BootstrapHack .input-group .form-control {
+    display: table-cell;
+}
+
+.BootstrapHack .input-group-addon:not(:first-child):not(:last-child),
+.BootstrapHack .input-group-btn:not(:first-child):not(:last-child),
+.BootstrapHack .input-group .form-control:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+
+.BootstrapHack .input-group-addon,
+.BootstrapHack .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.BootstrapHack .input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.BootstrapHack .input-group-addon.input-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.BootstrapHack .input-group-addon.input-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.BootstrapHack .input-group-addon input[type="radio"],
+.BootstrapHack .input-group-addon input[type="checkbox"] {
+    margin-top: 0;
+}
+
+.BootstrapHack .input-group .form-control:first-child,
+.BootstrapHack .input-group-addon:first-child,
+.BootstrapHack .input-group-btn:first-child > .btn,
+.BootstrapHack .input-group-btn:first-child > .btn-group > .btn,
+.BootstrapHack .input-group-btn:first-child > .dropdown-toggle,
+.BootstrapHack .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.BootstrapHack .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.BootstrapHack .input-group-addon:first-child {
+    border-right: 0;
+}
+
+.BootstrapHack .input-group .form-control:last-child,
+.BootstrapHack .input-group-addon:last-child,
+.BootstrapHack .input-group-btn:last-child > .btn,
+.BootstrapHack .input-group-btn:last-child > .btn-group > .btn,
+.BootstrapHack .input-group-btn:last-child > .dropdown-toggle,
+.BootstrapHack .input-group-btn:first-child > .btn:not(:first-child),
+.BootstrapHack .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.BootstrapHack .input-group-addon:last-child {
+    border-left: 0;
+}
+
+.BootstrapHack .input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.BootstrapHack .input-group-btn > .btn {
+    position: relative;
+}
+
+.BootstrapHack .input-group-btn > .btn + .btn {
+    margin-left: -1px;
+}
+
+.BootstrapHack .input-group-btn > .btn:hover,
+.BootstrapHack .input-group-btn > .btn:focus,
+.BootstrapHack .input-group-btn > .btn:active {
+    z-index: 2;
+}
+
+.BootstrapHack .input-group-btn:first-child > .btn,
+.BootstrapHack .input-group-btn:first-child > .btn-group {
+    margin-right: -1px;
+}
+
+.BootstrapHack .input-group-btn:last-child > .btn,
+.BootstrapHack .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: -1px;
+}
+
+.BootstrapHack .nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.BootstrapHack .nav > li {
+    position: relative;
+    display: block;
+}
+
+.BootstrapHack .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.BootstrapHack .nav > li > a:hover,
+.BootstrapHack .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+.BootstrapHack .nav > li.disabled > a {
+    color: #777;
+}
+
+.BootstrapHack .nav > li.disabled > a:hover,
+.BootstrapHack .nav > li.disabled > a:focus {
+    color: #777;
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+}
+
+.BootstrapHack .nav .open > a,
+.BootstrapHack .nav .open > a:hover,
+.BootstrapHack .nav .open > a:focus {
+    background-color: #eee;
+    border-color: #337ab7;
+}
+
+.BootstrapHack .nav .nav-divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.BootstrapHack .nav > li > a > img {
+    max-width: none;
+}
+
+.BootstrapHack .nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.BootstrapHack .nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.BootstrapHack .nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.BootstrapHack .nav-tabs > li > a:hover {
+    border-color: #eee #eee #ddd;
+}
+
+.BootstrapHack .nav-tabs > li.active > a,
+.BootstrapHack .nav-tabs > li.active > a:hover,
+.BootstrapHack .nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.BootstrapHack .nav-tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+
+.BootstrapHack .nav-tabs.nav-justified > li {
+    float: none;
+}
+
+.BootstrapHack .nav-tabs.nav-justified > li > a {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.BootstrapHack .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .nav-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .BootstrapHack .nav-tabs.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+}
+
+.BootstrapHack .nav-tabs.nav-justified > li > a {
+    margin-right: 0;
+    border-radius: 4px;
+}
+
+.BootstrapHack .nav-tabs.nav-justified > .active > a,
+.BootstrapHack .nav-tabs.nav-justified > .active > a:hover,
+.BootstrapHack .nav-tabs.nav-justified > .active > a:focus {
+    border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .nav-tabs.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .BootstrapHack .nav-tabs.nav-justified > .active > a,
+    .BootstrapHack .nav-tabs.nav-justified > .active > a:hover,
+    .BootstrapHack .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+}
+
+.BootstrapHack .nav-pills > li {
+    float: left;
+}
+
+.BootstrapHack .nav-pills > li > a {
+    border-radius: 4px;
+}
+
+.BootstrapHack .nav-pills > li + li {
+    margin-left: 2px;
+}
+
+.BootstrapHack .nav-pills > li.active > a,
+.BootstrapHack .nav-pills > li.active > a:hover,
+.BootstrapHack .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.BootstrapHack .nav-stacked > li {
+    float: none;
+}
+
+.BootstrapHack .nav-stacked > li + li {
+    margin-top: 2px;
+    margin-left: 0;
+}
+
+.BootstrapHack .nav-justified {
+    width: 100%;
+}
+
+.BootstrapHack .nav-justified > li {
+    float: none;
+}
+
+.BootstrapHack .nav-justified > li > a {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.BootstrapHack .nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .BootstrapHack .nav-justified > li > a {
+        margin-bottom: 0;
+    }
+}
+
+.BootstrapHack .nav-tabs-justified {
+    border-bottom: 0;
+}
+
+.BootstrapHack .nav-tabs-justified > li > a {
+    margin-right: 0;
+    border-radius: 4px;
+}
+
+.BootstrapHack .nav-tabs-justified > .active > a,
+.BootstrapHack .nav-tabs-justified > .active > a:hover,
+.BootstrapHack .nav-tabs-justified > .active > a:focus {
+    border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .nav-tabs-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .BootstrapHack .nav-tabs-justified > .active > a,
+    .BootstrapHack .nav-tabs-justified > .active > a:hover,
+    .BootstrapHack .nav-tabs-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+}
+
+.BootstrapHack .tab-content > .tab-pane {
+    display: none;
+}
+
+.BootstrapHack .tab-content > .active {
+    display: block;
+}
+
+.BootstrapHack .nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.BootstrapHack .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar {
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-header {
+        float: left;
+    }
+}
+
+.BootstrapHack .navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.BootstrapHack .navbar-collapse.in {
+    overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .BootstrapHack .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+    .BootstrapHack .navbar-collapse.in {
+        overflow-y: visible;
+    }
+    .BootstrapHack .navbar-fixed-top .navbar-collapse,
+    .BootstrapHack .navbar-static-top .navbar-collapse,
+    .BootstrapHack .navbar-fixed-bottom .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.BootstrapHack .navbar-fixed-top .navbar-collapse,
+.BootstrapHack .navbar-fixed-bottom .navbar-collapse {
+    max-height: 340px;
+}
+
+@media (max-device-width: 480px) and (orientation: landscape) {
+    .BootstrapHack .navbar-fixed-top .navbar-collapse,
+    .BootstrapHack .navbar-fixed-bottom .navbar-collapse {
+        max-height: 200px;
+    }
+}
+
+.BootstrapHack .container > .navbar-header,
+.BootstrapHack .container-fluid > .navbar-header,
+.BootstrapHack .container > .navbar-collapse,
+.BootstrapHack .container-fluid > .navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .container > .navbar-header,
+    .BootstrapHack .container-fluid > .navbar-header,
+    .BootstrapHack .container > .navbar-collapse,
+    .BootstrapHack .container-fluid > .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.BootstrapHack .navbar-static-top {
+    z-index: 1000;
+    border-width: 0 0 1px;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-static-top {
+        border-radius: 0;
+    }
+}
+
+.BootstrapHack .navbar-fixed-top,
+.BootstrapHack .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-fixed-top,
+    .BootstrapHack .navbar-fixed-bottom {
+        border-radius: 0;
+    }
+}
+
+.BootstrapHack .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+.BootstrapHack .navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+}
+
+.BootstrapHack .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.BootstrapHack .navbar-brand:hover,
+.BootstrapHack .navbar-brand:focus {
+    text-decoration: none;
+}
+
+.BootstrapHack .navbar-brand > img {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar > .container .navbar-brand,
+    .BootstrapHack .navbar > .container-fluid .navbar-brand {
+        margin-left: -15px;
+    }
+}
+
+.BootstrapHack .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.BootstrapHack .navbar-toggle:focus {
+    outline: 0;
+}
+
+.BootstrapHack .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.BootstrapHack .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-toggle {
+        display: none;
+    }
+}
+
+.BootstrapHack .navbar-nav {
+    margin: 7.5px -15px;
+}
+
+.BootstrapHack .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    .BootstrapHack .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .BootstrapHack .navbar-nav .open .dropdown-menu > li > a,
+    .BootstrapHack .navbar-nav .open .dropdown-menu .dropdown-header {
+        padding: 5px 15px 5px 25px;
+    }
+    .BootstrapHack .navbar-nav .open .dropdown-menu > li > a {
+        line-height: 20px;
+    }
+    .BootstrapHack .navbar-nav .open .dropdown-menu > li > a:hover,
+    .BootstrapHack .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-image: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+    .BootstrapHack .navbar-nav > li {
+        float: left;
+    }
+    .BootstrapHack .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.BootstrapHack .navbar-form {
+    padding: 10px 15px;
+    margin-top: 8px;
+    margin-right: -15px;
+    margin-bottom: 8px;
+    margin-left: -15px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-form .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .BootstrapHack .navbar-form .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+    .BootstrapHack .navbar-form .form-control-static {
+        display: inline-block;
+    }
+    .BootstrapHack .navbar-form .input-group {
+        display: inline-table;
+        vertical-align: middle;
+    }
+    .BootstrapHack .navbar-form .input-group .input-group-addon,
+    .BootstrapHack .navbar-form .input-group .input-group-btn,
+    .BootstrapHack .navbar-form .input-group .form-control {
+        width: auto;
+    }
+    .BootstrapHack .navbar-form .input-group > .form-control {
+        width: 100%;
+    }
+    .BootstrapHack .navbar-form .control-label {
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .BootstrapHack .navbar-form .radio,
+    .BootstrapHack .navbar-form .checkbox {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .BootstrapHack .navbar-form .radio label,
+    .BootstrapHack .navbar-form .checkbox label {
+        padding-left: 0;
+    }
+    .BootstrapHack .navbar-form .radio input[type="radio"],
+    .BootstrapHack .navbar-form .checkbox input[type="checkbox"] {
+        position: relative;
+        margin-left: 0;
+    }
+    .BootstrapHack .navbar-form .has-feedback .form-control-feedback {
+        top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .BootstrapHack .navbar-form .form-group {
+        margin-bottom: 5px;
+    }
+    .BootstrapHack .navbar-form .form-group:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-form {
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.BootstrapHack .navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.BootstrapHack .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+    margin-bottom: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.BootstrapHack .navbar-btn {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.BootstrapHack .navbar-btn.btn-sm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.BootstrapHack .navbar-btn.btn-xs {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.BootstrapHack .navbar-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-text {
+        float: left;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .navbar-left {
+        float: left !important;
+    }
+    .BootstrapHack .navbar-right {
+        float: right !important;
+        margin-right: -15px;
+    }
+    .BootstrapHack .navbar-right ~ .navbar-right {
+        margin-right: 0;
+    }
+}
+
+.BootstrapHack .navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.BootstrapHack .navbar-default .navbar-brand {
+    color: #777;
+}
+
+.BootstrapHack .navbar-default .navbar-brand:hover,
+.BootstrapHack .navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+
+.BootstrapHack .navbar-default .navbar-text {
+    color: #777;
+}
+
+.BootstrapHack .navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+
+.BootstrapHack .navbar-default .navbar-nav > li > a:hover,
+.BootstrapHack .navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+}
+
+.BootstrapHack .navbar-default .navbar-nav > .active > a,
+.BootstrapHack .navbar-default .navbar-nav > .active > a:hover,
+.BootstrapHack .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+.BootstrapHack .navbar-default .navbar-nav > .disabled > a,
+.BootstrapHack .navbar-default .navbar-nav > .disabled > a:hover,
+.BootstrapHack .navbar-default .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.BootstrapHack .navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+
+.BootstrapHack .navbar-default .navbar-toggle:hover,
+.BootstrapHack .navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+.BootstrapHack .navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.BootstrapHack .navbar-default .navbar-collapse,
+.BootstrapHack .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.BootstrapHack .navbar-default .navbar-nav > .open > a,
+.BootstrapHack .navbar-default .navbar-nav > .open > a:hover,
+.BootstrapHack .navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+    .BootstrapHack .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .BootstrapHack .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .BootstrapHack .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .BootstrapHack .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .BootstrapHack .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .BootstrapHack .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .BootstrapHack .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+    .BootstrapHack .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .BootstrapHack .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+
+.BootstrapHack .navbar-default .navbar-link {
+    color: #777;
+}
+
+.BootstrapHack .navbar-default .navbar-link:hover {
+    color: #333;
+}
+
+.BootstrapHack .navbar-default .btn-link {
+    color: #777;
+}
+
+.BootstrapHack .navbar-default .btn-link:hover,
+.BootstrapHack .navbar-default .btn-link:focus {
+    color: #333;
+}
+
+.BootstrapHack .navbar-default .btn-link[disabled]:hover,
+.BootstrapHack fieldset[disabled] .navbar-default .btn-link:hover,
+.BootstrapHack .navbar-default .btn-link[disabled]:focus,
+.BootstrapHack fieldset[disabled] .navbar-default .btn-link:focus {
+    color: #ccc;
+}
+
+.BootstrapHack .navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+
+.BootstrapHack .navbar-inverse .navbar-brand {
+    color: #9d9d9d;
+}
+
+.BootstrapHack .navbar-inverse .navbar-brand:hover,
+.BootstrapHack .navbar-inverse .navbar-brand:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.BootstrapHack .navbar-inverse .navbar-text {
+    color: #9d9d9d;
+}
+
+.BootstrapHack .navbar-inverse .navbar-nav > li > a {
+    color: #9d9d9d;
+}
+
+.BootstrapHack .navbar-inverse .navbar-nav > li > a:hover,
+.BootstrapHack .navbar-inverse .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.BootstrapHack .navbar-inverse .navbar-nav > .active > a,
+.BootstrapHack .navbar-inverse .navbar-nav > .active > a:hover,
+.BootstrapHack .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #080808;
+}
+
+.BootstrapHack .navbar-inverse .navbar-nav > .disabled > a,
+.BootstrapHack .navbar-inverse .navbar-nav > .disabled > a:hover,
+.BootstrapHack .navbar-inverse .navbar-nav > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+}
+
+.BootstrapHack .navbar-inverse .navbar-toggle {
+    border-color: #333;
+}
+
+.BootstrapHack .navbar-inverse .navbar-toggle:hover,
+.BootstrapHack .navbar-inverse .navbar-toggle:focus {
+    background-color: #333;
+}
+
+.BootstrapHack .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.BootstrapHack .navbar-inverse .navbar-collapse,
+.BootstrapHack .navbar-inverse .navbar-form {
+    border-color: #101010;
+}
+
+.BootstrapHack .navbar-inverse .navbar-nav > .open > a,
+.BootstrapHack .navbar-inverse .navbar-nav > .open > a:hover,
+.BootstrapHack .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #080808;
+}
+
+@media (max-width: 767px) {
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+        border-color: #080808;
+    }
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+        background-color: #080808;
+    }
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #9d9d9d;
+    }
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+        background-color: transparent;
+    }
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #080808;
+    }
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .BootstrapHack .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #444;
+        background-color: transparent;
+    }
+}
+
+.BootstrapHack .navbar-inverse .navbar-link {
+    color: #9d9d9d;
+}
+
+.BootstrapHack .navbar-inverse .navbar-link:hover {
+    color: #fff;
+}
+
+.BootstrapHack .navbar-inverse .btn-link {
+    color: #9d9d9d;
+}
+
+.BootstrapHack .navbar-inverse .btn-link:hover,
+.BootstrapHack .navbar-inverse .btn-link:focus {
+    color: #fff;
+}
+
+.BootstrapHack .navbar-inverse .btn-link[disabled]:hover,
+.BootstrapHack fieldset[disabled] .navbar-inverse .btn-link:hover,
+.BootstrapHack .navbar-inverse .btn-link[disabled]:focus,
+.BootstrapHack fieldset[disabled] .navbar-inverse .btn-link:focus {
+    color: #444;
+}
+
+.BootstrapHack .breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.BootstrapHack .breadcrumb > li {
+    display: inline-block;
+}
+
+.BootstrapHack .breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+
+.BootstrapHack .breadcrumb > .active {
+    color: #777;
+}
+
+.BootstrapHack .pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.BootstrapHack .pagination > li {
+    display: inline;
+}
+
+.BootstrapHack .pagination > li > a,
+.BootstrapHack .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.BootstrapHack .pagination > li:first-child > a,
+.BootstrapHack .pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.BootstrapHack .pagination > li:last-child > a,
+.BootstrapHack .pagination > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.BootstrapHack .pagination > li > a:hover,
+.BootstrapHack .pagination > li > span:hover,
+.BootstrapHack .pagination > li > a:focus,
+.BootstrapHack .pagination > li > span:focus {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.BootstrapHack .pagination > .active > a,
+.BootstrapHack .pagination > .active > span,
+.BootstrapHack .pagination > .active > a:hover,
+.BootstrapHack .pagination > .active > span:hover,
+.BootstrapHack .pagination > .active > a:focus,
+.BootstrapHack .pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.BootstrapHack .pagination > .disabled > span,
+.BootstrapHack .pagination > .disabled > span:hover,
+.BootstrapHack .pagination > .disabled > span:focus,
+.BootstrapHack .pagination > .disabled > a,
+.BootstrapHack .pagination > .disabled > a:hover,
+.BootstrapHack .pagination > .disabled > a:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.BootstrapHack .pagination-lg > li > a,
+.BootstrapHack .pagination-lg > li > span {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+
+.BootstrapHack .pagination-lg > li:first-child > a,
+.BootstrapHack .pagination-lg > li:first-child > span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.BootstrapHack .pagination-lg > li:last-child > a,
+.BootstrapHack .pagination-lg > li:last-child > span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.BootstrapHack .pagination-sm > li > a,
+.BootstrapHack .pagination-sm > li > span {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.BootstrapHack .pagination-sm > li:first-child > a,
+.BootstrapHack .pagination-sm > li:first-child > span {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.BootstrapHack .pagination-sm > li:last-child > a,
+.BootstrapHack .pagination-sm > li:last-child > span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.BootstrapHack .pager {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+}
+
+.BootstrapHack .pager li {
+    display: inline;
+}
+
+.BootstrapHack .pager li > a,
+.BootstrapHack .pager li > span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.BootstrapHack .pager li > a:hover,
+.BootstrapHack .pager li > a:focus {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+.BootstrapHack .pager .next > a,
+.BootstrapHack .pager .next > span {
+    float: right;
+}
+
+.BootstrapHack .pager .previous > a,
+.BootstrapHack .pager .previous > span {
+    float: left;
+}
+
+.BootstrapHack .pager .disabled > a,
+.BootstrapHack .pager .disabled > a:hover,
+.BootstrapHack .pager .disabled > a:focus,
+.BootstrapHack .pager .disabled > span {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+}
+
+.BootstrapHack .label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.BootstrapHack a.label:hover,
+.BootstrapHack a.label:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.BootstrapHack .label:empty {
+    display: none;
+}
+
+.BootstrapHack .btn .label {
+    position: relative;
+    top: -1px;
+}
+
+.BootstrapHack .label-default {
+    background-color: #777;
+}
+
+.BootstrapHack .label-default[href]:hover,
+.BootstrapHack .label-default[href]:focus {
+    background-color: #5e5e5e;
+}
+
+.BootstrapHack .label-primary {
+    background-color: #337ab7;
+}
+
+.BootstrapHack .label-primary[href]:hover,
+.BootstrapHack .label-primary[href]:focus {
+    background-color: #286090;
+}
+
+.BootstrapHack .label-success {
+    background-color: #5cb85c;
+}
+
+.BootstrapHack .label-success[href]:hover,
+.BootstrapHack .label-success[href]:focus {
+    background-color: #449d44;
+}
+
+.BootstrapHack .label-info {
+    background-color: #5bc0de;
+}
+
+.BootstrapHack .label-info[href]:hover,
+.BootstrapHack .label-info[href]:focus {
+    background-color: #31b0d5;
+}
+
+.BootstrapHack .label-warning {
+    background-color: #f0ad4e;
+}
+
+.BootstrapHack .label-warning[href]:hover,
+.BootstrapHack .label-warning[href]:focus {
+    background-color: #ec971f;
+}
+
+.BootstrapHack .label-danger {
+    background-color: #d9534f;
+}
+
+.BootstrapHack .label-danger[href]:hover,
+.BootstrapHack .label-danger[href]:focus {
+    background-color: #c9302c;
+}
+
+.BootstrapHack .badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+}
+
+.BootstrapHack .badge:empty {
+    display: none;
+}
+
+.BootstrapHack .btn .badge {
+    position: relative;
+    top: -1px;
+}
+
+.BootstrapHack .btn-xs .badge,
+.BootstrapHack .btn-group-xs > .btn .badge {
+    top: 0;
+    padding: 1px 5px;
+}
+
+.BootstrapHack a.badge:hover,
+.BootstrapHack a.badge:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.BootstrapHack .list-group-item.active > .badge,
+.BootstrapHack .nav-pills > .active > a > .badge {
+    color: #337ab7;
+    background-color: #fff;
+}
+
+.BootstrapHack .list-group-item > .badge {
+    float: right;
+}
+
+.BootstrapHack .list-group-item > .badge + .badge {
+    margin-right: 5px;
+}
+
+.BootstrapHack .nav-pills > li > a > .badge {
+    margin-left: 3px;
+}
+
+.BootstrapHack .jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}
+
+.BootstrapHack .jumbotron h1,
+.BootstrapHack .jumbotron .h1 {
+    color: inherit;
+}
+
+.BootstrapHack .jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.BootstrapHack .jumbotron > hr {
+    border-top-color: #d5d5d5;
+}
+
+.BootstrapHack .container .jumbotron,
+.BootstrapHack .container-fluid .jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px;
+}
+
+.BootstrapHack .jumbotron .container {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .BootstrapHack .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .BootstrapHack .container .jumbotron,
+    .BootstrapHack .container-fluid .jumbotron {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .BootstrapHack .jumbotron h1,
+    .BootstrapHack .jumbotron .h1 {
+        font-size: 63px;
+    }
+}
+
+.BootstrapHack .thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+}
+
+.BootstrapHack .thumbnail > img,
+.BootstrapHack .thumbnail a > img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.BootstrapHack a.thumbnail:hover,
+.BootstrapHack a.thumbnail:focus,
+.BootstrapHack a.thumbnail.active {
+    border-color: #337ab7;
+}
+
+.BootstrapHack .thumbnail .caption {
+    padding: 9px;
+    color: #333;
+}
+
+.BootstrapHack .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.BootstrapHack .alert h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.BootstrapHack .alert .alert-link {
+    font-weight: bold;
+}
+
+.BootstrapHack .alert > p,
+.BootstrapHack .alert > ul {
+    margin-bottom: 0;
+}
+
+.BootstrapHack .alert > p + p {
+    margin-top: 5px;
+}
+
+.BootstrapHack .alert-dismissable,
+.BootstrapHack .alert-dismissible {
+    padding-right: 35px;
+}
+
+.BootstrapHack .alert-dismissable .close,
+.BootstrapHack .alert-dismissible .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+}
+
+.BootstrapHack .alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.BootstrapHack .alert-success hr {
+    border-top-color: #c9e2b3;
+}
+
+.BootstrapHack .alert-success .alert-link {
+    color: #2b542c;
+}
+
+.BootstrapHack .alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.BootstrapHack .alert-info hr {
+    border-top-color: #a6e1ec;
+}
+
+.BootstrapHack .alert-info .alert-link {
+    color: #245269;
+}
+
+.BootstrapHack .alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.BootstrapHack .alert-warning hr {
+    border-top-color: #f7e1b5;
+}
+
+.BootstrapHack .alert-warning .alert-link {
+    color: #66512c;
+}
+
+.BootstrapHack .alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.BootstrapHack .alert-danger hr {
+    border-top-color: #e4b9c0;
+}
+
+.BootstrapHack .alert-danger .alert-link {
+    color: #843534;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+@-o-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+.BootstrapHack .progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.BootstrapHack .progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.BootstrapHack .progress-striped .progress-bar,
+.BootstrapHack .progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+
+.BootstrapHack .progress.active .progress-bar,
+.BootstrapHack .progress-bar.active {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+}
+
+.BootstrapHack .progress-bar-success {
+    background-color: #5cb85c;
+}
+
+.BootstrapHack .progress-striped .progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.BootstrapHack .progress-bar-info {
+    background-color: #5bc0de;
+}
+
+.BootstrapHack .progress-striped .progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.BootstrapHack .progress-bar-warning {
+    background-color: #f0ad4e;
+}
+
+.BootstrapHack .progress-striped .progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.BootstrapHack .progress-bar-danger {
+    background-color: #d9534f;
+}
+
+.BootstrapHack .progress-striped .progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.BootstrapHack .media {
+    margin-top: 15px;
+}
+
+.BootstrapHack .media:first-child {
+    margin-top: 0;
+}
+
+.BootstrapHack .media,
+.BootstrapHack .media-body {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.BootstrapHack .media-body {
+    width: 10000px;
+}
+
+.BootstrapHack .media-object {
+    display: block;
+}
+
+.BootstrapHack .media-object.img-thumbnail {
+    max-width: none;
+}
+
+.BootstrapHack .media-right,
+.BootstrapHack .media > .pull-right {
+    padding-left: 10px;
+}
+
+.BootstrapHack .media-left,
+.BootstrapHack .media > .pull-left {
+    padding-right: 10px;
+}
+
+.BootstrapHack .media-left,
+.BootstrapHack .media-right,
+.BootstrapHack .media-body {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.BootstrapHack .media-middle {
+    vertical-align: middle;
+}
+
+.BootstrapHack .media-bottom {
+    vertical-align: bottom;
+}
+
+.BootstrapHack .media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.BootstrapHack .media-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.BootstrapHack .list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.BootstrapHack .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.BootstrapHack .list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.BootstrapHack .list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.BootstrapHack a.list-group-item,
+.BootstrapHack button.list-group-item {
+    color: #555;
+}
+
+.BootstrapHack a.list-group-item .list-group-item-heading,
+.BootstrapHack button.list-group-item .list-group-item-heading {
+    color: #333;
+}
+
+.BootstrapHack a.list-group-item:hover,
+.BootstrapHack button.list-group-item:hover,
+.BootstrapHack a.list-group-item:focus,
+.BootstrapHack button.list-group-item:focus {
+    color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.BootstrapHack button.list-group-item {
+    width: 100%;
+    text-align: left;
+}
+
+.BootstrapHack .list-group-item.disabled,
+.BootstrapHack .list-group-item.disabled:hover,
+.BootstrapHack .list-group-item.disabled:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #eee;
+}
+
+.BootstrapHack .list-group-item.disabled .list-group-item-heading,
+.BootstrapHack .list-group-item.disabled:hover .list-group-item-heading,
+.BootstrapHack .list-group-item.disabled:focus .list-group-item-heading {
+    color: inherit;
+}
+
+.BootstrapHack .list-group-item.disabled .list-group-item-text,
+.BootstrapHack .list-group-item.disabled:hover .list-group-item-text,
+.BootstrapHack .list-group-item.disabled:focus .list-group-item-text {
+    color: #777;
+}
+
+.BootstrapHack .list-group-item.active,
+.BootstrapHack .list-group-item.active:hover,
+.BootstrapHack .list-group-item.active:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.BootstrapHack .list-group-item.active .list-group-item-heading,
+.BootstrapHack .list-group-item.active:hover .list-group-item-heading,
+.BootstrapHack .list-group-item.active:focus .list-group-item-heading,
+.BootstrapHack .list-group-item.active .list-group-item-heading > small,
+.BootstrapHack .list-group-item.active:hover .list-group-item-heading > small,
+.BootstrapHack .list-group-item.active:focus .list-group-item-heading > small,
+.BootstrapHack .list-group-item.active .list-group-item-heading > .small,
+.BootstrapHack .list-group-item.active:hover .list-group-item-heading > .small,
+.BootstrapHack .list-group-item.active:focus .list-group-item-heading > .small {
+    color: inherit;
+}
+
+.BootstrapHack .list-group-item.active .list-group-item-text,
+.BootstrapHack .list-group-item.active:hover .list-group-item-text,
+.BootstrapHack .list-group-item.active:focus .list-group-item-text {
+    color: #c7ddef;
+}
+
+.BootstrapHack .list-group-item-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+}
+
+.BootstrapHack a.list-group-item-success,
+.BootstrapHack button.list-group-item-success {
+    color: #3c763d;
+}
+
+.BootstrapHack a.list-group-item-success .list-group-item-heading,
+.BootstrapHack button.list-group-item-success .list-group-item-heading {
+    color: inherit;
+}
+
+.BootstrapHack a.list-group-item-success:hover,
+.BootstrapHack button.list-group-item-success:hover,
+.BootstrapHack a.list-group-item-success:focus,
+.BootstrapHack button.list-group-item-success:focus {
+    color: #3c763d;
+    background-color: #d0e9c6;
+}
+
+.BootstrapHack a.list-group-item-success.active,
+.BootstrapHack button.list-group-item-success.active,
+.BootstrapHack a.list-group-item-success.active:hover,
+.BootstrapHack button.list-group-item-success.active:hover,
+.BootstrapHack a.list-group-item-success.active:focus,
+.BootstrapHack button.list-group-item-success.active:focus {
+    color: #fff;
+    background-color: #3c763d;
+    border-color: #3c763d;
+}
+
+.BootstrapHack .list-group-item-info {
+    color: #31708f;
+    background-color: #d9edf7;
+}
+
+.BootstrapHack a.list-group-item-info,
+.BootstrapHack button.list-group-item-info {
+    color: #31708f;
+}
+
+.BootstrapHack a.list-group-item-info .list-group-item-heading,
+.BootstrapHack button.list-group-item-info .list-group-item-heading {
+    color: inherit;
+}
+
+.BootstrapHack a.list-group-item-info:hover,
+.BootstrapHack button.list-group-item-info:hover,
+.BootstrapHack a.list-group-item-info:focus,
+.BootstrapHack button.list-group-item-info:focus {
+    color: #31708f;
+    background-color: #c4e3f3;
+}
+
+.BootstrapHack a.list-group-item-info.active,
+.BootstrapHack button.list-group-item-info.active,
+.BootstrapHack a.list-group-item-info.active:hover,
+.BootstrapHack button.list-group-item-info.active:hover,
+.BootstrapHack a.list-group-item-info.active:focus,
+.BootstrapHack button.list-group-item-info.active:focus {
+    color: #fff;
+    background-color: #31708f;
+    border-color: #31708f;
+}
+
+.BootstrapHack .list-group-item-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+}
+
+.BootstrapHack a.list-group-item-warning,
+.BootstrapHack button.list-group-item-warning {
+    color: #8a6d3b;
+}
+
+.BootstrapHack a.list-group-item-warning .list-group-item-heading,
+.BootstrapHack button.list-group-item-warning .list-group-item-heading {
+    color: inherit;
+}
+
+.BootstrapHack a.list-group-item-warning:hover,
+.BootstrapHack button.list-group-item-warning:hover,
+.BootstrapHack a.list-group-item-warning:focus,
+.BootstrapHack button.list-group-item-warning:focus {
+    color: #8a6d3b;
+    background-color: #faf2cc;
+}
+
+.BootstrapHack a.list-group-item-warning.active,
+.BootstrapHack button.list-group-item-warning.active,
+.BootstrapHack a.list-group-item-warning.active:hover,
+.BootstrapHack button.list-group-item-warning.active:hover,
+.BootstrapHack a.list-group-item-warning.active:focus,
+.BootstrapHack button.list-group-item-warning.active:focus {
+    color: #fff;
+    background-color: #8a6d3b;
+    border-color: #8a6d3b;
+}
+
+.BootstrapHack .list-group-item-danger {
+    color: #a94442;
+    background-color: #f2dede;
+}
+
+.BootstrapHack a.list-group-item-danger,
+.BootstrapHack button.list-group-item-danger {
+    color: #a94442;
+}
+
+.BootstrapHack a.list-group-item-danger .list-group-item-heading,
+.BootstrapHack button.list-group-item-danger .list-group-item-heading {
+    color: inherit;
+}
+
+.BootstrapHack a.list-group-item-danger:hover,
+.BootstrapHack button.list-group-item-danger:hover,
+.BootstrapHack a.list-group-item-danger:focus,
+.BootstrapHack button.list-group-item-danger:focus {
+    color: #a94442;
+    background-color: #ebcccc;
+}
+
+.BootstrapHack a.list-group-item-danger.active,
+.BootstrapHack button.list-group-item-danger.active,
+.BootstrapHack a.list-group-item-danger.active:hover,
+.BootstrapHack button.list-group-item-danger.active:hover,
+.BootstrapHack a.list-group-item-danger.active:focus,
+.BootstrapHack button.list-group-item-danger.active:focus {
+    color: #fff;
+    background-color: #a94442;
+    border-color: #a94442;
+}
+
+.BootstrapHack .list-group-item-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.BootstrapHack .list-group-item-text {
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.BootstrapHack .panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.BootstrapHack .panel-body {
+    padding: 15px;
+}
+
+.BootstrapHack .panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.BootstrapHack .panel-heading > .dropdown .dropdown-toggle {
+    color: inherit;
+}
+
+.BootstrapHack .panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+.BootstrapHack .panel-title > a,
+.BootstrapHack .panel-title > small,
+.BootstrapHack .panel-title > .small,
+.BootstrapHack .panel-title > small > a,
+.BootstrapHack .panel-title > .small > a {
+    color: inherit;
+}
+
+.BootstrapHack .panel-footer {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.BootstrapHack .panel > .list-group,
+.BootstrapHack .panel > .panel-collapse > .list-group {
+    margin-bottom: 0;
+}
+
+.BootstrapHack .panel > .list-group .list-group-item,
+.BootstrapHack .panel > .panel-collapse > .list-group .list-group-item {
+    border-width: 1px 0;
+    border-radius: 0;
+}
+
+.BootstrapHack .panel > .list-group:first-child .list-group-item:first-child,
+.BootstrapHack .panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
+    border-top: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.BootstrapHack .panel > .list-group:last-child .list-group-item:last-child,
+.BootstrapHack .panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
+    border-bottom: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.BootstrapHack .panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.BootstrapHack .panel-heading + .list-group .list-group-item:first-child {
+    border-top-width: 0;
+}
+
+.BootstrapHack .list-group + .panel-footer {
+    border-top-width: 0;
+}
+
+.BootstrapHack .panel > .table,
+.BootstrapHack .panel > .table-responsive > .table,
+.BootstrapHack .panel > .panel-collapse > .table {
+    margin-bottom: 0;
+}
+
+.BootstrapHack .panel > .table caption,
+.BootstrapHack .panel > .table-responsive > .table caption,
+.BootstrapHack .panel > .panel-collapse > .table caption {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.BootstrapHack .panel > .table:first-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.BootstrapHack .panel > .table:first-child > thead:first-child > tr:first-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
+.BootstrapHack .panel > .table:first-child > tbody:first-child > tr:first-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.BootstrapHack .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.BootstrapHack .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.BootstrapHack .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.BootstrapHack .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+    border-top-left-radius: 3px;
+}
+
+.BootstrapHack .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.BootstrapHack .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.BootstrapHack .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.BootstrapHack .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.BootstrapHack .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+    border-top-right-radius: 3px;
+}
+
+.BootstrapHack .panel > .table:last-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.BootstrapHack .panel > .table:last-child > tbody:last-child > tr:last-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
+.BootstrapHack .panel > .table:last-child > tfoot:last-child > tr:last-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.BootstrapHack .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.BootstrapHack .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.BootstrapHack .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.BootstrapHack .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+.BootstrapHack .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.BootstrapHack .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.BootstrapHack .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.BootstrapHack .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.BootstrapHack .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+.BootstrapHack .panel > .panel-body + .table,
+.BootstrapHack .panel > .panel-body + .table-responsive,
+.BootstrapHack .panel > .table + .panel-body,
+.BootstrapHack .panel > .table-responsive + .panel-body {
+    border-top: 1px solid #ddd;
+}
+
+.BootstrapHack .panel > .table > tbody:first-child > tr:first-child th,
+.BootstrapHack .panel > .table > tbody:first-child > tr:first-child td {
+    border-top: 0;
+}
+
+.BootstrapHack .panel > .table-bordered,
+.BootstrapHack .panel > .table-responsive > .table-bordered {
+    border: 0;
+}
+
+.BootstrapHack .panel > .table-bordered > thead > tr > th:first-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.BootstrapHack .panel > .table-bordered > tbody > tr > th:first-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.BootstrapHack .panel > .table-bordered > tfoot > tr > th:first-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.BootstrapHack .panel > .table-bordered > thead > tr > td:first-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.BootstrapHack .panel > .table-bordered > tbody > tr > td:first-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.BootstrapHack .panel > .table-bordered > tfoot > tr > td:first-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+}
+
+.BootstrapHack .panel > .table-bordered > thead > tr > th:last-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.BootstrapHack .panel > .table-bordered > tbody > tr > th:last-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.BootstrapHack .panel > .table-bordered > tfoot > tr > th:last-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.BootstrapHack .panel > .table-bordered > thead > tr > td:last-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.BootstrapHack .panel > .table-bordered > tbody > tr > td:last-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.BootstrapHack .panel > .table-bordered > tfoot > tr > td:last-child,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+}
+
+.BootstrapHack .panel > .table-bordered > thead > tr:first-child > td,
+.BootstrapHack .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
+.BootstrapHack .panel > .table-bordered > tbody > tr:first-child > td,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
+.BootstrapHack .panel > .table-bordered > thead > tr:first-child > th,
+.BootstrapHack .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
+.BootstrapHack .panel > .table-bordered > tbody > tr:first-child > th,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {
+    border-bottom: 0;
+}
+
+.BootstrapHack .panel > .table-bordered > tbody > tr:last-child > td,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+.BootstrapHack .panel > .table-bordered > tfoot > tr:last-child > td,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+.BootstrapHack .panel > .table-bordered > tbody > tr:last-child > th,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+.BootstrapHack .panel > .table-bordered > tfoot > tr:last-child > th,
+.BootstrapHack .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+    border-bottom: 0;
+}
+
+.BootstrapHack .panel > .table-responsive {
+    margin-bottom: 0;
+    border: 0;
+}
+
+.BootstrapHack .panel-group {
+    margin-bottom: 20px;
+}
+
+.BootstrapHack .panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+
+.BootstrapHack .panel-group .panel + .panel {
+    margin-top: 5px;
+}
+
+.BootstrapHack .panel-group .panel-heading {
+    border-bottom: 0;
+}
+
+.BootstrapHack .panel-group .panel-heading + .panel-collapse > .panel-body,
+.BootstrapHack .panel-group .panel-heading + .panel-collapse > .list-group {
+    border-top: 1px solid #ddd;
+}
+
+.BootstrapHack .panel-group .panel-footer {
+    border-top: 0;
+}
+
+.BootstrapHack .panel-group .panel-footer + .panel-collapse .panel-body {
+    border-bottom: 1px solid #ddd;
+}
+
+.BootstrapHack .panel-default {
+    border-color: #ddd;
+}
+
+.BootstrapHack .panel-default > .panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+.BootstrapHack .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+
+.BootstrapHack .panel-default > .panel-heading .badge {
+    color: #f5f5f5;
+    background-color: #333;
+}
+
+.BootstrapHack .panel-default > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #ddd;
+}
+
+.BootstrapHack .panel-primary {
+    border-color: #337ab7;
+}
+
+.BootstrapHack .panel-primary > .panel-heading {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.BootstrapHack .panel-primary > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #337ab7;
+}
+
+.BootstrapHack .panel-primary > .panel-heading .badge {
+    color: #337ab7;
+    background-color: #fff;
+}
+
+.BootstrapHack .panel-primary > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #337ab7;
+}
+
+.BootstrapHack .panel-success {
+    border-color: #d6e9c6;
+}
+
+.BootstrapHack .panel-success > .panel-heading {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.BootstrapHack .panel-success > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #d6e9c6;
+}
+
+.BootstrapHack .panel-success > .panel-heading .badge {
+    color: #dff0d8;
+    background-color: #3c763d;
+}
+
+.BootstrapHack .panel-success > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #d6e9c6;
+}
+
+.BootstrapHack .panel-info {
+    border-color: #bce8f1;
+}
+
+.BootstrapHack .panel-info > .panel-heading {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.BootstrapHack .panel-info > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #bce8f1;
+}
+
+.BootstrapHack .panel-info > .panel-heading .badge {
+    color: #d9edf7;
+    background-color: #31708f;
+}
+
+.BootstrapHack .panel-info > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #bce8f1;
+}
+
+.BootstrapHack .panel-warning {
+    border-color: #faebcc;
+}
+
+.BootstrapHack .panel-warning > .panel-heading {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.BootstrapHack .panel-warning > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #faebcc;
+}
+
+.BootstrapHack .panel-warning > .panel-heading .badge {
+    color: #fcf8e3;
+    background-color: #8a6d3b;
+}
+
+.BootstrapHack .panel-warning > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #faebcc;
+}
+
+.BootstrapHack .panel-danger {
+    border-color: #ebccd1;
+}
+
+.BootstrapHack .panel-danger > .panel-heading {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.BootstrapHack .panel-danger > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ebccd1;
+}
+
+.BootstrapHack .panel-danger > .panel-heading .badge {
+    color: #f2dede;
+    background-color: #a94442;
+}
+
+.BootstrapHack .panel-danger > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #ebccd1;
+}
+
+.BootstrapHack .embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.BootstrapHack .embed-responsive .embed-responsive-item,
+.BootstrapHack .embed-responsive iframe,
+.BootstrapHack .embed-responsive embed,
+.BootstrapHack .embed-responsive object,
+.BootstrapHack .embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.BootstrapHack .embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
+
+.BootstrapHack .embed-responsive-4by3 {
+    padding-bottom: 75%;
+}
+
+.BootstrapHack .well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.BootstrapHack .well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.BootstrapHack .well-lg {
+    padding: 24px;
+    border-radius: 6px;
+}
+
+.BootstrapHack .well-sm {
+    padding: 9px;
+    border-radius: 3px;
+}
+
+.BootstrapHack .close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.BootstrapHack .close:hover,
+.BootstrapHack .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.BootstrapHack button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+
+.BootstrapHack .modal-open {
+    overflow: hidden;
+}
+
+.BootstrapHack .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.BootstrapHack .modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}
+
+.BootstrapHack .modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.BootstrapHack .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.BootstrapHack .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+.BootstrapHack .modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.BootstrapHack .modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+.BootstrapHack .modal-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.BootstrapHack .modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.BootstrapHack .modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.BootstrapHack .modal-header .close {
+    margin-top: -2px;
+}
+
+.BootstrapHack .modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.BootstrapHack .modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.BootstrapHack .modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.BootstrapHack .modal-footer .btn + .btn {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.BootstrapHack .modal-footer .btn-group .btn + .btn {
+    margin-left: -1px;
+}
+
+.BootstrapHack .modal-footer .btn-block + .btn-block {
+    margin-left: 0;
+}
+
+.BootstrapHack .modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+@media (min-width: 768px) {
+    .BootstrapHack .modal-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+    .BootstrapHack .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    .BootstrapHack .modal-sm {
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .BootstrapHack .modal-lg {
+        width: 900px;
+    }
+}
+
+.BootstrapHack .tooltip {
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    line-break: auto;
+}
+
+.BootstrapHack .tooltip.in {
+    filter: alpha(opacity=90);
+    opacity: .9;
+}
+
+.BootstrapHack .tooltip.top {
+    padding: 5px 0;
+    margin-top: -3px;
+}
+
+.BootstrapHack .tooltip.right {
+    padding: 0 5px;
+    margin-left: 3px;
+}
+
+.BootstrapHack .tooltip.bottom {
+    padding: 5px 0;
+    margin-top: 3px;
+}
+
+.BootstrapHack .tooltip.left {
+    padding: 0 5px;
+    margin-left: -3px;
+}
+
+.BootstrapHack .tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.BootstrapHack .tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.BootstrapHack .tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}
+
+.BootstrapHack .tooltip.top-left .tooltip-arrow {
+    right: 5px;
+    bottom: 0;
+    margin-bottom: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}
+
+.BootstrapHack .tooltip.top-right .tooltip-arrow {
+    bottom: 0;
+    left: 5px;
+    margin-bottom: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}
+
+.BootstrapHack .tooltip.right .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #000;
+}
+
+.BootstrapHack .tooltip.left .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #000;
+}
+
+.BootstrapHack .tooltip.bottom .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000;
+}
+
+.BootstrapHack .tooltip.bottom-left .tooltip-arrow {
+    top: 0;
+    right: 5px;
+    margin-top: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000;
+}
+
+.BootstrapHack .tooltip.bottom-right .tooltip-arrow {
+    top: 0;
+    left: 5px;
+    margin-top: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000;
+}
+
+.BootstrapHack .popover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    max-width: 276px;
+    padding: 1px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    line-break: auto;
+}
+
+.BootstrapHack .popover.top {
+    margin-top: -10px;
+}
+
+.BootstrapHack .popover.right {
+    margin-left: 10px;
+}
+
+.BootstrapHack .popover.bottom {
+    margin-top: 10px;
+}
+
+.BootstrapHack .popover.left {
+    margin-left: -10px;
+}
+
+.BootstrapHack .popover-title {
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+}
+
+.BootstrapHack .popover-content {
+    padding: 9px 14px;
+}
+
+.BootstrapHack .popover > .arrow,
+.BootstrapHack .popover > .arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.BootstrapHack .popover > .arrow {
+    border-width: 11px;
+}
+
+.BootstrapHack .popover > .arrow:after {
+    content: "";
+    border-width: 10px;
+}
+
+.BootstrapHack .popover.top > .arrow {
+    bottom: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-top-color: #999;
+    border-top-color: rgba(0, 0, 0, 0.25);
+    border-bottom-width: 0;
+}
+
+.BootstrapHack .popover.top > .arrow:after {
+    bottom: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-color: #fff;
+    border-bottom-width: 0;
+}
+
+.BootstrapHack .popover.right > .arrow {
+    top: 50%;
+    left: -11px;
+    margin-top: -11px;
+    border-right-color: #999;
+    border-right-color: rgba(0, 0, 0, 0.25);
+    border-left-width: 0;
+}
+
+.BootstrapHack .popover.right > .arrow:after {
+    bottom: -10px;
+    left: 1px;
+    content: " ";
+    border-right-color: #fff;
+    border-left-width: 0;
+}
+
+.BootstrapHack .popover.bottom > .arrow {
+    top: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-top-width: 0;
+    border-bottom-color: #999;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+.BootstrapHack .popover.bottom > .arrow:after {
+    top: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: #fff;
+}
+
+.BootstrapHack .popover.left > .arrow {
+    top: 50%;
+    right: -11px;
+    margin-top: -11px;
+    border-right-width: 0;
+    border-left-color: #999;
+    border-left-color: rgba(0, 0, 0, 0.25);
+}
+
+.BootstrapHack .popover.left > .arrow:after {
+    right: 1px;
+    bottom: -10px;
+    content: " ";
+    border-right-width: 0;
+    border-left-color: #fff;
+}
+
+.BootstrapHack .carousel {
+    position: relative;
+}
+
+.BootstrapHack .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.BootstrapHack .carousel-inner > .item {
+    position: relative;
+    display: none;
+    -webkit-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+}
+
+.BootstrapHack .carousel-inner > .item > img,
+.BootstrapHack .carousel-inner > .item > a > img {
+    line-height: 1;
+}
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .BootstrapHack .carousel-inner > .item {
+        -webkit-transition: -webkit-transform 0.6s ease-in-out;
+        -o-transition: -o-transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+    }
+    .BootstrapHack .carousel-inner > .item.next,
+    .BootstrapHack .carousel-inner > .item.active.right {
+        left: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    .BootstrapHack .carousel-inner > .item.prev,
+    .BootstrapHack .carousel-inner > .item.active.left {
+        left: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    .BootstrapHack .carousel-inner > .item.next.left,
+    .BootstrapHack .carousel-inner > .item.prev.right,
+    .BootstrapHack .carousel-inner > .item.active {
+        left: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.BootstrapHack .carousel-inner > .active,
+.BootstrapHack .carousel-inner > .next,
+.BootstrapHack .carousel-inner > .prev {
+    display: block;
+}
+
+.BootstrapHack .carousel-inner > .active {
+    left: 0;
+}
+
+.BootstrapHack .carousel-inner > .next,
+.BootstrapHack .carousel-inner > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.BootstrapHack .carousel-inner > .next {
+    left: 100%;
+}
+
+.BootstrapHack .carousel-inner > .prev {
+    left: -100%;
+}
+
+.BootstrapHack .carousel-inner > .next.left,
+.BootstrapHack .carousel-inner > .prev.right {
+    left: 0;
+}
+
+.BootstrapHack .carousel-inner > .active.left {
+    left: -100%;
+}
+
+.BootstrapHack .carousel-inner > .active.right {
+    left: 100%;
+}
+
+.BootstrapHack .carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.BootstrapHack .carousel-control.left {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    background-repeat: repeat-x;
+}
+
+.BootstrapHack .carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-repeat: repeat-x;
+}
+
+.BootstrapHack .carousel-control:hover,
+.BootstrapHack .carousel-control:focus {
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: .9;
+}
+
+.BootstrapHack .carousel-control .icon-prev,
+.BootstrapHack .carousel-control .icon-next,
+.BootstrapHack .carousel-control .glyphicon-chevron-left,
+.BootstrapHack .carousel-control .glyphicon-chevron-right {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.BootstrapHack .carousel-control .icon-prev,
+.BootstrapHack .carousel-control .glyphicon-chevron-left {
+    left: 50%;
+    margin-left: -10px;
+}
+
+.BootstrapHack .carousel-control .icon-next,
+.BootstrapHack .carousel-control .glyphicon-chevron-right {
+    right: 50%;
+    margin-right: -10px;
+}
+
+.BootstrapHack .carousel-control .icon-prev,
+.BootstrapHack .carousel-control .icon-next {
+    width: 20px;
+    height: 20px;
+    font-family: serif;
+    line-height: 1;
+}
+
+.BootstrapHack .carousel-control .icon-prev:before {
+    content: '\2039';
+}
+
+.BootstrapHack .carousel-control .icon-next:before {
+    content: '\203a';
+}
+
+.BootstrapHack .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+
+.BootstrapHack .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.BootstrapHack .carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.BootstrapHack .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.BootstrapHack .carousel-caption .btn {
+    text-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+    .BootstrapHack .carousel-control .glyphicon-chevron-left,
+    .BootstrapHack .carousel-control .glyphicon-chevron-right,
+    .BootstrapHack .carousel-control .icon-prev,
+    .BootstrapHack .carousel-control .icon-next {
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+        font-size: 30px;
+    }
+    .BootstrapHack .carousel-control .glyphicon-chevron-left,
+    .BootstrapHack .carousel-control .icon-prev {
+        margin-left: -10px;
+    }
+    .BootstrapHack .carousel-control .glyphicon-chevron-right,
+    .BootstrapHack .carousel-control .icon-next {
+        margin-right: -10px;
+    }
+    .BootstrapHack .carousel-caption {
+        right: 20%;
+        left: 20%;
+        padding-bottom: 30px;
+    }
+    .BootstrapHack .carousel-indicators {
+        bottom: 20px;
+    }
+}
+
+.BootstrapHack .clearfix:before,
+.BootstrapHack .clearfix:after,
+.BootstrapHack .dl-horizontal dd:before,
+.BootstrapHack .dl-horizontal dd:after,
+.BootstrapHack .container:before,
+.BootstrapHack .container:after,
+.BootstrapHack .container-fluid:before,
+.BootstrapHack .container-fluid:after,
+.BootstrapHack .row:before,
+.BootstrapHack .row:after,
+.BootstrapHack .form-horizontal .form-group:before,
+.BootstrapHack .form-horizontal .form-group:after,
+.BootstrapHack .btn-toolbar:before,
+.BootstrapHack .btn-toolbar:after,
+.BootstrapHack .btn-group-vertical > .btn-group:before,
+.BootstrapHack .btn-group-vertical > .btn-group:after,
+.BootstrapHack .nav:before,
+.BootstrapHack .nav:after,
+.BootstrapHack .navbar:before,
+.BootstrapHack .navbar:after,
+.BootstrapHack .navbar-header:before,
+.BootstrapHack .navbar-header:after,
+.BootstrapHack .navbar-collapse:before,
+.BootstrapHack .navbar-collapse:after,
+.BootstrapHack .pager:before,
+.BootstrapHack .pager:after,
+.BootstrapHack .panel-body:before,
+.BootstrapHack .panel-body:after,
+.BootstrapHack .modal-header:before,
+.BootstrapHack .modal-header:after,
+.BootstrapHack .modal-footer:before,
+.BootstrapHack .modal-footer:after {
+    display: table;
+    content: " ";
+}
+
+.BootstrapHack .clearfix:after,
+.BootstrapHack .dl-horizontal dd:after,
+.BootstrapHack .container:after,
+.BootstrapHack .container-fluid:after,
+.BootstrapHack .row:after,
+.BootstrapHack .form-horizontal .form-group:after,
+.BootstrapHack .btn-toolbar:after,
+.BootstrapHack .btn-group-vertical > .btn-group:after,
+.BootstrapHack .nav:after,
+.BootstrapHack .navbar:after,
+.BootstrapHack .navbar-header:after,
+.BootstrapHack .navbar-collapse:after,
+.BootstrapHack .pager:after,
+.BootstrapHack .panel-body:after,
+.BootstrapHack .modal-header:after,
+.BootstrapHack .modal-footer:after {
+    clear: both;
+}
+
+.BootstrapHack .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.BootstrapHack .pull-right {
+    float: right !important;
+}
+
+.BootstrapHack .pull-left {
+    float: left !important;
+}
+
+.BootstrapHack .hide {
+    display: none !important;
+}
+
+.BootstrapHack .show {
+    display: block !important;
+}
+
+.BootstrapHack .invisible {
+    visibility: hidden;
+}
+
+.BootstrapHack .text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.BootstrapHack .hidden {
+    display: none !important;
+}
+
+.BootstrapHack .affix {
+    position: fixed;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+.BootstrapHack .visible-xs,
+.BootstrapHack .visible-sm,
+.BootstrapHack .visible-md,
+.BootstrapHack .visible-lg {
+    display: none !important;
+}
+
+.BootstrapHack .visible-xs-block,
+.BootstrapHack .visible-xs-inline,
+.BootstrapHack .visible-xs-inline-block,
+.BootstrapHack .visible-sm-block,
+.BootstrapHack .visible-sm-inline,
+.BootstrapHack .visible-sm-inline-block,
+.BootstrapHack .visible-md-block,
+.BootstrapHack .visible-md-inline,
+.BootstrapHack .visible-md-inline-block,
+.BootstrapHack .visible-lg-block,
+.BootstrapHack .visible-lg-inline,
+.BootstrapHack .visible-lg-inline-block {
+    display: none !important;
+}
+
+@media (max-width: 767px) {
+    .BootstrapHack .visible-xs {
+        display: block !important;
+    }
+    .BootstrapHack table.visible-xs {
+        display: table !important;
+    }
+    .BootstrapHack tr.visible-xs {
+        display: table-row !important;
+    }
+    .BootstrapHack th.visible-xs,
+    .BootstrapHack td.visible-xs {
+        display: table-cell !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .BootstrapHack .visible-xs-block {
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .BootstrapHack .visible-xs-inline {
+        display: inline !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .BootstrapHack .visible-xs-inline-block {
+        display: inline-block !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .BootstrapHack .visible-sm {
+        display: block !important;
+    }
+    .BootstrapHack table.visible-sm {
+        display: table !important;
+    }
+    .BootstrapHack tr.visible-sm {
+        display: table-row !important;
+    }
+    .BootstrapHack th.visible-sm,
+    .BootstrapHack td.visible-sm {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .BootstrapHack .visible-sm-block {
+        display: block !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .BootstrapHack .visible-sm-inline {
+        display: inline !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .BootstrapHack .visible-sm-inline-block {
+        display: inline-block !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .BootstrapHack .visible-md {
+        display: block !important;
+    }
+    .BootstrapHack table.visible-md {
+        display: table !important;
+    }
+    .BootstrapHack tr.visible-md {
+        display: table-row !important;
+    }
+    .BootstrapHack th.visible-md,
+    .BootstrapHack td.visible-md {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .BootstrapHack .visible-md-block {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .BootstrapHack .visible-md-inline {
+        display: inline !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .BootstrapHack .visible-md-inline-block {
+        display: inline-block !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .BootstrapHack .visible-lg {
+        display: block !important;
+    }
+    .BootstrapHack table.visible-lg {
+        display: table !important;
+    }
+    .BootstrapHack tr.visible-lg {
+        display: table-row !important;
+    }
+    .BootstrapHack th.visible-lg,
+    .BootstrapHack td.visible-lg {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .BootstrapHack .visible-lg-block {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .BootstrapHack .visible-lg-inline {
+        display: inline !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .BootstrapHack .visible-lg-inline-block {
+        display: inline-block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .BootstrapHack .hidden-xs {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .BootstrapHack .hidden-sm {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .BootstrapHack .hidden-md {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .BootstrapHack .hidden-lg {
+        display: none !important;
+    }
+}
+
+.BootstrapHack .visible-print {
+    display: none !important;
+}
+
+@media print {
+    .BootstrapHack .visible-print {
+        display: block !important;
+    }
+    .BootstrapHack table.visible-print {
+        display: table !important;
+    }
+    .BootstrapHack tr.visible-print {
+        display: table-row !important;
+    }
+    .BootstrapHack th.visible-print,
+    .BootstrapHack td.visible-print {
+        display: table-cell !important;
+    }
+}
+
+.BootstrapHack .visible-print-block {
+    display: none !important;
+}
+
+@media print {
+    .BootstrapHack .visible-print-block {
+        display: block !important;
+    }
+}
+
+.BootstrapHack .visible-print-inline {
+    display: none !important;
+}
+
+@media print {
+    .BootstrapHack .visible-print-inline {
+        display: inline !important;
+    }
+}
+
+.BootstrapHack .visible-print-inline-block {
+    display: none !important;
+}
+
+@media print {
+    .BootstrapHack .visible-print-inline-block {
+        display: inline-block !important;
+    }
+}
+
+@media print {
+    .BootstrapHack .hidden-print {
+        display: none !important;
+    }
+}
